@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cube Algorithms</title>
+<link rel="stylesheet" href="algpage.css">
+
+</head>
+
+<body>
+
+<script>
+
+// Adjacent/None
+
+function completed_ana_() {
+document.getElementById('completed_ana_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_done.png'> Completed ";
+document.getElementById('completed_ana_').style.background = '#00B666';
+document.getElementById('trash_ana_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+document.getElementById('trash_ana_').style.background = '#000066';
+document.getElementById('learn_ana_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+document.getElementById('learn_ana_').style.background = '#000066';
+document.getElementById('none_ana_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+document.getElementById('none_ana_').style.background = '#000066';
+}
+
+function trash_ana_() {
+document.getElementById('completed_ana_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+document.getElementById('completed_ana_').style.background = '#000066';
+document.getElementById('trash_ana_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_delete.png'> Delete ";
+document.getElementById('trash_ana_').style.background = '#FF0000';
+document.getElementById('learn_ana_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+document.getElementById('learn_ana_').style.background = '#000066';
+document.getElementById('none_ana_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+document.getElementById('none_ana_').style.background = '#000066';
+}
+
+function learn_ana_() {
+document.getElementById('completed_ana_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+document.getElementById('completed_ana_').style.background = '#000066';
+document.getElementById('trash_ana_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+document.getElementById('trash_ana_').style.background = '#000066';
+document.getElementById('learn_ana_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_learning.png'> Learning ";
+document.getElementById('learn_ana_').style.background = '#FFCC00';
+document.getElementById('none_ana_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+document.getElementById('none_ana_').style.background = '#000066';
+}
+
+function none_ana_() {
+document.getElementById('completed_ana_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+document.getElementById('completed_ana_').style.background = '#000066';
+document.getElementById('trash_ana_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+document.getElementById('trash_ana_').style.background = '#000066';
+document.getElementById('learn_ana_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+document.getElementById('learn_ana_').style.background = '#000066';
+document.getElementById('none_ana_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None ";
+document.getElementById('none_ana_').style.background = '#575757';
+}
+
+// Diagonal/None
+
+function completed_dnb_() {
+document.getElementById('completed_dnb_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_done.png'> Completed ";
+document.getElementById('completed_dnb_').style.background = '#00B666';
+document.getElementById('trash_dnb_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+document.getElementById('trash_dnb_').style.background = '#000066';
+document.getElementById('learn_dnb_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+document.getElementById('learn_dnb_').style.background = '#000066';
+document.getElementById('none_dnb_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+document.getElementById('none_dnb_').style.background = '#000066';
+}
+
+function trash_dnb_() {
+document.getElementById('completed_dnb_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+document.getElementById('completed_dnb_').style.background = '#000066';
+document.getElementById('trash_dnb_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_delete.png'> Delete ";
+document.getElementById('trash_dnb_').style.background = '#FF0000';
+document.getElementById('learn_dnb_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+document.getElementById('learn_dnb_').style.background = '#000066';
+document.getElementById('none_dnb_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+document.getElementById('none_dnb_').style.background = '#000066';
+}
+
+function learn_dnb_() {
+document.getElementById('completed_dnb_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+document.getElementById('completed_dnb_').style.background = '#000066';
+document.getElementById('trash_dnb_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+document.getElementById('trash_dnb_').style.background = '#000066';
+document.getElementById('learn_dnb_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_learning.png'> Learning ";
+document.getElementById('learn_dnb_').style.background = '#FFCC00';
+document.getElementById('none_dnb_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+document.getElementById('none_dnb_').style.background = '#000066';
+}
+
+function none_dnb_() {
+document.getElementById('completed_dnb_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+document.getElementById('completed_dnb_').style.background = '#000066';
+document.getElementById('trash_dnb_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+document.getElementById('trash_dnb_').style.background = '#000066';
+document.getElementById('learn_dnb_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+document.getElementById('learn_dnb_').style.background = '#000066';
+document.getElementById('none_dnb_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None ";
+document.getElementById('none_dnb_').style.background = '#575757';
+}
+
+// Adjacent/Adjacent
+
+function completed_aac_() {
+document.getElementById('completed_aac_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_done.png'> Completed ";
+document.getElementById('completed_aac_').style.background = '#00B666';
+document.getElementById('trash_aac_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+document.getElementById('trash_aac_').style.background = '#000066';
+document.getElementById('learn_aac_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+document.getElementById('learn_aac_').style.background = '#000066';
+document.getElementById('none_aac_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+document.getElementById('none_aac_').style.background = '#000066';
+}
+
+function trash_aac_() {
+document.getElementById('completed_aac_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+document.getElementById('completed_aac_').style.background = '#000066';
+document.getElementById('trash_aac_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_delete.png'> Delete ";
+document.getElementById('trash_aac_').style.background = '#FF0000';
+document.getElementById('learn_aac_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+document.getElementById('learn_aac_').style.background = '#000066';
+document.getElementById('none_aac_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+document.getElementById('none_aac_').style.background = '#000066';
+}
+
+function learn_aac_() {
+document.getElementById('completed_aac_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+document.getElementById('completed_aac_').style.background = '#000066';
+document.getElementById('trash_aac_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+document.getElementById('trash_aac_').style.background = '#000066';
+document.getElementById('learn_aac_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_learning.png'> Learning ";
+document.getElementById('learn_aac_').style.background = '#FFCC00';
+document.getElementById('none_aac_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+document.getElementById('none_aac_').style.background = '#000066';
+}
+
+function none_aac_() {
+document.getElementById('completed_aac_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+document.getElementById('completed_aac_').style.background = '#000066';
+document.getElementById('trash_aac_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+document.getElementById('trash_aac_').style.background = '#000066';
+document.getElementById('learn_aac_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+document.getElementById('learn_aac_').style.background = '#000066';
+document.getElementById('none_aac_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None ";
+document.getElementById('none_aac_').style.background = '#575757';
+}
+
+// Adjacent/Diagonal
+
+function completed_add_() {
+document.getElementById('completed_add_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_done.png'> Completed ";
+document.getElementById('completed_add_').style.background = '#00B666';
+document.getElementById('trash_add_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+document.getElementById('trash_add_').style.background = '#000066';
+document.getElementById('learn_add_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+document.getElementById('learn_add_').style.background = '#000066';
+document.getElementById('none_add_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+document.getElementById('none_add_').style.background = '#000066';
+}
+
+function trash_add_() {
+document.getElementById('completed_add_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+document.getElementById('completed_add_').style.background = '#000066';
+document.getElementById('trash_add_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_delete.png'> Delete ";
+document.getElementById('trash_add_').style.background = '#FF0000';
+document.getElementById('learn_add_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+document.getElementById('learn_add_').style.background = '#000066';
+document.getElementById('none_add_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+document.getElementById('none_add_').style.background = '#000066';
+}
+
+function learn_add_() {
+document.getElementById('completed_add_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+document.getElementById('completed_add_').style.background = '#000066';
+document.getElementById('trash_add_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+document.getElementById('trash_add_').style.background = '#000066';
+document.getElementById('learn_add_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_learning.png'> Learning ";
+document.getElementById('learn_add_').style.background = '#FFCC00';
+document.getElementById('none_add_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+document.getElementById('none_add_').style.background = '#000066';
+}
+
+function none_add_() {
+document.getElementById('completed_add_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+document.getElementById('completed_add_').style.background = '#000066';
+document.getElementById('trash_add_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+document.getElementById('trash_add_').style.background = '#000066';
+document.getElementById('learn_add_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+document.getElementById('learn_add_').style.background = '#000066';
+document.getElementById('none_add_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None ";
+document.getElementById('none_add_').style.background = '#575757';
+}
+
+// Diagonal/Diagonal
+
+function completed_dde_() {
+document.getElementById('completed_dde_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_done.png'> Completed ";
+document.getElementById('completed_dde_').style.background = '#00B666';
+document.getElementById('trash_dde_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+document.getElementById('trash_dde_').style.background = '#000066';
+document.getElementById('learn_dde_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+document.getElementById('learn_dde_').style.background = '#000066';
+document.getElementById('none_dde_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+document.getElementById('none_dde_').style.background = '#000066';
+}
+
+function trash_dde_() {
+document.getElementById('completed_dde_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+document.getElementById('completed_dde_').style.background = '#000066';
+document.getElementById('trash_dde_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_delete.png'> Delete ";
+document.getElementById('trash_dde_').style.background = '#FF0000';
+document.getElementById('learn_dde_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+document.getElementById('learn_dde_').style.background = '#000066';
+document.getElementById('none_dde_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+document.getElementById('none_dde_').style.background = '#000066';
+}
+
+function learn_dde_() {
+document.getElementById('completed_dde_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+document.getElementById('completed_dde_').style.background = '#000066';
+document.getElementById('trash_dde_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+document.getElementById('trash_dde_').style.background = '#000066';
+document.getElementById('learn_dde_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_learning.png'> Learning ";
+document.getElementById('learn_dde_').style.background = '#FFCC00';
+document.getElementById('none_dde_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+document.getElementById('none_dde_').style.background = '#000066';
+}
+
+function none_dde_() {
+document.getElementById('completed_dde_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+document.getElementById('completed_dde_').style.background = '#000066';
+document.getElementById('trash_dde_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+document.getElementById('trash_dde_').style.background = '#000066';
+document.getElementById('learn_dde_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+document.getElementById('learn_dde_').style.background = '#000066';
+document.getElementById('none_dde_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None ";
+document.getElementById('none_dde_').style.background = '#575757';
+}
+
+// Triggers
+
+function showtrigger() {
+document.getElementById('anat').innerHTML = " (R U R' U') R' F (R2 U' R' U') (R U R') F'";
+document.getElementById('dnbt').innerHTML = " F (R U' R' U') (R U R') F' (R U R' U') (R' F R F')";
+document.getElementById('aact').innerHTML = " (R2 U') B2 U2 (R2 U') R2";
+document.getElementById('addt').innerHTML = " (R U' R) F2 (R' U R')";
+document.getElementById('ddet').innerHTML = " R2 F2 R2";
+changecolor_22intortpbl();
+}
+
+function hidetrigger() {
+document.getElementById('anat').innerHTML = " R U R' U' R' F R2 U' R' U' R U R' F'";
+document.getElementById('dnbt').innerHTML = " F R U' R' U' R U R' F' R U R' U' R' F R F'";
+document.getElementById('aact').innerHTML = " R2 U' B2 U2 R2 U' R2";
+document.getElementById('addt').innerHTML = " R U' R F2 R' U R'";
+document.getElementById('ddet').innerHTML = " R2 F2 R2";
+changecolor_22intortpbl();
+}
+
+function changecolor_22intortpbl() {
+document.getElementById('anat').style.color = "#000066";
+document.getElementById('dnbt').style.color = "#000066";
+document.getElementById('aact').style.color = "#000066";
+document.getElementById('addt').style.color = "#000066";
+document.getElementById('ddet').style.color = "#000066";
+}
+
+</script>
+
+<header id='heading'>
+
+<h1 style='text-align:center; background-color: yellow; color: #000066; width: 100%; height: 125px;' id='top'> <br> Adarsh Crazy Cubing </h1>
+
+</header>
+
+<button class="buttonap" onclick="document.location='algpage.html'"> <h2> Algorithm Page </h2> </button>
+
+<br><br>
+
+<h1 style='text-align:center;'>2x2</h1>
+
+<h2 style='text-align:center;'>Ortega PBL Algorithms </h2>
+
+<div> <b>
+
+<p class='introp22'>This is the Final step in Ortega method. Before this step, do 
+<a class='introa22' href='22_int_ortoll_cor.html' alt='Ortega OLL'>Ortega OLL</a>.
+</p>
+
+<p class='introp22'>Beginner Orientation: 
+<a class='introa22' href='22_beg_pll_cor.html' alt='PLL'>Beginner PLL</a>.
+</p>
+
+<p class='introp22'>Full LL: 
+<a class='introa22' href='22_adv_cll_cor.html' alt='CLL'>CLL</a>, 
+<a class='introa22' href='22_mas_eg1_cor.html' alt='EG-1'>EG-1</a>, 
+<a class='introa22' href='22_mas_eg2_cor.html' alt='EG-2'>EG-2</a>.
+</p>
+
+<button class='triggerornot22' onclick='showtrigger()'> <h4> Show triggers(brackets) </h4> </button>
+<br><br>
+<button class='triggerornot22' onclick='hidetrigger()'> <h4> Hide triggers(no brackets) </h4> </button>
+<br>
+
+</b> </div>
+
+<br><br>
+
+<div id='ana' class='two_intermediate_ortega_algs'>
+
+<h3 class='algname22'>Adjacent/None</h3>
+
+<img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/22INTORTEGA/int_ort_pbl_adj-none-1.png' class='221limgs' alt='Adjacent/None' style='height: 125px; width: 125px;'> </img>
+<br>
+<img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/22INTORTEGA/int_ort_pbl_adj-none-2.png' class='221limgs' alt='Adjacent/None' style='height: 125px; width: 125px;'> </img>
+<br><br>
+<h3 id='anat'> <b class='two_intermediate_ortega_algs'> R U R' U' R' F R2 U' R' U' R U R' F' </b> </h3>
+
+<button type='button' class='cubealgbutton22' id='completed_ana_' onclick='completed_ana_()'>
+<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed 
+</button>
+
+<button type='button' class='cubealgbutton22' id='trash_ana_' onclick='trash_ana_()'>
+<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete 
+</button>
+
+<button type='button' class='cubealgbutton22' id='learn_ana_' onclick='learn_ana_()'>
+<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning 
+</button>
+
+<button type='button' class='cubealgbutton22_none' id='none_ana_' onclick='none_ana_()'>
+<img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None 
+</button>
+
+<br>
+<br>
+
+</div>
+
+<br><br><br>
+
+<div id='dnb' class='two_intermediate_ortega_algs'>
+
+<h3 class='algname22'>Diagonal/None</h3>
+
+<img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/22INTORTEGA/int_ort_pbl_dia-none-1.png' class='221limgs' alt='Diagonal/None' style='height: 125px; width: 125px;'> </img>
+<br>
+<img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/22INTORTEGA/int_ort_pbl_dia-none-2.png' class='221limgs' alt='Diagonal/None' style='height: 125px; width: 125px;'> </img>
+<br><br>
+<h3 id='dnbt'> <b class='two_intermediate_ortega_algs'> F R U' R' U' R U R' F' R U R' U' R' F R F' </b> </h3>
+
+<button type='button' class='cubealgbutton22' id='completed_dnb_' onclick='completed_dnb_()'>
+<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed 
+</button>
+
+<button type='button' class='cubealgbutton22' id='trash_dnb_' onclick='trash_dnb_()'>
+<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete 
+</button>
+
+<button type='button' class='cubealgbutton22' id='learn_dnb_' onclick='learn_dnb_()'>
+<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning 
+</button>
+
+<button type='button' class='cubealgbutton22_none' id='none_dnb_' onclick='none_dnb_()'>
+<img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None 
+</button>
+
+<br>
+<br>
+
+</div>
+
+<br><br><br>
+
+<div id='aac' class='two_intermediate_ortega_algs'>
+
+<h3 class='algname22'>Adjacent/Adjacent</h3>
+
+<img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/22INTORTEGA/int_ort_pbl_adj-adj-1.png' class='221limgs' alt='Adjacent/Adjacent' style='height: 125px; width: 125px;'> </img>
+<br>
+<img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/22INTORTEGA/int_ort_pbl_adj-adj-2.png' class='221limgs' alt='Adjacent/Adjacent' style='height: 125px; width: 125px;'> </img>
+<br><br>
+<h3 id='aact'> <b class='two_intermediate_ortega_algs'> R2 U' B2 U2 R2 U' R2 </b> </h3>
+
+<button type='button' class='cubealgbutton22' id='completed_aac_' onclick='completed_aac_()'>
+<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed 
+</button>
+
+<button type='button' class='cubealgbutton22' id='trash_aac_' onclick='trash_aac_()'>
+<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete 
+</button>
+
+<button type='button' class='cubealgbutton22' id='learn_aac_' onclick='learn_aac_()'>
+<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning 
+</button>
+
+<button type='button' class='cubealgbutton22_none' id='none_aac_' onclick='none_aac_()'>
+<img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None 
+</button>
+
+<br>
+<br>
+
+</div>
+
+<br><br><br>
+
+<div id='add' class='two_intermediate_ortega_algs'>
+
+<h3 class='algname22'>Adjacent/Diagonal</h3>
+
+<img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/22INTORTEGA/int_ort_pbl_adj-dia-1.png' class='221limgs' alt='Adjacent/Diagonal' style='height: 125px; width: 125px;'> </img>
+<br>
+<img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/22INTORTEGA/int_ort_pbl_adj-dia-2.png' class='221limgs' alt='Adjacent/Diagonal' style='height: 125px; width: 125px;'> </img>
+<br><br>
+<h3 id='addt'> <b class='two_intermediate_ortega_algs'> R U' R F2 R' U R' </b> </h3>
+
+<button type='button' class='cubealgbutton22' id='completed_add_' onclick='completed_add_()'>
+<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed 
+</button>
+
+<button type='button' class='cubealgbutton22' id='trash_add_' onclick='trash_add_()'>
+<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete 
+</button>
+
+<button type='button' class='cubealgbutton22' id='learn_add_' onclick='learn_add_()'>
+<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning 
+</button>
+
+<button type='button' class='cubealgbutton22_none' id='none_add_' onclick='none_add_()'>
+<img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None 
+</button>
+
+<br>
+<br>
+
+</div>
+
+<br><br><br>
+
+<div id='dde' class='two_intermediate_ortega_algs'>
+
+<h3 class='algname22'>Diagonal/Diagonal</h3>
+
+<img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/22INTORTEGA/int_ort_pbl_dia-dia-1.png' class='221limgs' alt='Diagonal/Diagonal' style='height: 125px; width: 125px;'> </img>
+<br>
+<img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/22INTORTEGA/int_ort_pbl_adj-dia-2.png' class='221limgs' alt='Adjacent/Diagonal' style='height: 125px; width: 125px;'> </img>
+<br><br>
+<h3 id='ddet'> <b class='two_intermediate_ortega_algs'> R2 F2 R2 </b> </h3>
+
+<button type='button' class='cubealgbutton22' id='completed_dde_' onclick='completed_dde_()'>
+<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed 
+</button>
+
+<button type='button' class='cubealgbutton22' id='trash_dde_' onclick='trash_dde_()'>
+<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete 
+</button>
+
+<button type='button' class='cubealgbutton22' id='learn_dde_' onclick='learn_dde_()'>
+<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning 
+</button>
+
+<button type='button' class='cubealgbutton22_none' id='none_dde_' onclick='none_dde_()'>
+<img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None 
+</button>
+
+<br>
+<br>
+
+</div>
+
+<br><br><br>
+
+<b><a class='atop' href="#top">Back To Top</a></b>
+
+<footer id='footer'>
+
+<p style='text-align:center;'>Thank you for viewing our page<br>Requesting you to visit our page again</p>
+
+</footer>
+
+</body>
+
+</html>

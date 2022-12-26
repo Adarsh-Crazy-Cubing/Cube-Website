@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cube Algorithms</title>
+<link rel="stylesheet" href="algpage.css">
+
+</head>
+
+<body>
+
+<script>
+
+// Adjacent Corner Swap
+
+function completed_acs_() {
+document.getElementById('completed_acs_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_thumbs_up_done.png'> Completed ";
+document.getElementById('completed_acs_').style.background = '#00B666';
+document.getElementById('trash_acs_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_eye_slash_normal.png'> Delete ";
+document.getElementById('trash_acs_').style.background = '#660066';
+document.getElementById('learn_acs_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_bookmark_normal.png'> Learning ";
+document.getElementById('learn_acs_').style.background = '#660066';
+document.getElementById('none_acs_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_xmark_normal.png'> None ";
+document.getElementById('none_acs_').style.background = '#660066';
+}
+
+function trash_acs_() {
+document.getElementById('completed_acs_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_thumbs_up_normal.png'> Completed ";
+document.getElementById('completed_acs_').style.background = '#660066';
+document.getElementById('trash_acs_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_eye_slash_delete.png'> Delete ";
+document.getElementById('trash_acs_').style.background = '#FF0000';
+document.getElementById('learn_acs_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_bookmark_normal.png'> Learning ";
+document.getElementById('learn_acs_').style.background = '#660066';
+document.getElementById('none_acs_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_xmark_normal.png'> None ";
+document.getElementById('none_acs_').style.background = '#660066';
+}
+
+function learn_acs_() {
+document.getElementById('completed_acs_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_thumbs_up_normal.png'> Completed ";
+document.getElementById('completed_acs_').style.background = '#660066';
+document.getElementById('trash_acs_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_eye_slash_normal.png'> Delete ";
+document.getElementById('trash_acs_').style.background = '#660066';
+document.getElementById('learn_acs_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_bookmark_learning.png'> Learning ";
+document.getElementById('learn_acs_').style.background = '#FFCC00';
+document.getElementById('none_acs_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_xmark_normal.png'> None ";
+document.getElementById('none_acs_').style.background = '#660066';
+}
+
+function none_acs_() {
+document.getElementById('completed_acs_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_thumbs_up_normal.png'> Completed ";
+document.getElementById('completed_acs_').style.background = '#660066';
+document.getElementById('trash_acs_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_eye_slash_normal.png'> Delete ";
+document.getElementById('trash_acs_').style.background = '#660066';
+document.getElementById('learn_acs_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_bookmark_normal.png'> Learning ";
+document.getElementById('learn_acs_').style.background = '#660066';
+document.getElementById('none_acs_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_xmark_none.png'> None ";
+document.getElementById('none_acs_').style.background = '#575757';
+}
+
+// Diagonal Corner Swap
+
+function completed_dcs_() {
+document.getElementById('completed_dcs_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_thumbs_up_done.png'> Completed ";
+document.getElementById('completed_dcs_').style.background = '#00B666';
+document.getElementById('trash_dcs_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_eye_slash_normal.png'> Delete ";
+document.getElementById('trash_dcs_').style.background = '#660066';
+document.getElementById('learn_dcs_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_bookmark_normal.png'> Learning ";
+document.getElementById('learn_dcs_').style.background = '#660066';
+document.getElementById('none_dcs_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_xmark_normal.png'> None ";
+document.getElementById('none_dcs_').style.background = '#660066';
+}
+
+function trash_dcs_() {
+document.getElementById('completed_dcs_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_thumbs_up_normal.png'> Completed ";
+document.getElementById('completed_dcs_').style.background = '#660066';
+document.getElementById('trash_dcs_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_eye_slash_delete.png'> Delete ";
+document.getElementById('trash_dcs_').style.background = '#FF0000';
+document.getElementById('learn_dcs_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_bookmark_normal.png'> Learning ";
+document.getElementById('learn_dcs_').style.background = '#660066';
+document.getElementById('none_dcs_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_xmark_normal.png'> None ";
+document.getElementById('none_dcs_').style.background = '#660066';
+}
+
+function learn_dcs_() {
+document.getElementById('completed_dcs_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_thumbs_up_normal.png'> Completed ";
+document.getElementById('completed_dcs_').style.background = '#660066';
+document.getElementById('trash_dcs_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_eye_slash_normal.png'> Delete ";
+document.getElementById('trash_dcs_').style.background = '#660066';
+document.getElementById('learn_dcs_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_bookmark_learning.png'> Learning ";
+document.getElementById('learn_dcs_').style.background = '#FFCC00';
+document.getElementById('none_dcs_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_xmark_normal.png'> None ";
+document.getElementById('none_dcs_').style.background = '#660066';
+}
+
+function none_dcs_() {
+document.getElementById('completed_dcs_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_thumbs_up_normal.png'> Completed ";
+document.getElementById('completed_dcs_').style.background = '#660066';
+document.getElementById('trash_dcs_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_eye_slash_normal.png'> Delete ";
+document.getElementById('trash_dcs_').style.background = '#660066';
+document.getElementById('learn_dcs_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_bookmark_normal.png'> Learning ";
+document.getElementById('learn_dcs_').style.background = '#660066';
+document.getElementById('none_dcs_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_xmark_none.png'> None ";
+document.getElementById('none_dcs_').style.background = '#575757';
+}
+
+// Edge Cycle 1
+
+function completed_eca_() {
+document.getElementById('completed_eca_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_thumbs_up_done.png'> Completed ";
+document.getElementById('completed_eca_').style.background = '#00B666';
+document.getElementById('trash_eca_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_eye_slash_normal.png'> Delete ";
+document.getElementById('trash_eca_').style.background = '#660066';
+document.getElementById('learn_eca_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_bookmark_normal.png'> Learning ";
+document.getElementById('learn_eca_').style.background = '#660066';
+document.getElementById('none_eca_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_xmark_normal.png'> None ";
+document.getElementById('none_eca_').style.background = '#660066';
+}
+
+function trash_eca_() {
+document.getElementById('completed_eca_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_thumbs_up_normal.png'> Completed ";
+document.getElementById('completed_eca_').style.background = '#660066';
+document.getElementById('trash_eca_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_eye_slash_delete.png'> Delete ";
+document.getElementById('trash_eca_').style.background = '#FF0000';
+document.getElementById('learn_eca_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_bookmark_normal.png'> Learning ";
+document.getElementById('learn_eca_').style.background = '#660066';
+document.getElementById('none_eca_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_xmark_normal.png'> None ";
+document.getElementById('none_eca_').style.background = '#660066';
+}
+
+function learn_eca_() {
+document.getElementById('completed_eca_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_thumbs_up_normal.png'> Completed ";
+document.getElementById('completed_eca_').style.background = '#660066';
+document.getElementById('trash_eca_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_eye_slash_normal.png'> Delete ";
+document.getElementById('trash_eca_').style.background = '#660066';
+document.getElementById('learn_eca_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_bookmark_learning.png'> Learning ";
+document.getElementById('learn_eca_').style.background = '#FFCC00';
+document.getElementById('none_eca_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_xmark_normal.png'> None ";
+document.getElementById('none_eca_').style.background = '#660066';
+}
+
+function none_eca_() {
+document.getElementById('completed_eca_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_thumbs_up_normal.png'> Completed ";
+document.getElementById('completed_eca_').style.background = '#660066';
+document.getElementById('trash_eca_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_eye_slash_normal.png'> Delete ";
+document.getElementById('trash_eca_').style.background = '#660066';
+document.getElementById('learn_eca_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_bookmark_normal.png'> Learning ";
+document.getElementById('learn_eca_').style.background = '#660066';
+document.getElementById('none_eca_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_xmark_none.png'> None ";
+document.getElementById('none_eca_').style.background = '#575757';
+}
+
+// Edge Cycle 2
+
+function completed_ecb_() {
+document.getElementById('completed_ecb_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_thumbs_up_done.png'> Completed ";
+document.getElementById('completed_ecb_').style.background = '#00B666';
+document.getElementById('trash_ecb_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_eye_slash_normal.png'> Delete ";
+document.getElementById('trash_ecb_').style.background = '#660066';
+document.getElementById('learn_ecb_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_bookmark_normal.png'> Learning ";
+document.getElementById('learn_ecb_').style.background = '#660066';
+document.getElementById('none_ecb_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_xmark_normal.png'> None ";
+document.getElementById('none_ecb_').style.background = '#660066';
+}
+
+function trash_ecb_() {
+document.getElementById('completed_ecb_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_thumbs_up_normal.png'> Completed ";
+document.getElementById('completed_ecb_').style.background = '#660066';
+document.getElementById('trash_ecb_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_eye_slash_delete.png'> Delete ";
+document.getElementById('trash_ecb_').style.background = '#FF0000';
+document.getElementById('learn_ecb_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_bookmark_normal.png'> Learning ";
+document.getElementById('learn_ecb_').style.background = '#660066';
+document.getElementById('none_ecb_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_xmark_normal.png'> None ";
+document.getElementById('none_ecb_').style.background = '#660066';
+}
+
+function learn_ecb_() {
+document.getElementById('completed_ecb_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_thumbs_up_normal.png'> Completed ";
+document.getElementById('completed_ecb_').style.background = '#660066';
+document.getElementById('trash_ecb_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_eye_slash_normal.png'> Delete ";
+document.getElementById('trash_ecb_').style.background = '#660066';
+document.getElementById('learn_ecb_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_bookmark_learning.png'> Learning ";
+document.getElementById('learn_ecb_').style.background = '#FFCC00';
+document.getElementById('none_ecb_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_xmark_normal.png'> None ";
+document.getElementById('none_ecb_').style.background = '#660066';
+}
+
+function none_ecb_() {
+document.getElementById('completed_ecb_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_thumbs_up_normal.png'> Completed ";
+document.getElementById('completed_ecb_').style.background = '#660066';
+document.getElementById('trash_ecb_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_eye_slash_normal.png'> Delete ";
+document.getElementById('trash_ecb_').style.background = '#660066';
+document.getElementById('learn_ecb_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_bookmark_normal.png'> Learning ";
+document.getElementById('learn_ecb_').style.background = '#660066';
+document.getElementById('none_ecb_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_xmark_none.png'> None ";
+document.getElementById('none_ecb_').style.background = '#575757';
+}
+
+// Opposite Edge Swap
+
+function completed_oes_() {
+document.getElementById('completed_oes_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_thumbs_up_done.png'> Completed ";
+document.getElementById('completed_oes_').style.background = '#00B666';
+document.getElementById('trash_oes_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_eye_slash_normal.png'> Delete ";
+document.getElementById('trash_oes_').style.background = '#660066';
+document.getElementById('learn_oes_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_bookmark_normal.png'> Learning ";
+document.getElementById('learn_oes_').style.background = '#660066';
+document.getElementById('none_oes_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_xmark_normal.png'> None ";
+document.getElementById('none_oes_').style.background = '#660066';
+}
+
+function trash_oes_() {
+document.getElementById('completed_oes_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_thumbs_up_normal.png'> Completed ";
+document.getElementById('completed_oes_').style.background = '#660066';
+document.getElementById('trash_oes_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_eye_slash_delete.png'> Delete ";
+document.getElementById('trash_oes_').style.background = '#FF0000';
+document.getElementById('learn_oes_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_bookmark_normal.png'> Learning ";
+document.getElementById('learn_oes_').style.background = '#660066';
+document.getElementById('none_oes_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_xmark_normal.png'> None ";
+document.getElementById('none_oes_').style.background = '#660066';
+}
+
+function learn_oes_() {
+document.getElementById('completed_oes_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_thumbs_up_normal.png'> Completed ";
+document.getElementById('completed_oes_').style.background = '#660066';
+document.getElementById('trash_oes_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_eye_slash_normal.png'> Delete ";
+document.getElementById('trash_oes_').style.background = '#660066';
+document.getElementById('learn_oes_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_bookmark_learning.png'> Learning ";
+document.getElementById('learn_oes_').style.background = '#FFCC00';
+document.getElementById('none_oes_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_xmark_normal.png'> None ";
+document.getElementById('none_oes_').style.background = '#660066';
+}
+
+function none_oes_() {
+document.getElementById('completed_oes_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_thumbs_up_normal.png'> Completed ";
+document.getElementById('completed_oes_').style.background = '#660066';
+document.getElementById('trash_oes_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_eye_slash_normal.png'> Delete ";
+document.getElementById('trash_oes_').style.background = '#660066';
+document.getElementById('learn_oes_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_bookmark_normal.png'> Learning ";
+document.getElementById('learn_oes_').style.background = '#660066';
+document.getElementById('none_oes_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_xmark_none.png'> None ";
+document.getElementById('none_oes_').style.background = '#575757';
+}
+
+// Adjacent Edge Swap
+
+function completed_aes_() {
+document.getElementById('completed_aes_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_thumbs_up_done.png'> Completed ";
+document.getElementById('completed_aes_').style.background = '#00B666';
+document.getElementById('trash_aes_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_eye_slash_normal.png'> Delete ";
+document.getElementById('trash_aes_').style.background = '#660066';
+document.getElementById('learn_aes_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_bookmark_normal.png'> Learning ";
+document.getElementById('learn_aes_').style.background = '#660066';
+document.getElementById('none_aes_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_xmark_normal.png'> None ";
+document.getElementById('none_aes_').style.background = '#660066';
+}
+
+function trash_aes_() {
+document.getElementById('completed_aes_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_thumbs_up_normal.png'> Completed ";
+document.getElementById('completed_aes_').style.background = '#660066';
+document.getElementById('trash_aes_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_eye_slash_delete.png'> Delete ";
+document.getElementById('trash_aes_').style.background = '#FF0000';
+document.getElementById('learn_aes_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_bookmark_normal.png'> Learning ";
+document.getElementById('learn_aes_').style.background = '#660066';
+document.getElementById('none_aes_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_xmark_normal.png'> None ";
+document.getElementById('none_aes_').style.background = '#660066';
+}
+
+function learn_aes_() {
+document.getElementById('completed_aes_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_thumbs_up_normal.png'> Completed ";
+document.getElementById('completed_aes_').style.background = '#660066';
+document.getElementById('trash_aes_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_eye_slash_normal.png'> Delete ";
+document.getElementById('trash_aes_').style.background = '#660066';
+document.getElementById('learn_aes_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_bookmark_learning.png'> Learning ";
+document.getElementById('learn_aes_').style.background = '#FFCC00';
+document.getElementById('none_aes_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_xmark_normal.png'> None ";
+document.getElementById('none_aes_').style.background = '#660066';
+}
+
+function none_aes_() {
+document.getElementById('completed_aes_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_thumbs_up_normal.png'> Completed ";
+document.getElementById('completed_aes_').style.background = '#660066';
+document.getElementById('trash_aes_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_eye_slash_normal.png'> Delete ";
+document.getElementById('trash_aes_').style.background = '#660066';
+document.getElementById('learn_aes_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_bookmark_normal.png'> Learning ";
+document.getElementById('learn_aes_').style.background = '#660066';
+document.getElementById('none_aes_').innerHTML = "<img class='imgbut33' height='20px' width='20px' src='33_xmark_none.png'> None ";
+document.getElementById('none_aes_').style.background = '#575757';
+}
+
+//Triggers
+
+function showtrigger() {
+document.getElementById('acst').innerHTML = "(R U R' U') R' F (R2 U' R' U') (R U R') F'";
+document.getElementById('dcst').innerHTML = "F (R U' R' U') (R U R') F' (R U R' U') (R' F R F')";
+document.getElementById('ecat').innerHTML = "M2 U' (M' U2 M) U' M2";
+document.getElementById('ecbt').innerHTML = "M2 U (M' U2 M) U M2";
+document.getElementById('oest').innerHTML = "M2 U' (M2 U2 M2) U' M2";
+document.getElementById('aest').innerHTML = "(M' U' M2) U' M2 U' (M' U2 M2)";
+changecolor_33begpll();
+}
+
+function hidetrigger() {
+document.getElementById('acst').innerHTML = "R U R' U' R' F R2 U' R' U' R U R' F'";
+document.getElementById('dcst').innerHTML = "F R U' R' U' R U R' F' R U R' U' R' F R F'";
+document.getElementById('ecat').innerHTML = "M2 U' M' U2 M U' M2";
+document.getElementById('ecbt').innerHTML = "M2 U M' U2 M U M2";
+document.getElementById('oest').innerHTML = "M2 U' M2 U2 M2 U' M2";
+document.getElementById('aest').innerHTML = "M' U' M2 U' M2 U' M' U2 M2";
+changecolor_33begpll();
+}
+
+function changecolor_33begpll() {
+document.getElementById('acst').style.color = "#660066";
+document.getElementById('dcst').style.color = "#660066";
+document.getElementById('ecat').style.color = "#660066";
+document.getElementById('ecbt').style.color = "#660066";
+document.getElementById('oest').style.color = "#660066";
+document.getElementById('aest').style.color = "#660066";
+}
+
+</script>
+
+<header id='heading'>
+
+<h1 style='text-align:center; background-color: yellow; color: #9900FF; width: 100%; height: 125px;' id='top'> <br> Adarsh Crazy Cubing </h1>
+
+</header>
+
+<button type="button" class="buttonap" onclick="document.location='algpage.html'"> <h2> Algorithm Page </h2> </button>
+
+<br><br>
+
+<h1 style='text-align:center;'>3x3</h1>
+
+<h2 style='text-align:center;'>Beginner OLL Algorithms </h2>
+
+<br><br>
+
+<div> <b>
+
+<p class='introp33'>This is the sixth(corner pemutation) and seventh(edge permutation) step in beginner solving method. Before this step, do 
+<a class='introa33' href='33_beg_oll_both.html' alt='OLL'>Beginner OLL</a>.
+</p>
+
+<p class='introp33'>Advanced Permutation: 
+<a class='introa33' href='33_adv_pll_both.html' alt='Advanced PLL'>Advanced PLL</a>.
+</p>
+
+<button type="button" class='triggerornot33' onclick='showtrigger()'> <h4> Show triggers(brackets) </h4> </button>
+<br><br>
+<button type="button" class='triggerornot33' onclick='hidetrigger()'> <h4> Hide triggers(no brackets) </h4> </button>
+<br>
+
+</b> </div>
+
+<br><br><br>
+
+<b><a class='adv_pllhea' href="#con">Corners(2 algs - Adjacent Swap, Diagonal Swap)</a></b>
+
+<br><br><br>
+
+<b><a class='adv_pllhea' href="#eon">Edges(4 algs - Edge cycle 1, Edge cycle 2, Adjacent Swap, Diagonal Swap)</a></b>
+
+<br><br><br>
+
+<h2 style='text-align:center; color:#660066;' id='con'>Corners</h2>
+
+<div id='acs' class='three_beginner_pll_algs'>
+
+<h3 class='algname33'>Adjacent Corner Swap</h3>
+
+<img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/33BEGPLL/beg_pll_adj_corner_swap.png' class='331limgs' alt='Adjacent Swap' style='height: 160px; width: 160px;'> </img>
+<br><br>
+<h3 id='acst'> <b class='three_beginner_pll_algs'> R U R' U' R' F R2 U' R' U' R U R' F' </b> </h3>
+
+<button type='button' class='cubealgbutton33' id='completed_acs_' onclick='completed_acs_()'>
+<img class='imgbut33' height='20px' width='20px' src='33_thumbs_up_normal.png'> Completed 
+</button>
+
+<button type='button' class='cubealgbutton33' id='trash_acs_' onclick='trash_acs_()'>
+<img class='imgbut33' height='20px' width='20px' src='33_eye_slash_normal.png'> Delete 
+</button>
+
+<button type='button' class='cubealgbutton33' id='learn_acs_' onclick='learn_acs_()'>
+<img class='imgbut33' height='20px' width='20px' src='33_bookmark_normal.png'> Learning 
+</button>
+
+<button type='button' class='cubealgbutton33_none' id='none_acs_' onclick='none_acs_()'>
+<img class='imgbut33' height='20px' width='20px' src='33_xmark_none.png'> None 
+</button>
+
+<br>
+<br>
+
+</div>
+
+<br><br><br>
+
+<div id='dcs' class='three_beginner_pll_algs'>
+
+<h3 class='algname33'>Diagonal Corner Swap</h3>
+
+<img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/33BEGPLL/beg_pll_dia_corner_swap.png' class='331limgs' alt='Diagonal Swap' style='height: 160px; width: 160px;'> </img>
+<br><br>
+<h3 id='dcst'> <b class='three_beginner_pll_algs'> F R U' R' U' R U R' F' R U R' U' R' F R F' </b> </h3>
+
+<button type='button' class='cubealgbutton33' id='completed_dcs_' onclick='completed_dcs_()'>
+<img class='imgbut33' height='20px' width='20px' src='33_thumbs_up_normal.png'> Completed 
+</button>
+
+<button type='button' class='cubealgbutton33' id='trash_dcs_' onclick='trash_dcs_()'>
+<img class='imgbut33' height='20px' width='20px' src='33_eye_slash_normal.png'> Delete 
+</button>
+
+<button type='button' class='cubealgbutton33' id='learn_dcs_' onclick='learn_dcs_()'>
+<img class='imgbut33' height='20px' width='20px' src='33_bookmark_normal.png'> Learning 
+</button>
+
+<button type='button' class='cubealgbutton33_none' id='none_dcs_' onclick='none_dcs_()'>
+<img class='imgbut33' height='20px' width='20px' src='33_xmark_none.png'> None 
+</button>
+
+<br>
+<br>
+
+</div>
+
+<br><br><br>
+
+<b><a class='atop' href="#top">Back To Top</a></b>
+
+<br><br><br>
+
+<h2 style='text-align:center; color:#660066;' id='eon'>Edges</h2>
+
+<div id='eca' class='three_beginner_pll_algs'>
+
+<h3 class='algname33'>3 Edge Cycle 1(Right to Left)</h3>
+
+<img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/33BEGPLL/beg_pll_edge_cycle_r_to_l.png' class='331limgs' alt='3 Edge Cycle 1(Right to Left)' style='height: 160px; width: 160px;'> </img>
+<br><br>
+<h3 id='ecat'> <b class='three_beginner_pll_algs'> M2 U' M' U2 M U' M2 </b> </h3>
+
+<button type='button' class='cubealgbutton33' id='completed_eca_' onclick='completed_eca_()'>
+<img class='imgbut33' height='20px' width='20px' src='33_thumbs_up_normal.png'> Completed 
+</button>
+
+<button type='button' class='cubealgbutton33' id='trash_eca_' onclick='trash_eca_()'>
+<img class='imgbut33' height='20px' width='20px' src='33_eye_slash_normal.png'> Delete 
+</button>
+
+<button type='button' class='cubealgbutton33' id='learn_eca_' onclick='learn_eca_()'>
+<img class='imgbut33' height='20px' width='20px' src='33_bookmark_normal.png'> Learning 
+</button>
+
+<button type='button' class='cubealgbutton33_none' id='none_eca_' onclick='none_eca_()'>
+<img class='imgbut33' height='20px' width='20px' src='33_xmark_none.png'> None 
+</button>
+
+<br>
+<br>
+
+</div>
+
+<br><br><br>
+
+<div id='ecb' class='three_beginner_pll_algs'>
+
+<h3 class='algname33'>3 Edge Cycle 2(Left to Right)</h3>
+
+<img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/33BEGPLL/beg_pll_edge_cycle_l_to_r.png' class='331limgs' alt='3 Edge Cycle 2(Left to Right)' style='height: 160px; width: 160px;'> </img>
+<br><br>
+<h3 id='ecbt'> <b class='three_beginner_pll_algs'> M2 U M' U2 M U M2 </b> </h3>
+
+<button type='button' class='cubealgbutton33' id='completed_ecb_' onclick='completed_ecb_()'>
+<img class='imgbut33' height='20px' width='20px' src='33_thumbs_up_normal.png'> Completed 
+</button>
+
+<button type='button' class='cubealgbutton33' id='trash_ecb_' onclick='trash_ecb_()'>
+<img class='imgbut33' height='20px' width='20px' src='33_eye_slash_normal.png'> Delete 
+</button>
+
+<button type='button' class='cubealgbutton33' id='learn_ecb_' onclick='learn_ecb_()'>
+<img class='imgbut33' height='20px' width='20px' src='33_bookmark_normal.png'> Learning 
+</button>
+
+<button type='button' class='cubealgbutton33_none' id='none_ecb_' onclick='none_ecb_()'>
+<img class='imgbut33' height='20px' width='20px' src='33_xmark_none.png'> None 
+</button>
+
+<br>
+<br>
+
+</div>
+
+<br><br><br>
+
+<div id='oes' class='three_beginner_pll_algs'>
+
+<h3 class='algname33'>Opposite Edge Swap</h3>
+
+<img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/33BEGPLL/beg_pll_opp_edge_swap.png' class='331limgs' alt='Opposite Edge Swap' style='height: 160px; width: 160px;'> </img>
+<br><br>
+<h3 id='oest'> <b class='three_beginner_pll_algs'> M2 U' M2 U2 M2 U' M2 </b> </h3>
+
+<button type='button' class='cubealgbutton33' id='completed_oes_' onclick='completed_oes_()'>
+<img class='imgbut33' height='20px' width='20px' src='33_thumbs_up_normal.png'> Completed 
+</button>
+
+<button type='button' class='cubealgbutton33' id='trash_oes_' onclick='trash_oes_()'>
+<img class='imgbut33' height='20px' width='20px' src='33_eye_slash_normal.png'> Delete 
+</button>
+
+<button type='button' class='cubealgbutton33' id='learn_oes_' onclick='learn_oes_()'>
+<img class='imgbut33' height='20px' width='20px' src='33_bookmark_normal.png'> Learning 
+</button>
+
+<button type='button' class='cubealgbutton33_none' id='none_oes_' onclick='none_oes_()'>
+<img class='imgbut33' height='20px' width='20px' src='33_xmark_none.png'> None 
+</button>
+
+<br>
+<br>
+
+</div>
+
+<br><br><br>
+
+<div id='aes' class='three_beginner_pll_algs'>
+
+<h3 class='algname33'>Adjacent Edge Swap</h3>
+
+<img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/33BEGPLL/beg_pll_adj_edge_swap.png' class='331limgs' alt='Adjacent Edge Swap' style='height: 160px; width: 160px;'> </img>
+<br><br>
+<h3 id='aest'> <b class='three_beginner_pll_algs'> M' U' M2 U' M2 U' M' U2 M2 </b> </h3>
+
+<button type='button' class='cubealgbutton33' id='completed_aes_' onclick='completed_aes_()'>
+<img class='imgbut33' height='20px' width='20px' src='33_thumbs_up_normal.png'> Completed 
+</button>
+
+<button type='button' class='cubealgbutton33' id='trash_aes_' onclick='trash_aes_()'>
+<img class='imgbut33' height='20px' width='20px' src='33_eye_slash_normal.png'> Delete 
+</button>
+
+<button type='button' class='cubealgbutton33' id='learn_aes_' onclick='learn_aes_()'>
+<img class='imgbut33' height='20px' width='20px' src='33_bookmark_normal.png'> Learning 
+</button>
+
+<button type='button' class='cubealgbutton33_none' id='none_aes_' onclick='none_aes_()'>
+<img class='imgbut33' height='20px' width='20px' src='33_xmark_none.png'> None 
+</button>
+
+<br>
+<br>
+
+</div>
+
+<br><br><br>
+
+<b><a class='atop' href="#top">Back To Top</a></b>
+
+<br><br><br>
+
+<footer id='footer'>
+
+<p style='text-align:center;'>Thank you for viewing our page<br>Requesting you to visit our page again</p>
+
+</footer>
+
+</body>
+
+</html>

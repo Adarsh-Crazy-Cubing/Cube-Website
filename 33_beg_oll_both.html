@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cube Algorithms</title>
+<link rel="stylesheet" href="algpage.css">
+
+</head>
+
+<body>
+
+<script>
+
+// Line
+
+function learnedlin() {
+document.getElementById('lin').style.backgroundColor= '#FF0066';
+}
+
+function learninglin() {
+document.getElementById('lin').style.backgroundColor= 'yellow';
+}
+
+function notlearnlin() {
+document.getElementById('lin').style.backgroundColor= 'white';
+}
+
+function deletelin() {
+document.getElementById('lin').style.backgroundColor= 'red';
+}
+
+// L-Shaped
+
+function learnedsll() {
+document.getElementById('sll').style.backgroundColor= '#FF0066';
+}
+
+function learningsll() {
+document.getElementById('sll').style.backgroundColor= 'yellow';
+}
+
+function notlearnsll() {
+document.getElementById('sll').style.backgroundColor= 'white';
+}
+
+function deletesll() {
+document.getElementById('sll').style.backgroundColor= 'red';
+}
+
+// Dot
+
+function learneddot() {
+document.getElementById('dot').style.backgroundColor= '#FF0066';
+}
+
+function learningdot() {
+document.getElementById('dot').style.backgroundColor= 'yellow';
+}
+
+function notlearndot() {
+document.getElementById('dot').style.backgroundColor= 'white';
+}
+
+function deletedot() {
+document.getElementById('dot').style.backgroundColor= 'red';
+}
+
+// Sune
+
+function learnedsun() {
+document.getElementById('sun').style.backgroundColor= '#FF0066';
+}
+
+function learningsun() {
+document.getElementById('sun').style.backgroundColor= 'yellow';
+}
+
+function notlearnsun() {
+document.getElementById('sun').style.backgroundColor= 'white';
+}
+
+function deletesun() {
+document.getElementById('sun').style.backgroundColor= 'red';
+}
+
+// Antisune
+
+function learnedasu() {
+document.getElementById('asu').style.backgroundColor= '#FF0066';
+}
+
+function learningasu() {
+document.getElementById('asu').style.backgroundColor= 'yellow';
+}
+
+function notlearnasu() {
+document.getElementById('asu').style.backgroundColor= 'white';
+}
+
+function deleteasu() {
+document.getElementById('asu').style.backgroundColor= 'red';
+}
+
+// H-shaped
+
+function learnedhhh() {
+document.getElementById('hhh').style.backgroundColor= '#FF0066';
+}
+
+function learninghhh() {
+document.getElementById('hhh').style.backgroundColor= 'yellow';
+}
+
+function notlearnhhh() {
+document.getElementById('hhh').style.backgroundColor= 'white';
+}
+
+function deletehhh() {
+document.getElementById('hhh').style.backgroundColor= 'red';
+}
+
+// Pi
+
+function learnedppi() {
+document.getElementById('ppi').style.backgroundColor= '#FF0066';
+}
+
+function learningppi() {
+document.getElementById('ppi').style.backgroundColor= 'yellow';
+}
+
+function notlearnppi() {
+document.getElementById('ppi').style.backgroundColor= 'white';
+}
+
+function deleteppi() {
+document.getElementById('ppi').style.backgroundColor= 'red';
+}
+
+// 8-shaped
+
+function learnedlll() {
+document.getElementById('lll').style.backgroundColor= '#FF0066';
+}
+
+function learninglll() {
+document.getElementById('lll').style.backgroundColor= 'yellow';
+}
+
+function notlearnlll() {
+document.getElementById('lll').style.backgroundColor= 'white';
+}
+
+function deletelll() {
+document.getElementById('lll').style.backgroundColor= 'red';
+}
+
+// T-shaped
+
+function learnedttt() {
+document.getElementById('ttt').style.backgroundColor= '#FF0066';
+}
+
+function learningttt() {
+document.getElementById('ttt').style.backgroundColor= 'yellow';
+}
+
+function notlearnttt() {
+document.getElementById('ttt').style.backgroundColor= 'white';
+}
+
+function deletettt() {
+document.getElementById('ttt').style.backgroundColor= 'red';
+}
+
+// U-shaped
+
+function learneduuu() {
+document.getElementById('uuu').style.backgroundColor= '#FF0066';
+}
+
+function learninguuu() {
+document.getElementById('uuu').style.backgroundColor= 'yellow';
+}
+
+function notlearnuuu() {
+document.getElementById('uuu').style.backgroundColor= 'white';
+}
+
+function deleteuuu() {
+document.getElementById('uuu').style.backgroundColor= 'red';
+}
+
+//Triggers
+
+function showtrigger() {
+document.getElementById('lint').innerHTML = "F (R U R' U') F'";
+document.getElementById('sllt').innerHTML = "f (R U R' U') f'";
+document.getElementById('dott').innerHTML = "F (R U R' U') F' f (R U R' U') f'";
+document.getElementById('sunt').innerHTML = "(R U R' U) (R U2 R')";
+document.getElementById('asut').innerHTML = "(L' U' L U') (L' U2 L)";
+document.getElementById('hhht').innerHTML = "F (R U R' U') (R U R' U') (R U R' U') F'";
+document.getElementById('ppit').innerHTML = "(R U2 R2) U' R2 U' (R2 U2 R)";
+document.getElementById('lllt').innerHTML = "(F R' F' R) (U R U' R')";
+document.getElementById('tttt').innerHTML = "(R U R' U') (R' F R F')";
+document.getElementById('uuut').innerHTML = "R2 D (R' U2 R) D' (R' U2 R')";
+}
+
+function hidetrigger() {
+document.getElementById('lint').innerHTML = "F R U R' U' F'";
+document.getElementById('sllt').innerHTML = "f R U R' U' f'";
+document.getElementById('dott').innerHTML = "F R U R' U' F' f R U R' U' f'";
+document.getElementById('sunt').innerHTML = "R U R' U R U2 R'";
+document.getElementById('asut').innerHTML = "L' U' L U' L' U2 L";
+document.getElementById('hhht').innerHTML = "F (R U R' U')3 F'";
+document.getElementById('ppit').innerHTML = "R U2 R2 U' R2 U' R2 U2 R";
+document.getElementById('lllt').innerHTML = "F R' F' R U R U' R'";
+document.getElementById('tttt').innerHTML = "R U R' U' R' F R F'";
+document.getElementById('uuut').innerHTML = "R2 D R' U2 R D' R' U2 R'";
+}
+
+</script>
+
+<header id='heading'>
+
+<h1 style='text-align:center; background-color: yellow; color: #9900FF; width: 100%; height: 125px;' id='top'> <br> Adarsh Crazy Cubing </h1>
+
+</header>
+
+<button class="buttonap" onclick="document.location='algpage.html'"> <h2> Algorithm Page </h2> </button>
+
+<br><br>
+
+<h1 style='text-align:center;'>3x3</h1>
+
+<h2 style='text-align:center;'>Beginner OLL Algorithms </h2>
+
+<br><br>
+
+<div> <b>
+
+<p class='introp33'>This is the fourth(edge orientation) and fifth(corner orientation) step in beginner solving method. After this step, do 
+<a class='introa33' href='33_beg_pll_both.html' alt='PLL'>Beginner PLL</a>.
+</p>
+
+<p class='introp33'>Advanced Orientation: 
+<a class='introa33' href='33_adv_oll_both.html' alt='Advanced OLL'>Advanced OLL</a>.
+</p>
+
+<button class='triggerornot33' onclick='showtrigger()'> <h4> Show triggers(brackets) </h4> </button>
+<br><br>
+<button class='triggerornot33' onclick='hidetrigger()'> <h4> Hide triggers(no brackets) </h4> </button>
+<br>
+
+</b> </div>
+
+<br><br><br>
+
+<b><a class='adv_pllhea' href="#eon">Edges(3 algs - Line, L-Shaped, Dot)</a></b>
+
+<br><br><br>
+
+<b><a class='adv_pllhea' href="#con">Corners(7 algs - Sune, Antisune, H-shaped, Pi, 8-shaped, T-shaped, U-shaped)</a></b>
+
+<br><br><br>
+
+<h2 style='text-align:center; color:#660066;' id='eon'>Edges</h2>
+
+<div id='lin' class='three_beginner_oll_algs'>
+
+<h3>Line</h3>
+
+<img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/33BEGOLL/beg_oll_line.png' class='331limgs' alt='Line' style='height: 160px; width: 160px;'> </img>
+<br><br>
+<h3 id='lint'> <b class='three_beginner_oll_algs'> F R U R' U' F'</b> </h3>
+<button onclick="learnedlin()">Learned</button>
+<button onclick="learninglin()">Learning</button>
+<button onclick="notlearnlin()">Not Learned</button>
+<button onclick="deletelin()">Delete</button>
+<br>
+<br>
+
+</div>
+
+<br><br><br>
+
+<div id='sll' class='three_beginner_oll_algs'>
+
+<h3>L-Shaped</h3>
+
+<img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/33BEGOLL/beg_oll_l-shaped.png' class='331limgs' alt='L-Shaped' style='height: 160px; width: 160px;'> </img>
+<br><br>
+<h3 id='sllt'> <b class='three_beginner_oll_algs'> f R U R' U' f' </b> </h3>
+<button onclick="learnedsll()">Learned</button>
+<button onclick="learningsll()">Learning</button>
+<button onclick="notlearnsll()">Not Learned</button>
+<button onclick="deletesll()">Delete</button>
+<br>
+<br>
+
+</div>
+
+<br><br><br>
+
+<div id='dot' class='three_beginner_oll_algs'>
+
+<h3>Dot</h3>
+
+<img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/33BEGOLL/beg_oll_dot.png' class='331limgs' alt='Dot' style='height: 160px; width: 160px;'> </img>
+<br><br>
+<h3 id='dott'> <b class='three_beginner_oll_algs'> F R U R' U' F' f R U R' U' f'</b> </h3>
+<button onclick="learneddot()">Learned</button>
+<button onclick="learningdot()">Learning</button>
+<button onclick="notlearndot()">Not Learned</button>
+<button onclick="deletedot()">Delete</button>
+<br>
+<br>
+
+</div>
+
+<br><br><br>
+
+<b><a class='atop' href="#top">Back To Top</a></b>
+
+<br><br><br>
+
+<h2 style='text-align:center; color:#660066;' id='con'>Corners</h2>
+
+<div id='sun' class='three_beginner_oll_algs'>
+
+<h3>Sune</h3>
+
+<img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/33BEGOLL/beg_oll_sune.png' class='331limgs' alt='Sune' style='height: 160px; width: 160px;'> </img>
+<br><br>
+<h3 id='sunt'> <b class='three_beginner_oll_algs'> R U R' U R U2 R' </b> </h3>
+<button onclick="learnedsun()">Learned</button>
+<button onclick="learningsun()">Learning</button>
+<button onclick="notlearnsun()">Not Learned</button>
+<button onclick="deletesun()">Delete</button>
+<br>
+<br>
+
+</div>
+
+<br><br><br>
+
+<div id='asu' class='three_beginner_oll_algs'>
+
+<h3>Antisune</h3>
+
+<img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/33BEGOLL/beg_oll_antisune.png' class='331limgs' alt='Antisune' style='height: 160px; width: 160px;'> </img>
+<br><br>
+<h3 id='asut'> <b class='three_beginner_oll_algs'> L' U' L U' L' U2 L </b> </h3>
+<button onclick="learnedasu()">Learned</button>
+<button onclick="learningasu()">Learning</button>
+<button onclick="notlearnasu()">Not Learned</button>
+<button onclick="deleteasu()">Delete</button>
+<br>
+<br>
+
+</div>
+
+<br><br><br>
+
+<div id='hhh' class='three_beginner_oll_algs'>
+
+<h3>H-shaped</h3>
+
+<img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/33BEGOLL/beg_oll_h-shaped.png' class='331limgs' alt='H-shaped' style='height: 160px; width: 160px;'> </img>
+<br><br>
+<h3 id='hhht'> <b class='three_beginner_oll_algs'> F (R U R' U')3 F' </b> </h3>
+<button onclick="learnedhhh()">Learned</button>
+<button onclick="learninghhh()">Learning</button>
+<button onclick="notlearnhhh()">Not Learned</button>
+<button onclick="deletehhh()">Delete</button>
+<br>
+<br>
+
+</div>
+
+<br><br><br>
+
+<div id='ppi' class='three_beginner_oll_algs'>
+
+<h3>Pi</h3>
+
+<img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/33BEGOLL/beg_oll_pi.png' class='331limgs' alt='Pi' style='height: 160px; width: 160px;'> </img>
+<br><br>
+<h3 id='ppit'> <b class='three_beginner_oll_algs'> F (R U R' U')2 F' </b> </h3>
+<button onclick="learnedppi()">Learned</button>
+<button onclick="learningppi()">Learning</button>
+<button onclick="notlearnppi()">Not Learned</button>
+<button onclick="deleteppi()">Delete</button>
+<br>
+<br>
+
+</div>
+
+<br><br><br>
+
+<div id='lll' class='three_beginner_oll_algs'>
+
+<h3>8-shaped</h3>
+
+<img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/33BEGOLL/beg_oll_8-shaped.png' class='331limgs' alt='8-shaped' style='height: 160px; width: 160px;'> </img>
+<br><br>
+<h3 id='lllt'> <b class='three_beginner_oll_algs'> F R' F' R U R U' R' </b> </h3>
+<button onclick="learnedlll()">Learned</button>
+<button onclick="learninglll()">Learning</button>
+<button onclick="notlearnlll()">Not Learned</button>
+<button onclick="deletelll()">Delete</button>
+<br>
+<br>
+
+</div>
+
+<br><br><br>
+
+<div id='ttt' class='three_beginner_oll_algs'>
+
+<h3>T-shaped</h3>
+
+<img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/33BEGOLL/beg_oll_t-shaped.png' class='331limgs' alt='T-shaped' style='height: 160px; width: 160px;'> </img>
+<br><br>
+<h3 id='tttt'> <b class='three_beginner_oll_algs'> R U R' U' R' F R F' </b> </h3>
+<button onclick="learnedttt()">Learned</button>
+<button onclick="learningttt()">Learning</button>
+<button onclick="notlearnttt()">Not Learned</button>
+<button onclick="deletettt()">Delete</button>
+<br>
+<br>
+
+</div>
+
+<br><br><br>
+
+<div id='uuu' class='three_beginner_oll_algs'>
+
+<h3>U-shaped</h3>
+
+<img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/33BEGOLL/beg_oll_u-shaped.png' class='331limgs' alt='U-shaped' style='height: 160px; width: 160px;'> </img>
+<br><br>
+<h3 id='uuut'> <b class='three_beginner_oll_algs'> R2 D R' U2 R D' R' U2 R' </b> </h3>
+<button onclick="learneduuu()">Learned</button>
+<button onclick="learninguuu()">Learning</button>
+<button onclick="notlearnuuu()">Not Learned</button>
+<button onclick="deleteuuu()">Delete</button>
+<br>
+<br>
+
+</div>
+
+<br><br><br>
+
+<b><a class='atop' href="#top">Back To Top</a></b>
+
+<br><br><br>
+
+<footer id='footer'>
+
+<p style='text-align:center;'>Thank you for viewing our page<br>Requesting you to visit our page again</p>
+
+</footer>
+
+</body>
+
+</html>

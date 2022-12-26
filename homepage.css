@@ -1,0 +1,51 @@
+<style>
+
+/*Buttons to other pages*/
+
+.buttonap {
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.buttonap:hover {
+  background-color: darkgrey;
+  color: white;
+}
+
+.buttonpy {
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.buttonpy:hover {
+  background-color: #454545;
+  color: white;
+}
+
+/*Header and Footer*/
+
+header#headermain  {
+	background-color:#FAFAFA;
+	border: 5px double #FF5050
+}
+
+h1#headhone {
+	text-align: center;
+	color: #33CCCC;
+}
+
+button.headbutton#hdbuttonone {
+	border: 2px solid #FF5050
+}
+
+footer#footer {
+	background-color:cyan;
+	color: #CC801A;
+	width: 100%;
+	height:40px;
+}
+
+</style>
+

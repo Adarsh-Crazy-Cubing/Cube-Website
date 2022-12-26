@@ -1,0 +1,57 @@
+#DDDDDD - GREY 33
+#66FF66
+#668066
+#660066
+
+#DDDDDD - GREY 22
+#FFCC66
+#806666
+#000066
+
+#DDDDDD - GREY 44
+#99CCFF
+#996699
+#990033
+
+7D7D7D - Grey
+FAE600 - Yellow
+EFEFEF - White
+EF272C - Red
+0064FF - Blue
+EF8E1F - Orange
+32A032 - Green
+
+FFFFFF - White
+00B666 - Completed
+
+button.cubealgbutton22 {
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: clr_1;
+  border: clr_3;
+  color: clr_3;
+}
+
+button.cubealgbutton22:hover {
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: clr_3;
+  border: clr_1;
+  color: clr_1;
+}
+
+46 Ln But
+31 Ln Alg
+Total - 77 Lines(APPROX)
+a - 1
+b - 2
+c - 3
+d - 4
+e - 5
+f - 6
+g - 7
+h - 8
+i - 9
+z - 0
