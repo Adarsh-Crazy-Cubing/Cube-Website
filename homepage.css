@@ -24,11 +24,12 @@
   color: white;
 }
 
-/*Header and Footer*/
+/* Header */
 
 header#headermain  {
 	background-color:#FAFAFA;
-	border: 5px double #FF5050
+	border: 5px double #FF5050;
+	padding-left: 1.75px;
 }
 
 h1#headhone {
@@ -37,7 +38,7 @@ h1#headhone {
 }
 
 button.headbutton#hdbuttonone {
-	border: 2px solid #FF5050
+	border: 2px solid #FF5050;
 }
 
 footer#footer {
@@ -48,4 +49,3 @@ footer#footer {
 }
 
 </style>
-

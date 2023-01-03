@@ -11,7 +11,7 @@ header#heading {
 
 footer#footer {
 	background-color:cyan;
-	color: #668066;
+	color: #4C8080;
 	width: 100%;
 	height:40px;
 }
@@ -23,7 +23,7 @@ footer#footer {
 }
 
 .buttonhp:hover {
-  background-color: #668066;
+  background-color: #4C8080;
   color: white;
 }
 
@@ -78,7 +78,7 @@ a.atop:hover {
 }
 
 .algpageheading33 {
-	border: 3px solid #668066;
+	border: 3px solid #4C8080;
 	padding-left: 5px;
 	background-color: #DDDDDD;
 }
@@ -87,18 +87,18 @@ a.atop:hover {
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-	background-color: #66FF66;
-	color: #660066;
-	border: 2px solid #660066;
+	background-color: #99CCFF;
+	color: #003300;
+	border: 2px solid #003300;
 }
 
 .button33alglink:hover {
-	background-color: #668066;
-	color: #660066;
+	background-color: #4C8080;
+	color: #003300;
 }
 
 .algpageheading44 {
-	border: 3px solid #996699;
+	border: 3px solid #8C801A;
 	padding-left: 5px;
 	background-color: #DDDDDD;
 }
@@ -107,14 +107,14 @@ a.atop:hover {
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-	background-color: #99CCFF;
-	color: #990033;
-	border: 2px solid #990033;
+	background-color: #99FF33;
+	color: #800000;
+	border: 2px solid #800000;
 }
 
 .button44alglink:hover {
-	background-color: #996699;
-	color: #990033;
+	background-color: #8C801A;
+	color: #800000;
 }
 
 /* Top note and triger */
@@ -148,45 +148,45 @@ a.atop:hover {
 }
 
 .introp33 {
-	color: #660066;
+	color: #003300;
 }
 
 .introa33 {
-	color: #66FF66;
+	color: #99CCFF;
 	text-decoration: none;
 }
 
 .introa33:hover {
-	color: #668066;
+	color: #4C8080;
 	text-decoration: none;
 }
 
 .triggerornot33 {
 	width:250px;
-	border: 2px solid #660066;
-	color: #660066;
-	background-color: #66FF66
+	border: 2px solid #003300;
+	color: #003300;
+	background-color: #99CCFF
 }
 
 .triggerornot33:hover {
 	width: 250px;
-	border: 2px solid #668066;
-	color: #668066;
-	background-color: #660066
+	border: 2px solid #4C8080;
+	color: #4C8080;
+	background-color: #003300
 }
 
 .triggerornot33_topic {
 	width: 350px;
-	border: 2px solid #66FF66;
-	color: #66FF66;
-	background-color: #660066
+	border: 2px solid #99CCFF;
+	color: #99CCFF;
+	background-color: #003300
 }
 
 .triggerornot33_topic:hover {
 	width: 350px;
-	border: 2px solid #668066;
-	color: #668066;
-	background-color: #66FF66
+	border: 2px solid #4C8080;
+	color: #4C8080;
+	background-color: #99CCFF
 }
 
 /* Advance CLL / Master EG-1, EG-2 / Advance OLL, PLL / Beginner OLL, PLL heading link */
@@ -204,41 +204,41 @@ a.adv_cllhea:hover {
 a.adv_pllhea {
     text-decoration: none;
     cursor: pointer;
-	color: #668066;
+	color: #4C8080;
 }
 
 a.adv_pllhea:hover {
-  color: #66FF66;
+  color: #99CCFF;
 }
 
 a.adv_ollhea {
     text-decoration: none;
     cursor: pointer;
-	color: #668066;
+	color: #4C8080;
 }
 
 a.adv_ollhea:hover {
-  color: #66FF66;
+  color: #99CCFF;
 }
 
 a.beg_pllhea {
     text-decoration: none;
     cursor: pointer;
-	color: #668066;
+	color: #4C8080;
 }
 
 a.beg_pllhea:hover {
-  color: #66FF66;
+  color: #99CCFF;
 }
 
 a.beg_ollhea {
     text-decoration: none;
     cursor: pointer;
-	color: #668066;
+	color: #4C8080;
 }
 
 a.beg_ollhea:hover {
-  color: #66FF66;
+  color: #99CCFF;
 }
 
 /* 2x2 Algorithm divs and algs */
@@ -310,62 +310,62 @@ b.two_master_eg2_algs {
 /* 3x3 Algorithm divs and algs */
 
 h3.algname33 {
-	color: #66FF66;
+	color: #99CCFF;
 }
 
 .hoverhthree33 {
-	color: #660066;
+	color: #003300;
 }
 
 div.three_beginner_oll_algs {
 	border: 2px solid black;
-	background-color: #668066;
+	background-color: #4C8080;
 }
 
 b.three_beginner_oll_algs {
-	color:#660066;
+	color:#003300;
 	padding-left: 5px;
 }
 
 div.three_beginner_pll_algs {
 	border: 2px solid black;
-	background-color: #668066;
+	background-color: #4C8080;
 }
 
 b.three_beginner_pll_algs {
-	color:#660066;
+	color:#003300;
 	padding-left: 5px;
 }
 
 div.three_advanced_oll_algs {
 	border: 2px solid black;
-	background-color: #668066;
+	background-color: #4C8080;
 }
 
 b.three_advanced_oll_algs {
-	color:#660066;
+	color:#003300;
 	padding-left: 5px;
 }
 
 div.three_advanced_pll_algs {
 	border: 2px solid black;
-	background-color: #668066;
+	background-color: #4C8080;
 }
 
 b.three_advanced_pll_algs {
-	color:#660066;
+	color:#003300;
 	padding-left: 5px;
 }
 
 /* 4x4+ Algorithm divs and algs */
 
 div.fourfivesixseven_beginner_parity_algs {
-	background-color: #99CCFF;
+	background-color: #99FF33;
 	border: 2px solid black;
 }
 
 b.fourfivesixseven_beginner_parity_algs {
-	color: #990033;
+	color: #800000;
 	padding-left: 5px;
 }
 
@@ -432,7 +432,7 @@ img.but22 {
 button.cubealgbutton33 {
   padding: 12px 16px;
   font-size: 16px;
-  background-color: #660066;
+  background-color: #003300;
   color: white;
   border: 2px solid white;
 }
@@ -441,9 +441,9 @@ button.cubealgbutton33:hover {
   padding: 12px 16px;
   font-size: 16px;
   cursor: pointer;
-  background-color: #660066;
-  color: #66FF66;
-  border: 2px solid #66FF66;
+  background-color: #003300;
+  color: #99CCFF;
+  border: 2px solid #99CCFF;
 }
 
 button.cubealgbutton33_none {
@@ -458,8 +458,8 @@ button.cubealgbutton33_none:hover {
   padding: 12px 16px;
   font-size: 16px;
   cursor: pointer;
-  color: #66FF66;
-  border: 2px solid #66FF66;
+  color: #99CCFF;
+  border: 2px solid #99CCFF;
 }
 
 button.cubealgbutton33_trigno {
@@ -474,9 +474,9 @@ button.cubealgbutton33_trigno:hover {
   padding: 12px 16px;
   font-size: 16px;
   cursor: pointer;
-  background-color: #660066;
-  color: #66FF66;
-  border: 2px solid #66FF66;
+  background-color: #003300;
+  color: #99CCFF;
+  border: 2px solid #99CCFF;
 }
 
 img.but33 {
