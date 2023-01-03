@@ -1,27 +1,10 @@
 <style>
 
-/*Buttons to other pages*/
+/* Links to other pages */
 
-.buttonap {
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.buttonap:hover {
-  background-color: darkgrey;
-  color: white;
-}
-
-.buttonpy {
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.buttonpy:hover {
-  background-color: #454545;
-  color: white;
+img.homeimg {
+	height: 200px;
+	width: 375px;
 }
 
 /* Header */
