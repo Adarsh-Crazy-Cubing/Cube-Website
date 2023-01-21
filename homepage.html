@@ -10,19 +10,49 @@
 
 </head>
 
-<body>
+<body onload="web_style_homepage()">
 
 <header id='headermain' style='text-align: center;'>
 
 <h1 id='headhone'>Adarsh Crazy Cubing</h1>
+
 <br><br>
-<button class='headbutton' id='hdbuttonone'  onclick="document.location='algpage.html'"> <h3> Algorithm Page </h3> </button>
+
+<button class='hdbutint' id='hdbutint_algp' onclick="document.location='algpage.html'"> <h3> Algorithm Page </h3> </button>
 
 <br><br>
 
 </header>
 
-<br><br><br>
+<br>
+
+<script>
+
+function web_style_homepage() {
+document.getElementById('hdbutint_algp').style.color = '#FF0066';
+document.getElementById('hdbutint_algp').style.border = 'none';
+document.getElementById('hdbutint_algp').style.background = '#FFCCCC';
+document.getElementById('hdbutint_algp').style.paddingLeft = '12px';
+document.getElementById('hdbutint_algp').style.paddingRight = '12px';
+}
+
+</script>
+
+<h2> Popular Algorithms </h2>
+
+<br>
+
+<div>
+
+<button class='hdbutint' id='hdbutint_algp' onclick="document.location='33_adv_pll_both.html'"> <h3> 3x3 Advanced PLL </h3> </button>
+
+<button class='hdbutint' id='hdbutint_algp' onclick="document.location='22_adv_cll_cor.html'"> <h3> 2x2 CLL </h3> </button>
+
+<button class='hdbutint' id='hdbutint_algp' onclick="document.location='33_adv_oll_both.html'"> <h3> 3x3 Advanced OLL </h3> </button>
+
+</div>
+
+<br><br>
 
 <div style='text-align: center;'>
 
