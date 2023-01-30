@@ -12,17 +12,6 @@
 
     <body onload="advoll_3_wprld()">
 
-        <header id='headermain' style='text-align: center;'>
-
-            <h1 id='headhone'>Adarsh Crazy Cubing</h1>
-           
-            <button class='hdbutint' id='hdbut_algp' onmouseover='algp_hover()' onmouseout='algp_down()' onclick="document.location='algpage.html'"> <h3> Algorithm Page </h3> </button>
-            <button class='hdbutint' id='hdbut_hmep' onmouseover='hmep_hover()' onmouseout='hmep_down()' onclick="document.location='homepage.html'"> <h3> Home Page </h3> </button>
-            
-            <br><br>
-            
-        </header>
-        
         <script>
         
             // On Load
@@ -34,7 +23,7 @@
             atop_style();
             header_style();
             footer_style();
-            header_colours();
+            title_colours();
             heading_colours();
             introduction_style();
             headinglink_colours();
@@ -743,7 +732,7 @@
             document.getElementById('atop_xaf').style.textDecoration = 'none';
             }
 
-            // Header - Style
+            // Header Buttons - Hover
             
             function algp_hover() {
             document.getElementById('hdbut_algp').style.color = '#FFFF00';
@@ -777,10 +766,7 @@
             document.getElementById('hdbut_hmep').style.paddingRight = '12px';
             }
             
-            function header_colours() {
-            document.getElementById('headermain').style.backgroundColor = '#FAFAFA';
-            document.getElementById('headermain').style.border = '5px double #FA5050';
-            document.getElementById('headhone').style.color = '#33CCCC';
+            function title_colours() {
             document.getElementById('bodyhone').style.color = '#003300';
             document.getElementById('bodyhtwo').style.color = '#4C8080';
             }
@@ -27759,6 +27745,17 @@
             }
             
         </script>
+        
+        <header id='headermain' style='text-align: center;'>
+
+            <h1 id='headhone'>Adarsh Crazy Cubing</h1>
+           
+            <button class='hdbutint' id='hdbut_algp' onmouseover='algp_hover()' onmouseout='algp_down()' onclick="document.location='algpage.html'"> <h3> Algorithm Page </h3> </button>
+            <button class='hdbutint' id='hdbut_hmep' onmouseover='hmep_hover()' onmouseout='hmep_down()' onclick="document.location='homepage.html'"> <h3> Home Page </h3> </button>
+            
+            <br><br>
+            
+        </header>
         
         <br><br>
         
