@@ -2,237 +2,337 @@
 
 <html lang="en" >
 
-<head>
+    <head>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cube Algorithms</title>
-<link rel="stylesheet" href="algpage.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cube Algorithms</title>
+    <link rel="stylesheet" href="algpage.css">
+    
+    </head>
 
-</head>
+    <body onload="begpll_2_wprld()">
 
-<body>
+        <script>
 
-<script>
+            // On Load
+    
+            function begpll_2_wprld() {
+            atop_style();
+            header_style();
+            footer_style();
+            title_colours();
+            header_total_2_begpll();
+            }
+            
+            // Header and Footer - Style
+    
+            function header_style() {
+            document.getElementById('headermain').style.backgroundColor = '#FAFAFA';
+            document.getElementById('headermain').style.border = '5px double #FF9933';
+            document.getElementById('headhone').style.color = '#33CC33';
+            }
+            
+            function footer_style() {
+            document.getElementById('footermain').style.backgroundColor = '#FAFAFA';
+            document.getElementById('footermain').style.border = '5px double #FF5050';
+            document.getElementById('footp_a').style.color = '#33CCCC';
+            document.getElementById('footp_b').style.color = '#33CCCC';
+            document.getElementById('footp_c').style.color = '#33CCCC';
+            }
+    
+            // On Load - Functions
+    
+            function atop_style() {
+            document.getElementById('atop_xxa').style.color = '#4C4C4C';
+            document.getElementById('atop_xxa').style.textDecoration = 'none';
+            }
+    
+            function title_colours() {
+            document.getElementById('bodyhone').style.color = '#000066';
+            document.getElementById('bodyhtwo').style.color = '#806666';
+            }
+            
+            // Back to Top - Hover
+    
+            function atop_xxa_d() {
+            document.getElementById('atop_xxa').style.color = '#4C4C4C';
+            document.getElementById('atop_xxa').style.textDecoration = 'none';
+            }
+    
+            function atop_xxa_h() {
+            document.getElementById('atop_xxa').style.color = '#808080';
+            document.getElementById('atop_xxa').style.textDecoration = 'none';
+            }
 
-// Adjacent Corner Swap
+            // Header Buttons - Hover
 
-function completed_acs_() {
-document.getElementById('completed_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_done.png'> Completed ";
-document.getElementById('completed_acs_').style.background = '#00B666';
-document.getElementById('trash_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
-document.getElementById('trash_acs_').style.background = '#000066';
-document.getElementById('learn_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
-document.getElementById('learn_acs_').style.background = '#000066';
-document.getElementById('none_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
-document.getElementById('none_acs_').style.background = '#000066';
-}
+            function header_total_2_begpll() {
+            algp_down();
+            hmep_down();
+            }
+            
+            function algp_hover() {
+            document.getElementById('hdbut_algp').style.color = '#FFFF00';
+            document.getElementById('hdbut_algp').style.border = '2px solid #FFFF00';
+            document.getElementById('hdbut_algp').style.backgroundColor = '#006600';
+            document.getElementById('hdbut_algp').style.paddingLeft = '12px';
+            document.getElementById('hdbut_algp').style.paddingRight = '12px';
+            }
+            
+            function algp_down() {
+            document.getElementById('hdbut_algp').style.color = '#006600';
+            document.getElementById('hdbut_algp').style.border = '2px solid #006600';
+            document.getElementById('hdbut_algp').style.backgroundColor = '#FFFF00';
+            document.getElementById('hdbut_algp').style.paddingLeft = '12px';
+            document.getElementById('hdbut_algp').style.paddingRight = '12px';
+            }
+            
+            function hmep_hover() {
+            document.getElementById('hdbut_hmep').style.color = '#FFFF00';
+            document.getElementById('hdbut_hmep').style.border = '2px solid #FFFF00';
+            document.getElementById('hdbut_hmep').style.backgroundColor = '#006600';
+            document.getElementById('hdbut_hmep').style.paddingLeft = '12px';
+            document.getElementById('hdbut_hmep').style.paddingRight = '12px';
+            }
+            
+            function hmep_down() {
+            document.getElementById('hdbut_hmep').style.color = '#006600';
+            document.getElementById('hdbut_hmep').style.border = '2px solid #006600';
+            document.getElementById('hdbut_hmep').style.backgroundColor = '#FFFF00';
+            document.getElementById('hdbut_hmep').style.paddingLeft = '12px';
+            document.getElementById('hdbut_hmep').style.paddingRight = '12px';
+            }
+    
+            // Adjacent Corner Swap
+            
+            function completed_acs_() {
+            document.getElementById('completed_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_done.png'> Completed ";
+            document.getElementById('completed_acs_').style.background = '#00B666';
+            document.getElementById('trash_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+            document.getElementById('trash_acs_').style.background = '#000066';
+            document.getElementById('learn_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+            document.getElementById('learn_acs_').style.background = '#000066';
+            document.getElementById('none_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+            document.getElementById('none_acs_').style.background = '#000066';
+            }
+            
+            function trash_acs_() {
+            document.getElementById('completed_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+            document.getElementById('completed_acs_').style.background = '#000066';
+            document.getElementById('trash_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_delete.png'> Delete ";
+            document.getElementById('trash_acs_').style.background = '#FF0000';
+            document.getElementById('learn_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+            document.getElementById('learn_acs_').style.background = '#000066';
+            document.getElementById('none_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+            document.getElementById('none_acs_').style.background = '#000066';
+            }
+            
+            function learn_acs_() {
+            document.getElementById('completed_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+            document.getElementById('completed_acs_').style.background = '#000066';
+            document.getElementById('trash_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+            document.getElementById('trash_acs_').style.background = '#000066';
+            document.getElementById('learn_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_learning.png'> Learning ";
+            document.getElementById('learn_acs_').style.background = '#FFCC00';
+            document.getElementById('none_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+            document.getElementById('none_acs_').style.background = '#000066';
+            }
+            
+            function none_acs_() {
+            document.getElementById('completed_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+            document.getElementById('completed_acs_').style.background = '#000066';
+            document.getElementById('trash_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+            document.getElementById('trash_acs_').style.background = '#000066';
+            document.getElementById('learn_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+            document.getElementById('learn_acs_').style.background = '#000066';
+            document.getElementById('none_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None ";
+            document.getElementById('none_acs_').style.background = '#575757';
+            }
+            
+            // Diagonal Corner Swap
+            
+            function completed_dcs_() {
+            document.getElementById('completed_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_done.png'> Completed ";
+            document.getElementById('completed_dcs_').style.background = '#00B666';
+            document.getElementById('trash_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+            document.getElementById('trash_dcs_').style.background = '#000066';
+            document.getElementById('learn_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+            document.getElementById('learn_dcs_').style.background = '#000066';
+            document.getElementById('none_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+            document.getElementById('none_dcs_').style.background = '#000066';
+            }
+            
+            function trash_dcs_() {
+            document.getElementById('completed_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+            document.getElementById('completed_dcs_').style.background = '#000066';
+            document.getElementById('trash_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_delete.png'> Delete ";
+            document.getElementById('trash_dcs_').style.background = '#FF0000';
+            document.getElementById('learn_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+            document.getElementById('learn_dcs_').style.background = '#000066';
+            document.getElementById('none_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+            document.getElementById('none_dcs_').style.background = '#000066';
+            }
+            
+            function learn_dcs_() {
+            document.getElementById('completed_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+            document.getElementById('completed_dcs_').style.background = '#000066';
+            document.getElementById('trash_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+            document.getElementById('trash_dcs_').style.background = '#000066';
+            document.getElementById('learn_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_learning.png'> Learning ";
+            document.getElementById('learn_dcs_').style.background = '#FFCC00';
+            document.getElementById('none_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+            document.getElementById('none_dcs_').style.background = '#000066';
+            }
+            
+            function none_dcs_() {
+            document.getElementById('completed_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+            document.getElementById('completed_dcs_').style.background = '#000066';
+            document.getElementById('trash_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+            document.getElementById('trash_dcs_').style.background = '#000066';
+            document.getElementById('learn_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+            document.getElementById('learn_dcs_').style.background = '#000066';
+            document.getElementById('none_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None ";
+            document.getElementById('none_dcs_').style.background = '#575757';
+            }
+            
+            //Triggers
+            
+            function showtrigger() {
+            document.getElementById('acst').innerHTML = " (R U R' U') R' F (R2 U' R' U') (R U R') F'";
+            document.getElementById('dcst').innerHTML = " F (R U' R' U') (R U R') F' (R U R' U') (R' F R F')";
+            changecolor_22begpll();
+            }
+            
+            function hidetrigger() {
+            document.getElementById('acst').innerHTML = " R U R' U' R' F R2 U' R' U' R U R' F'";
+            document.getElementById('dcst').innerHTML = " F R U' R' U' R U R' F' R U R' U' R' F R F'";
+            changecolor_22begpll();
+            }
+            
+            function changecolor_22begpll() {
+            document.getElementById('acst').style.color = "#000066";
+            document.getElementById('dcst').style.color = "#000066";
+            }
+            
+        </script>
+            
+        <header id='headermain' style='text-align: center;'>
 
-function trash_acs_() {
-document.getElementById('completed_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
-document.getElementById('completed_acs_').style.background = '#000066';
-document.getElementById('trash_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_delete.png'> Delete ";
-document.getElementById('trash_acs_').style.background = '#FF0000';
-document.getElementById('learn_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
-document.getElementById('learn_acs_').style.background = '#000066';
-document.getElementById('none_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
-document.getElementById('none_acs_').style.background = '#000066';
-}
+            <h1 id='headhone'>Adarsh Crazy Cubing</h1>
+           
+            <button class='hdbutint' id='hdbut_algp' onmouseover='algp_hover()' onmouseout='algp_down()' onclick="document.location='algpage.html'"> <h3> Algorithm Page </h3> </button>
+            <button class='hdbutint' id='hdbut_hmep' onmouseover='hmep_hover()' onmouseout='hmep_down()' onclick="document.location='homepage.html'"> <h3> Home Page </h3> </button>
+            
+            <br><br>
+            
+        </header>
+        
+        <br><br>
+        
+        <h1 style='text-align:center;' id='bodyhone'>2x2</h1>
+        
+        <h2 style='text-align:center;' id='bodyhtwo'>Beginner PLL Algorithms </h2>
 
-function learn_acs_() {
-document.getElementById('completed_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
-document.getElementById('completed_acs_').style.background = '#000066';
-document.getElementById('trash_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
-document.getElementById('trash_acs_').style.background = '#000066';
-document.getElementById('learn_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_learning.png'> Learning ";
-document.getElementById('learn_acs_').style.background = '#FFCC00';
-document.getElementById('none_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
-document.getElementById('none_acs_').style.background = '#000066';
-}
+        <br><br>
+        
+        <div> <b>
+        
+        <p class='introp22'>This is the third and final step in beginner solving method. Before this step, do 
+        <a class='introa22' href='22_beg_oll_cor.html' alt='OLL'>Beginner OLL</a>.
+        </p>
+        
+        <p class='introp22'>Advanced Permutation/Full LL: 
+        <a class='introa22' href='22_int_ortpbl_cor.html' alt='Ortega PBL'>Ortega PBL</a>, 
+        <a class='introa22' href='22_adv_cll_cor.html' alt='CLL'>CLL</a>, 
+        <a class='introa22' href='22_mas_eg1_cor.html' alt='EG-1'>EG-1</a>, 
+        <a class='introa22' href='22_mas_eg2_cor.html' alt='EG-2'>EG-2</a>.
+        </p>
+        
+        <button type="button" class='triggerornot22' onclick='showtrigger()'> <h4> Show triggers(brackets) </h4> </button>
+        <br><br>
+        <button type="button" class='triggerornot22' onclick='hidetrigger()'> <h4> Hide triggers(no brackets) </h4> </button>
+        <br>
+        
+        </b> </div>
+        
+        <br><br>
+        
+        <div id='acs' class='two_beginner_pll_algs'>
+        
+        <h3 class='algname22'>Adjacent Corner Swap</h3>
+        
+        <img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/22BEGPLL/beg_pll_adjacent-swap.png' class='221limgs' alt='Adjacent/None' style='height: 125px; width: 125px;'> </img>
+        <br>
+        <h3 id='acst'> <b class='two_beginner_pll_algs'> R U R' U' R' F R2 U' R' U' R U R' F' </b> </h3>
+        
+        <button type='button' class='cubealgbutton22' id='completed_acs_' onclick='completed_acs_()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed 
+        </button>
+        
+        <button type='button' class='cubealgbutton22' id='trash_acs_' onclick='trash_acs_()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete 
+        </button>
+        
+        <button type='button' class='cubealgbutton22' id='learn_acs_' onclick='learn_acs_()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning 
+        </button>
+        
+        <button type='button' class='cubealgbutton22_none' id='none_acs_' onclick='none_acs_()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None 
+        </button>
+        
+        <br>
+        <br>
+        
+        </div>
+        
+        <br><br><br>
+        
+        <div id='dcs' class='two_beginner_pll_algs'>
+        
+        <h3 class='algname22'>Diagonal Corner Swap</h3>
+        
+        <img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/22BEGPLL/beg_pll_diagonal-swap.png' class='221limgs' alt='Diagonal/None' style='height: 125px; width: 125px;'> </img>
+        <br>
+        <h3 id='dcst'> <b class='two_beginner_pll_algs'> F R U' R' U' R U R' F' R U R' U' R' F R F' </b> </h3>
+        
+        <button type='button' class='cubealgbutton22' id='completed_dcs_' onclick='completed_dcs_()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed 
+        </button>
+        
+        <button type='button' class='cubealgbutton22' id='trash_dcs_' onclick='trash_dcs_()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete 
+        </button>
+        
+        <button type='button' class='cubealgbutton22' id='learn_dcs_' onclick='learn_dcs_()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning 
+        </button>
+        
+        <button type='button' class='cubealgbutton22_none' id='none_dcs_' onclick='none_dcs_()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None 
+        </button>
+        
+        <br>
+        <br>
+        
+        </div>
+        
+        <br><br><br>
+        
+        <b><a class='atop' href="#top" id='atop_xxa' onmouseover='atop_xxa_h()' onmouseout='atop_xxa_d()'>Back To Top</a></b>
 
-function none_acs_() {
-document.getElementById('completed_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
-document.getElementById('completed_acs_').style.background = '#000066';
-document.getElementById('trash_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
-document.getElementById('trash_acs_').style.background = '#000066';
-document.getElementById('learn_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
-document.getElementById('learn_acs_').style.background = '#000066';
-document.getElementById('none_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None ";
-document.getElementById('none_acs_').style.background = '#575757';
-}
-
-// Diagonal Corner Swap
-
-function completed_dcs_() {
-document.getElementById('completed_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_done.png'> Completed ";
-document.getElementById('completed_dcs_').style.background = '#00B666';
-document.getElementById('trash_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
-document.getElementById('trash_dcs_').style.background = '#000066';
-document.getElementById('learn_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
-document.getElementById('learn_dcs_').style.background = '#000066';
-document.getElementById('none_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
-document.getElementById('none_dcs_').style.background = '#000066';
-}
-
-function trash_dcs_() {
-document.getElementById('completed_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
-document.getElementById('completed_dcs_').style.background = '#000066';
-document.getElementById('trash_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_delete.png'> Delete ";
-document.getElementById('trash_dcs_').style.background = '#FF0000';
-document.getElementById('learn_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
-document.getElementById('learn_dcs_').style.background = '#000066';
-document.getElementById('none_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
-document.getElementById('none_dcs_').style.background = '#000066';
-}
-
-function learn_dcs_() {
-document.getElementById('completed_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
-document.getElementById('completed_dcs_').style.background = '#000066';
-document.getElementById('trash_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
-document.getElementById('trash_dcs_').style.background = '#000066';
-document.getElementById('learn_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_learning.png'> Learning ";
-document.getElementById('learn_dcs_').style.background = '#FFCC00';
-document.getElementById('none_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
-document.getElementById('none_dcs_').style.background = '#000066';
-}
-
-function none_dcs_() {
-document.getElementById('completed_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
-document.getElementById('completed_dcs_').style.background = '#000066';
-document.getElementById('trash_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
-document.getElementById('trash_dcs_').style.background = '#000066';
-document.getElementById('learn_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
-document.getElementById('learn_dcs_').style.background = '#000066';
-document.getElementById('none_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None ";
-document.getElementById('none_dcs_').style.background = '#575757';
-}
-
-//Triggers
-
-function showtrigger() {
-document.getElementById('acst').innerHTML = " (R U R' U') R' F (R2 U' R' U') (R U R') F'";
-document.getElementById('dcst').innerHTML = " F (R U' R' U') (R U R') F' (R U R' U') (R' F R F')";
-changecolor_22begpll();
-}
-
-function hidetrigger() {
-document.getElementById('acst').innerHTML = " R U R' U' R' F R2 U' R' U' R U R' F'";
-document.getElementById('dcst').innerHTML = " F R U' R' U' R U R' F' R U R' U' R' F R F'";
-changecolor_22begpll();
-}
-
-function changecolor_22begpll() {
-document.getElementById('acst').style.color = "#000066";
-document.getElementById('dcst').style.color = "#000066";
-}
-
-</script>
-
-<header id='heading'>
-
-<h1 style='text-align:center; background-color: yellow; color: #000066; width: 100%; height: 125px;' id='top'> <br> Adarsh Crazy Cubing </h1>
-
-</header>
-
-<button type="button" class="buttonap" onclick="document.location='algpage.html'"> <h2> Algorithm Page </h2> </button>
-
-<br><br>
-
-<h1 style='text-align:center;'>2x2</h1>
-
-<h2 style='text-align:center;'>Beginner PLL Algorithms </h2>
-
-<div> <b>
-
-<p class='introp22'>This is the third and final step in beginner solving method. Before this step, do 
-<a class='introa22' href='22_beg_oll_cor.html' alt='OLL'>Beginner OLL</a>.
-</p>
-
-<p class='introp22'>Advanced Permutation/Full LL: 
-<a class='introa22' href='22_int_ortpbl_cor.html' alt='Ortega PBL'>Ortega PBL</a>, 
-<a class='introa22' href='22_adv_cll_cor.html' alt='CLL'>CLL</a>, 
-<a class='introa22' href='22_mas_eg1_cor.html' alt='EG-1'>EG-1</a>, 
-<a class='introa22' href='22_mas_eg2_cor.html' alt='EG-2'>EG-2</a>.
-</p>
-
-<button type="button" class='triggerornot22' onclick='showtrigger()'> <h4> Show triggers(brackets) </h4> </button>
-<br><br>
-<button type="button" class='triggerornot22' onclick='hidetrigger()'> <h4> Hide triggers(no brackets) </h4> </button>
-<br>
-
-</b> </div>
-
-<br><br>
-
-<div id='acs' class='two_beginner_pll_algs'>
-
-<h3 class='algname22'>Adjacent Corner Swap</h3>
-
-<img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/22BEGPLL/beg_pll_adjacent-swap.png' class='221limgs' alt='Adjacent/None' style='height: 125px; width: 125px;'> </img>
-<br>
-<h3 id='acst'> <b class='two_beginner_pll_algs'> R U R' U' R' F R2 U' R' U' R U R' F' </b> </h3>
-
-<button type='button' class='cubealgbutton22' id='completed_acs_' onclick='completed_acs_()'>
-<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed 
-</button>
-
-<button type='button' class='cubealgbutton22' id='trash_acs_' onclick='trash_acs_()'>
-<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete 
-</button>
-
-<button type='button' class='cubealgbutton22' id='learn_acs_' onclick='learn_acs_()'>
-<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning 
-</button>
-
-<button type='button' class='cubealgbutton22_none' id='none_acs_' onclick='none_acs_()'>
-<img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None 
-</button>
-
-<br>
-<br>
-
-</div>
-
-<br><br><br>
-
-<div id='dcs' class='two_beginner_pll_algs'>
-
-<h3 class='algname22'>Diagonal Corner Swap</h3>
-
-<img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/22BEGPLL/beg_pll_diagonal-swap.png' class='221limgs' alt='Diagonal/None' style='height: 125px; width: 125px;'> </img>
-<br>
-<h3 id='dcst'> <b class='two_beginner_pll_algs'> F R U' R' U' R U R' F' R U R' U' R' F R F' </b> </h3>
-
-<button type='button' class='cubealgbutton22' id='completed_dcs_' onclick='completed_dcs_()'>
-<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed 
-</button>
-
-<button type='button' class='cubealgbutton22' id='trash_dcs_' onclick='trash_dcs_()'>
-<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete 
-</button>
-
-<button type='button' class='cubealgbutton22' id='learn_dcs_' onclick='learn_dcs_()'>
-<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning 
-</button>
-
-<button type='button' class='cubealgbutton22_none' id='none_dcs_' onclick='none_dcs_()'>
-<img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None 
-</button>
-
-<br>
-<br>
-
-</div>
-
-<br><br><br>
-
-<b><a class='atop' href="#top">Back To Top</a></b>
-
-<footer id='footer'>
-
-<p style='text-align:center;'>Thank you for viewing our page<br>Requesting you to visit our page again</p>
-
-</footer>
-
-</body>
-
+        <br><br><br>
+        
+        <footer id='footermain' style='text-align: center;'>
+        
+            <p id='footp_a'>Thank you for viewing my page</p>
+            
+            <p id='footp_b'>Requesting you to visit our page again</p>
+            
+            <p id='footp_c'>Email at: <b>adarsh30k@gmail.com</b> </p>
+            
+        </footer>
+        
+        </body>
+        
 </html>
