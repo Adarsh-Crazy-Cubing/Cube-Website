@@ -13,4 +13,4 @@ Following links have been completed
 Following will be completed by February 28
 
 * 2x2 Beginner OLL
-* Algorithm Page(Converting CSS to JS)
+* 4x4 Beginner Parity Algs
