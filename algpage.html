@@ -10,30 +10,88 @@
 
 </head>
 
-<body>
+<body onload="algp_wprld()">
 
-<header id='heading'>
+    <script>
 
-<h1 style='text-align:center; background-color: yellow; color: #000066; width: 100%; height: 125px;'> <br> Adarsh Crazy Cubing </h1>
+        // On Load
 
-</header>
+        function algp_wprld() {
+        header_style();
+        footer_style();
+        header_total_algp();
+        }
+        
+        // Header and Footer - Style
+
+        function header_style() {
+        document.getElementById('headermain').style.backgroundColor = '#FAFAFA';
+        document.getElementById('headermain').style.border = '5px double #FF9933';
+        document.getElementById('headhone').style.color = '#33CC33';
+        }
+        
+        function footer_style() {
+        document.getElementById('footermain').style.backgroundColor = '#FAFAFA';
+        document.getElementById('footermain').style.border = '5px double #FF5050';
+        document.getElementById('footp_a').style.color = '#33CCCC';
+        document.getElementById('footp_b').style.color = '#33CCCC';
+        document.getElementById('footp_c').style.color = '#33CCCC';
+        }
+
+        // Header Buttons - Hover
+
+        function header_total_algp() {
+        algp_down();
+        hmep_down();
+        }
+        
+        function algp_hover() {
+        document.getElementById('hdbut_algp').style.color = '#FFFF00';
+        document.getElementById('hdbut_algp').style.border = '2px solid #FFFF00';
+        document.getElementById('hdbut_algp').style.backgroundColor = '#006600';
+        document.getElementById('hdbut_algp').style.paddingLeft = '12px';
+        document.getElementById('hdbut_algp').style.paddingRight = '12px';
+        }
+        
+        function algp_down() {
+        document.getElementById('hdbut_algp').style.color = '#006600';
+        document.getElementById('hdbut_algp').style.border = '2px solid #006600';
+        document.getElementById('hdbut_algp').style.backgroundColor = '#FFFF00';
+        document.getElementById('hdbut_algp').style.paddingLeft = '12px';
+        document.getElementById('hdbut_algp').style.paddingRight = '12px';
+        }
+        
+        function hmep_hover() {
+        document.getElementById('hdbut_hmep').style.color = '#FFFF00';
+        document.getElementById('hdbut_hmep').style.border = '2px solid #FFFF00';
+        document.getElementById('hdbut_hmep').style.backgroundColor = '#006600';
+        document.getElementById('hdbut_hmep').style.paddingLeft = '12px';
+        document.getElementById('hdbut_hmep').style.paddingRight = '12px';
+        }
+        
+        function hmep_down() {
+        document.getElementById('hdbut_hmep').style.color = '#006600';
+        document.getElementById('hdbut_hmep').style.border = '2px solid #006600';
+        document.getElementById('hdbut_hmep').style.backgroundColor = '#FFFF00';
+        document.getElementById('hdbut_hmep').style.paddingLeft = '12px';
+        document.getElementById('hdbut_hmep').style.paddingRight = '12px';
+        }
+        
+    </script>
+
+    <header id='headermain' style='text-align: center;'>
+
+        <h1 id='headhone'>Adarsh Crazy Cubing</h1>
+       
+        <button class='hdbutint' id='hdbut_algp' onmouseover='algp_hover()' onmouseout='algp_down()' onclick="document.location='algpage.html'"> <h3> Algorithm Page </h3> </button>
+        <button class='hdbutint' id='hdbut_hmep' onmouseover='hmep_hover()' onmouseout='hmep_down()' onclick="document.location='homepage.html'"> <h3> Home Page </h3> </button>
+        
+        <br><br>
+        
+    </header>
 
 <br><br>
 <button type="button" class="buttonhp" onclick="document.location='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/homepage.html'"> <h2> Webpage Home </h2> </button>
-
-<br><br><br>
-
-<div class='notediv'>
-
-<br>
-
-<b>Note:</b>
-
-<ul>
-<li> <b>4x4+</b> refers to <b>4x4, 5x5, 6x6, 7x7</b> </li>
-</ul>
-
-</div>
 
 <br><br><br>
 
@@ -125,10 +183,14 @@
 
 <br><br><br>
 
-<footer id='footer'>
-
-<p style='text-align:center;'>Thank you for viewing our page<br>Requesting you to visit our page again</p>
-
+<footer id='footermain' style='text-align: center;'>
+        
+    <p id='footp_a'>Thank you for viewing my page</p>
+    
+    <p id='footp_b'>Requesting you to visit our page again</p>
+    
+    <p id='footp_c'>Email at: <b>adarsh30k@gmail.com</b> </p>
+    
 </footer>
 
 </body>
