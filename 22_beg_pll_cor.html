@@ -17,11 +17,14 @@
             // On Load
     
             function begpll_2_wprld() {
+            plf_part_a();
             atop_style();
             header_style();
             footer_style();
             title_colours();
+            introduction_style();
             header_total_2_begpll();
+            triggerbutton_colours();
             }
             
             // Header and Footer - Style
@@ -41,17 +44,100 @@
             }
     
             // On Load - Functions
-    
+            
+            function plf_part_a() {
+            acs_all();
+            dcs_all();
+            }
+
             function atop_style() {
             document.getElementById('atop_xxa').style.color = '#4C4C4C';
             document.getElementById('atop_xxa').style.textDecoration = 'none';
             }
-    
+            
             function title_colours() {
             document.getElementById('bodyhone').style.color = '#000066';
             document.getElementById('bodyhtwo').style.color = '#806666';
             }
             
+            function introduction_style() {
+            document.getElementById('introp33_a').style.color = '#000066';
+            document.getElementById('introp33_b').style.color = '#000066';
+            document.getElementById('introa33_a').style.color = '#FFCC66';
+            document.getElementById('introa33_b').style.color = '#FFCC66';
+            document.getElementById('introa33_c').style.color = '#FFCC66';
+            document.getElementById('introa33_d').style.color = '#FFCC66';
+            document.getElementById('introa33_e').style.color = '#FFCC66';
+            document.getElementById('introa33_a').style.textDecoration = 'none';
+            document.getElementById('introa33_b').style.textDecoration = 'none';
+            document.getElementById('introa33_c').style.textDecoration = 'none';
+            document.getElementById('introa33_d').style.textDecoration = 'none';
+            document.getElementById('introa33_e').style.textDecoration = 'none';
+            }
+
+            function triggerbutton_colours() {
+            document.getElementById('show_hide_ooa').style.color = '#000066';
+            document.getElementById('show_hide_ooa').style.backgroundColor = '#FFCC66';
+            document.getElementById('show_hide_ooa').style.border = '2px solid #000066';
+            document.getElementById('show_hide_ooa').style.width = '250px';
+            document.getElementById('show_hide_oob').style.color = '#000066';
+            document.getElementById('show_hide_oob').style.backgroundColor = '#FFCC66';
+            document.getElementById('show_hide_oob').style.border = '2px solid #000066';
+            document.getElementById('show_hide_oob').style.width = '250px';
+            }
+
+            // Other Documents Link - Hover
+
+            function introa33_a_h() {
+            document.getElementById('introa33_a').style.color = '#806666';
+            document.getElementById('introa33_a').style.textDecoration = 'none';
+            }
+
+            function introa33_a_d() {
+            document.getElementById('introa33_a').style.color = '#FFCC66';
+            document.getElementById('introa33_a').style.textDecoration = 'none';
+            }
+
+            function introa33_b_h() {
+            document.getElementById('introa33_b').style.color = '#806666';
+            document.getElementById('introa33_b').style.textDecoration = 'none';
+            }
+
+            function introa33_b_d() {
+            document.getElementById('introa33_b').style.color = '#FFCC66';
+            document.getElementById('introa33_b').style.textDecoration = 'none';
+            }
+
+            function introa33_c_h() {
+            document.getElementById('introa33_c').style.color = '#806666';
+            document.getElementById('introa33_c').style.textDecoration = 'none';
+            }
+
+            function introa33_c_d() {
+            document.getElementById('introa33_c').style.color = '#FFCC66';
+            document.getElementById('introa33_c').style.textDecoration = 'none';
+            }
+
+            function introa33_d_h() {
+            document.getElementById('introa33_d').style.color = '#806666';
+            document.getElementById('introa33_d').style.textDecoration = 'none';
+            }
+
+            function introa33_d_d() {
+            document.getElementById('introa33_d').style.color = '#FFCC66';
+            document.getElementById('introa33_d').style.textDecoration = 'none';
+            }
+
+            function introa33_e_h() {
+            document.getElementById('introa33_e').style.color = '#806666';
+            document.getElementById('introa33_e').style.textDecoration = 'none';
+            }
+
+            function introa33_e_d() {
+            document.getElementById('introa33_e').style.color = '#FFCC66';
+            document.getElementById('introa33_e').style.textDecoration = 'none';
+            }
+
             // Back to Top - Hover
     
             function atop_xxa_d() {
@@ -103,115 +189,964 @@
             document.getElementById('hdbut_hmep').style.paddingRight = '12px';
             }
     
+            // Trigger Button - Hover
+            
+            function show_hide_ooa_d() {
+            document.getElementById('show_hide_ooa').style.color = '#000066';
+            document.getElementById('show_hide_ooa').style.backgroundColor = '#FFCC66';
+            document.getElementById('show_hide_ooa').style.border = '2px solid #000066';
+            document.getElementById('show_hide_ooa').style.width = '250px';
+            }
+
+            function show_hide_ooa_h() {
+            document.getElementById('show_hide_ooa').style.color = '#806666';
+            document.getElementById('show_hide_ooa').style.backgroundColor = '#000066';
+            document.getElementById('show_hide_ooa').style.border = '2px solid #806666';
+            document.getElementById('show_hide_ooa').style.width = '250px';
+            }
+            
+            function show_hide_oob_d() {
+            document.getElementById('show_hide_oob').style.color = '#000066';
+            document.getElementById('show_hide_oob').style.backgroundColor = '#FFCC66';
+            document.getElementById('show_hide_oob').style.border = '2px solid #000066';
+            document.getElementById('show_hide_oob').style.width = '250px';
+            }
+
+            function show_hide_oob_h() {
+            document.getElementById('show_hide_oob').style.color = '#806666';
+            document.getElementById('show_hide_oob').style.backgroundColor = '#000066';
+            document.getElementById('show_hide_oob').style.border = '2px solid #806666';
+            document.getElementById('show_hide_oob').style.width = '250px';
+            }
+            
             // Adjacent Corner Swap
+            
+            // Style
+            
+            function acs_all() {
+            document.getElementById('acs').style.padding = '5px';
+            document.getElementById('acs').style.backgroundColor = '#806666';
+            document.getElementById('acs').style.border = '2px solid black';
+            document.getElementById('acs').style.color = '#FFCC66';
+            document.getElementById('acst').style.color = '#000066';
+            document.getElementById('completed_acs_').style.backgroundColor = '#000066';
+            document.getElementById('trash_acs_').style.backgroundColor = '#000066';
+            document.getElementById('learn_acs_').style.backgroundColor = '#000066';
+            document.getElementById('none_acs_').style.backgroundColor = '#575757';
+            acs_com_style();
+            acs_del_style();
+            acs_lea_style();
+            acs_non_style();
+            document.getElementById('triggeryes_acs_').style.backgroundColor = '#000066';
+            document.getElementById('triggerno_acs_').style.backgroundColor = '#FFFF00';
+            acs_ytr_style();
+            acs_ntr_style();
+            }
+            
+            function acs_com_style() {
+            document.getElementById('completed_acs_').style.paddingBottom = "12px";
+            document.getElementById('completed_acs_').style.paddingTop = "12px";
+            document.getElementById('completed_acs_').style.paddingLeft = "16px";
+            document.getElementById('completed_acs_').style.paddingRight = "16px";
+            document.getElementById('completed_acs_').style.fontSize = '16px';
+            document.getElementById('completed_acs_').style.border = '2px solid white';
+            document.getElementById('completed_acs_').style.color = 'white';
+            }
+            
+            function acs_del_style() {
+            document.getElementById('trash_acs_').style.paddingBottom = "12px";
+            document.getElementById('trash_acs_').style.paddingTop = "12px";
+            document.getElementById('trash_acs_').style.paddingLeft = "16px";
+            document.getElementById('trash_acs_').style.paddingRight = "16px";
+            document.getElementById('trash_acs_').style.fontSize = '16px';
+            document.getElementById('trash_acs_').style.border = '2px solid white';
+            document.getElementById('trash_acs_').style.color = 'white';
+            }
+            
+            function acs_lea_style() {
+            document.getElementById('learn_acs_').style.paddingBottom = "12px";
+            document.getElementById('learn_acs_').style.paddingTop = "12px";
+            document.getElementById('learn_acs_').style.paddingLeft = "16px";
+            document.getElementById('learn_acs_').style.paddingRight = "16px";
+            document.getElementById('learn_acs_').style.fontSize = '16px';
+            document.getElementById('learn_acs_').style.border = '2px solid white';
+            document.getElementById('learn_acs_').style.color = 'white';
+            }
+            
+            function acs_non_style() {
+            document.getElementById('none_acs_').style.paddingBottom = "12px";
+            document.getElementById('none_acs_').style.paddingTop = "12px";
+            document.getElementById('none_acs_').style.paddingLeft = "16px";
+            document.getElementById('none_acs_').style.paddingRight = "16px";
+            document.getElementById('none_acs_').style.fontSize = '16px';
+            document.getElementById('none_acs_').style.border = '2px solid white';
+            document.getElementById('none_acs_').style.color = 'white';
+            }
+            
+            function acs_ytr_style() {
+            document.getElementById('triggeryes_acs_').style.paddingBottom = "12px";
+            document.getElementById('triggeryes_acs_').style.paddingTop = "12px";
+            document.getElementById('triggeryes_acs_').style.paddingLeft = "16px";
+            document.getElementById('triggeryes_acs_').style.paddingRight = "16px";
+            document.getElementById('triggeryes_acs_').style.fontSize = '16px';
+            document.getElementById('triggeryes_acs_').style.border = '2px solid white';
+            document.getElementById('triggeryes_acs_').style.color = 'white';
+            }
+            
+            function acs_ntr_style() {
+            document.getElementById('triggerno_acs_').style.paddingBottom = "12px";
+            document.getElementById('triggerno_acs_').style.paddingTop = "12px";
+            document.getElementById('triggerno_acs_').style.paddingLeft = "16px";
+            document.getElementById('triggerno_acs_').style.paddingRight = "16px";
+            document.getElementById('triggerno_acs_').style.fontSize = '16px';
+            document.getElementById('triggerno_acs_').style.border = '2px solid #33CCCC';
+            document.getElementById('triggerno_acs_').style.color = '#33CCCC';
+            }
+            
+            // Action Buttons
+            
+            var acscom = 'no';
+            var acslea = 'no';
+            var acsdel = 'no';
+            var acsnon = 'yes';
             
             function completed_acs_() {
             document.getElementById('completed_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_done.png'> Completed ";
-            document.getElementById('completed_acs_').style.background = '#00B666';
-            document.getElementById('trash_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
-            document.getElementById('trash_acs_').style.background = '#000066';
-            document.getElementById('learn_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
-            document.getElementById('learn_acs_').style.background = '#000066';
-            document.getElementById('none_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
-            document.getElementById('none_acs_').style.background = '#000066';
+            document.getElementById('completed_acs_').style.backgroundColor = '#00B666';
+            acs_del_nor();
+            acs_lea_nor();
+            acs_non_nor();
+            acscom = 'yes';
+            acslea = 'no';
+            acsdel = 'no';
+            acsnon = 'no';
+            acs_com_style();
+            acs_del_style();
+            acs_lea_style();
+            acs_non_style();
             }
             
             function trash_acs_() {
-            document.getElementById('completed_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
-            document.getElementById('completed_acs_').style.background = '#000066';
+            acs_com_nor();
             document.getElementById('trash_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_delete.png'> Delete ";
-            document.getElementById('trash_acs_').style.background = '#FF0000';
-            document.getElementById('learn_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
-            document.getElementById('learn_acs_').style.background = '#000066';
-            document.getElementById('none_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
-            document.getElementById('none_acs_').style.background = '#000066';
+            document.getElementById('trash_acs_').style.backgroundColor = '#FF0000';
+            acs_lea_nor();
+            acs_non_nor();
+            acscom = 'no';
+            acslea = 'no';
+            acsdel = 'yes';
+            acsnon = 'no';
+            acs_com_style();
+            acs_del_style();
+            acs_lea_style();
+            acs_non_style();
             }
             
             function learn_acs_() {
-            document.getElementById('completed_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
-            document.getElementById('completed_acs_').style.background = '#000066';
-            document.getElementById('trash_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
-            document.getElementById('trash_acs_').style.background = '#000066';
+            acs_com_nor();
+            acs_del_nor();
             document.getElementById('learn_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_learning.png'> Learning ";
-            document.getElementById('learn_acs_').style.background = '#FFCC00';
-            document.getElementById('none_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
-            document.getElementById('none_acs_').style.background = '#000066';
+            document.getElementById('learn_acs_').style.backgroundColor = '#FFCC00';
+            acs_non_nor();
+            acscom = 'no';
+            acslea = 'yes';
+            acsdel = 'no';
+            acsnon = 'no';
+            acs_com_style();
+            acs_del_style();
+            acs_lea_style();
+            acs_non_style();
             }
             
             function none_acs_() {
-            document.getElementById('completed_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
-            document.getElementById('completed_acs_').style.background = '#000066';
-            document.getElementById('trash_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
-            document.getElementById('trash_acs_').style.background = '#000066';
-            document.getElementById('learn_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
-            document.getElementById('learn_acs_').style.background = '#000066';
+            acs_com_nor();
+            acs_del_nor();
+            acs_lea_nor();
             document.getElementById('none_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None ";
-            document.getElementById('none_acs_').style.background = '#575757';
+            document.getElementById('none_acs_').style.backgroundColor = '#575757';
+            acscom = 'no';
+            acslea = 'no';
+            acsdel = 'no';
+            acsnon = 'yes';
+            acs_com_style();
+            acs_del_style();
+            acs_lea_style();
+            acs_non_style();
+            }
+            
+            function acs_com_nor() {
+            document.getElementById('completed_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+            document.getElementById('completed_acs_').style.backgroundColor = '#000066';
+            }
+            
+            function acs_lea_nor() {
+            document.getElementById('learn_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+            document.getElementById('learn_acs_').style.backgroundColor = '#000066';
+            }
+            
+            function acs_del_nor() {
+            document.getElementById('trash_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+            document.getElementById('trash_acs_').style.backgroundColor = '#000066';
+            }
+            
+            function acs_non_nor() {
+            document.getElementById('none_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+            document.getElementById('none_acs_').style.backgroundColor = '#000066';
+            }
+            
+            // Hover - Action buttons
+            
+            function acs_com_down() {
+            if (acscom == 'yes') {
+            document.getElementById('completed_acs_').style.backgroundColor = '#00B666';
+            document.getElementById('completed_acs_').style.border = '2px solid';
+            document.getElementById('completed_acs_').style.borderColor = 'white';
+            document.getElementById('completed_acs_').style.color = 'white';
+            document.getElementById('completed_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_done.png'> Completed ";
+            acscom = 'yes';
+            } else if (acscom == 'no') {
+            document.getElementById('completed_acs_').style.backgroundColor = '#000066';
+            document.getElementById('completed_acs_').style.border = '2px solid';
+            document.getElementById('completed_acs_').style.borderColor = 'white';
+            document.getElementById('completed_acs_').style.color = 'white';
+            document.getElementById('completed_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+            acscom = 'no';
+            } else {
+            acs_com_down()
+            }
+            }
+            
+            function acs_com_hover() {
+            if (acscom == 'yes') {
+            document.getElementById('completed_acs_').style.backgroundColor = '#000066';
+            document.getElementById('completed_acs_').style.border = '2px solid';
+            document.getElementById('completed_acs_').style.borderColor = '#FFCC66';
+            document.getElementById('completed_acs_').style.color = '#FFCC66';
+            document.getElementById('completed_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+            acscom = 'yes';
+            } else if (acscom == 'no') {
+            document.getElementById('completed_acs_').style.backgroundColor = '#000066';
+            document.getElementById('completed_acs_').style.border = '2px solid';
+            document.getElementById('completed_acs_').style.borderColor = '#FFCC66';
+            document.getElementById('completed_acs_').style.color = '#FFCC66';
+            document.getElementById('completed_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+            acscom = 'no';
+            } else {
+            acs_com_hover()
+            }
+            }
+            
+            function acs_del_down() {
+            if (acsdel == 'yes') {
+            document.getElementById('trash_acs_').style.backgroundColor = '#FF0000';
+            document.getElementById('trash_acs_').style.border = '2px solid';
+            document.getElementById('trash_acs_').style.borderColor = 'white';
+            document.getElementById('trash_acs_').style.color = 'white';
+            document.getElementById('trash_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_delete.png'> Delete ";
+            acsdel = 'yes';
+            } else if (acsdel == 'no') {
+            document.getElementById('trash_acs_').style.backgroundColor = '#000066';
+            document.getElementById('trash_acs_').style.border = '2px solid';
+            document.getElementById('trash_acs_').style.borderColor = 'white';
+            document.getElementById('trash_acs_').style.color = 'white';
+            document.getElementById('trash_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+            acsdel = 'no';
+            } else {
+            acs_del_down()
+            }
+            }
+            
+            function acs_del_hover() {
+            if (acsdel == 'yes') {
+            document.getElementById('trash_acs_').style.backgroundColor = '#000066';
+            document.getElementById('trash_acs_').style.border = '2px solid';
+            document.getElementById('trash_acs_').style.borderColor = '#FFCC66';
+            document.getElementById('trash_acs_').style.color = '#FFCC66';
+            document.getElementById('trash_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete  ";
+            acsdel = 'yes';
+            } else if (acsdel == 'no') {
+            document.getElementById('trash_acs_').style.backgroundColor = '#000066';
+            document.getElementById('trash_acs_').style.border = '2px solid';
+            document.getElementById('trash_acs_').style.borderColor = '#FFCC66';
+            document.getElementById('trash_acs_').style.color = '#FFCC66';
+            document.getElementById('trash_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+            acsdel = 'no';
+            } else {
+            acs_del_hover()
+            }
+            }
+            
+            function acs_lea_down() {
+            if (acslea == 'yes') {
+            document.getElementById('learn_acs_').style.backgroundColor = '#FFCC00';
+            document.getElementById('learn_acs_').style.border = '2px solid';
+            document.getElementById('learn_acs_').style.borderColor = 'white';
+            document.getElementById('learn_acs_').style.color = 'white';
+            document.getElementById('learn_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_learning.png'> Learning ";
+            acslea = 'yes';
+            } else if (acslea == 'no') {
+            document.getElementById('learn_acs_').style.backgroundColor = '#000066';
+            document.getElementById('learn_acs_').style.border = '2px solid';
+            document.getElementById('learn_acs_').style.borderColor = 'white';
+            document.getElementById('learn_acs_').style.color = 'white';
+            document.getElementById('learn_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+            acslea = 'no';
+            } else {
+            acs_lea_down()
+            }
+            }
+            
+            function acs_lea_hover() {
+            if (acslea == 'yes') {
+            document.getElementById('learn_acs_').style.backgroundColor = '#000066';
+            document.getElementById('learn_acs_').style.border = '2px solid';
+            document.getElementById('learn_acs_').style.borderColor = '#FFCC66';
+            document.getElementById('learn_acs_').style.color = '#FFCC66';
+            document.getElementById('learn_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+            acslea = 'yes';
+            } else if (acslea == 'no') {
+            document.getElementById('learn_acs_').style.backgroundColor = '#000066';
+            document.getElementById('learn_acs_').style.border = '2px solid';
+            document.getElementById('learn_acs_').style.borderColor = '#FFCC66';
+            document.getElementById('learn_acs_').style.color = '#FFCC66';
+            document.getElementById('learn_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+            acslea = 'no';
+            } else {
+            acs_lea_hover()
+            }
+            }
+            
+            function acs_non_down() {
+            if (acsnon == 'yes') {
+            document.getElementById('none_acs_').style.backgroundColor = '#575757';
+            document.getElementById('none_acs_').style.border = '2px solid';
+            document.getElementById('none_acs_').style.borderColor = 'white';
+            document.getElementById('none_acs_').style.color = 'white';
+            document.getElementById('none_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None ";
+            acsnon = 'yes';
+            } else if (acsnon == 'no') {
+            document.getElementById('none_acs_').style.backgroundColor = '#000066';
+            document.getElementById('none_acs_').style.border = '2px solid';
+            document.getElementById('none_acs_').style.borderColor = 'white';
+            document.getElementById('none_acs_').style.color = 'white';
+            document.getElementById('none_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+            acsnon = 'no';
+            } else {
+            acs_non_down()
+            }
+            }
+            
+            function acs_non_hover() {
+            if (acsnon == 'yes') {
+            document.getElementById('none_acs_').style.backgroundColor = '#000066';
+            document.getElementById('none_acs_').style.border = '2px solid';
+            document.getElementById('none_acs_').style.borderColor = '#FFCC66';
+            document.getElementById('none_acs_').style.color = '#FFCC66';
+            document.getElementById('none_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+            acsnon = 'yes';
+            } else if (acsnon == 'no') {
+            document.getElementById('none_acs_').style.backgroundColor = '#000066';
+            document.getElementById('none_acs_').style.border = '2px solid';
+            document.getElementById('none_acs_').style.borderColor = '#FFCC66';
+            document.getElementById('none_acs_').style.color = '#FFCC66';
+            document.getElementById('none_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+            acsnon = 'no';
+            } else {
+            acs_non_hover()
+            }
+            }
+            
+            // Triggers
+            
+            var acsytr = 'no';
+            var acsntr = 'yes';
+            
+            function triggeryes_acs_() {
+            document.getElementById('triggeryes_acs_').style.backgroundColor = '#FFFF00';
+            document.getElementById('triggeryes_acs_').style.borderColor = '#33CCCC';
+            document.getElementById('triggeryes_acs_').style.color = '#33CCCC';
+            document.getElementById('triggerno_acs_').style.backgroundColor = '#000066';
+            document.getElementById('triggerno_acs_').style.borderColor = '#FFFFFF';
+            document.getElementById('triggerno_acs_').style.color = '#FFFFFF';
+            document.getElementById('acst').innerHTML = "(R U R' U') R' F (R2 U' R' U') (R U R') F'";
+            document.getElementById('triggeryes_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bracket_bracket.png'> Show Triggers For Adjacent Corner Swap Only";
+            document.getElementById('triggerno_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_notrig_normal.png'> Hide Triggers For Adjacent Corner Swap Only";
+            acsytr = 'yes';
+            acsntr = 'no';
+            }
+            
+            function triggerno_acs_() {
+            document.getElementById('triggerno_acs_').style.backgroundColor = '#FFFF00';
+            document.getElementById('triggerno_acs_').style.borderColor = '#33CCCC';
+            document.getElementById('triggerno_acs_').style.color = '#33CCCC';
+            document.getElementById('triggeryes_acs_').style.backgroundColor = '#000066';
+            document.getElementById('triggeryes_acs_').style.borderColor = '#FFFFFF';
+            document.getElementById('triggeryes_acs_').style.color = '#FFFFFF';
+            document.getElementById('acst').innerHTML = "R U R' U' R' F R2 U' R' U' R U R' F'";
+            document.getElementById('triggeryes_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bracket_normal.png'> Show Triggers For Adjacent Corner Swap Only";
+            document.getElementById('triggerno_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_notrig_notrig.png'> Hide Triggers For Adjacent Corner Swap Only";
+            acsytr = 'no';
+            acsntr = 'yes';
+            }
+            
+            // Hover - Triggers
+            
+            function acs_ytr_down() {
+            if (acsytr == 'yes') {
+            document.getElementById('triggeryes_acs_').style.backgroundColor = '#FFFF00';
+            document.getElementById('triggeryes_acs_').style.border = '2px solid';
+            document.getElementById('triggeryes_acs_').style.borderColor = '#33CCCC';
+            document.getElementById('triggeryes_acs_').style.color = '#33CCCC';
+            document.getElementById('triggeryes_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bracket_bracket.png'> Show Triggers For Adjacent Corner Swap Only"
+            acsytr = 'yes';
+            } else if (acsytr == 'no') {
+            document.getElementById('triggeryes_acs_').style.backgroundColor = '#000066';
+            document.getElementById('triggeryes_acs_').style.border = '2px solid';
+            document.getElementById('triggeryes_acs_').style.borderColor = 'white';
+            document.getElementById('triggeryes_acs_').style.color = 'white';
+            document.getElementById('triggeryes_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bracket_normal.png'> Show Triggers For Adjacent Corner Swap Only"
+            acsytr = 'no';
+            } else {
+            acs_ytr_down()
+            }
+            }
+            
+            function acs_ytr_hover() {
+            if (acsytr == 'yes') {
+            document.getElementById('triggeryes_acs_').style.backgroundColor = '#000066';
+            document.getElementById('triggeryes_acs_').style.border = '2px solid';
+            document.getElementById('triggeryes_acs_').style.borderColor = '#FFCC66';
+            document.getElementById('triggeryes_acs_').style.color = '#FFCC66';
+            document.getElementById('triggeryes_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bracket_normal.png'> Show Triggers For Adjacent Corner Swap Only"
+            acsytr = 'yes';
+            } else if (acsytr == 'no') {
+            document.getElementById('triggeryes_acs_').style.backgroundColor = '#000066';
+            document.getElementById('triggeryes_acs_').style.border = '2px solid';
+            document.getElementById('triggeryes_acs_').style.borderColor = '#FFCC66';
+            document.getElementById('triggeryes_acs_').style.color = '#FFCC66';
+            document.getElementById('triggeryes_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bracket_normal.png'> Show Triggers For Adjacent Corner Swap Only"
+            acsytr = 'no';
+            } else {
+            acs_ytr_hover()
+            }
+            }
+            
+            function acs_ntr_down() {
+            if (acsntr == 'yes') {
+            document.getElementById('triggerno_acs_').style.backgroundColor = '#FFFF00';
+            document.getElementById('triggerno_acs_').style.border = '2px solid';
+            document.getElementById('triggerno_acs_').style.borderColor = '#33CCCC';
+            document.getElementById('triggerno_acs_').style.color = '#33CCCC';
+            document.getElementById('triggerno_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_notrig_notrig.png'> Hide Triggers For Adjacent Corner Swap Only";
+            acsntr = 'yes';
+            } else if (acsntr == 'no') {
+            document.getElementById('triggerno_acs_').style.backgroundColor = '#000066';
+            document.getElementById('triggerno_acs_').style.border = '2px solid';
+            document.getElementById('triggerno_acs_').style.borderColor = 'white';
+            document.getElementById('triggerno_acs_').style.color = 'white';
+            document.getElementById('triggerno_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_notrig_normal.png'> Hide Triggers For Adjacent Corner Swap Only";
+            acsntr = 'no';
+            } else {
+            acs_ntr_down()
+            }
+            }
+            
+            function acs_ntr_hover() {
+            if (acsntr == 'yes') {
+            document.getElementById('triggerno_acs_').style.backgroundColor = '#000066';
+            document.getElementById('triggerno_acs_').style.border = '2px solid';
+            document.getElementById('triggerno_acs_').style.borderColor = '#FFCC66';
+            document.getElementById('triggerno_acs_').style.color = '#FFCC66';
+            document.getElementById('triggerno_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_notrig_normal.png'> Hide Triggers For Adjacent Corner Swap Only";
+            acsntr = 'yes';
+            } else if (acsntr == 'no') {
+            document.getElementById('triggerno_acs_').style.backgroundColor = '#000066';
+            document.getElementById('triggerno_acs_').style.border = '2px solid';
+            document.getElementById('triggerno_acs_').style.borderColor = '#FFCC66';
+            document.getElementById('triggerno_acs_').style.color = '#FFCC66';
+            document.getElementById('triggerno_acs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_notrig_normal.png'> Hide Triggers For Adjacent Corner Swap Only";
+            acsntr = 'no';
+            } else {
+            acs_ntr_hover()
+            }
             }
             
             // Diagonal Corner Swap
             
+            // Style
+            
+            function dcs_all() {
+            document.getElementById('dcs').style.padding = '5px';
+            document.getElementById('dcs').style.backgroundColor = '#806666';
+            document.getElementById('dcs').style.border = '2px solid black';
+            document.getElementById('dcs').style.color = '#FFCC66';
+            document.getElementById('dcst').style.color = '#000066';
+            document.getElementById('completed_dcs_').style.backgroundColor = '#000066';
+            document.getElementById('trash_dcs_').style.backgroundColor = '#000066';
+            document.getElementById('learn_dcs_').style.backgroundColor = '#000066';
+            document.getElementById('none_dcs_').style.backgroundColor = '#575757';
+            dcs_com_style();
+            dcs_del_style();
+            dcs_lea_style();
+            dcs_non_style();
+            document.getElementById('triggeryes_dcs_').style.backgroundColor = '#000066';
+            document.getElementById('triggerno_dcs_').style.backgroundColor = '#FFFF00';
+            dcs_ytr_style();
+            dcs_ntr_style();
+            }
+            
+            function dcs_com_style() {
+            document.getElementById('completed_dcs_').style.paddingBottom = "12px";
+            document.getElementById('completed_dcs_').style.paddingTop = "12px";
+            document.getElementById('completed_dcs_').style.paddingLeft = "16px";
+            document.getElementById('completed_dcs_').style.paddingRight = "16px";
+            document.getElementById('completed_dcs_').style.fontSize = '16px';
+            document.getElementById('completed_dcs_').style.border = '2px solid white';
+            document.getElementById('completed_dcs_').style.color = 'white';
+            }
+            
+            function dcs_del_style() {
+            document.getElementById('trash_dcs_').style.paddingBottom = "12px";
+            document.getElementById('trash_dcs_').style.paddingTop = "12px";
+            document.getElementById('trash_dcs_').style.paddingLeft = "16px";
+            document.getElementById('trash_dcs_').style.paddingRight = "16px";
+            document.getElementById('trash_dcs_').style.fontSize = '16px';
+            document.getElementById('trash_dcs_').style.border = '2px solid white';
+            document.getElementById('trash_dcs_').style.color = 'white';
+            }
+            
+            function dcs_lea_style() {
+            document.getElementById('learn_dcs_').style.paddingBottom = "12px";
+            document.getElementById('learn_dcs_').style.paddingTop = "12px";
+            document.getElementById('learn_dcs_').style.paddingLeft = "16px";
+            document.getElementById('learn_dcs_').style.paddingRight = "16px";
+            document.getElementById('learn_dcs_').style.fontSize = '16px';
+            document.getElementById('learn_dcs_').style.border = '2px solid white';
+            document.getElementById('learn_dcs_').style.color = 'white';
+            }
+            
+            function dcs_non_style() {
+            document.getElementById('none_dcs_').style.paddingBottom = "12px";
+            document.getElementById('none_dcs_').style.paddingTop = "12px";
+            document.getElementById('none_dcs_').style.paddingLeft = "16px";
+            document.getElementById('none_dcs_').style.paddingRight = "16px";
+            document.getElementById('none_dcs_').style.fontSize = '16px';
+            document.getElementById('none_dcs_').style.border = '2px solid white';
+            document.getElementById('none_dcs_').style.color = 'white';
+            }
+            
+            function dcs_ytr_style() {
+            document.getElementById('triggeryes_dcs_').style.paddingBottom = "12px";
+            document.getElementById('triggeryes_dcs_').style.paddingTop = "12px";
+            document.getElementById('triggeryes_dcs_').style.paddingLeft = "16px";
+            document.getElementById('triggeryes_dcs_').style.paddingRight = "16px";
+            document.getElementById('triggeryes_dcs_').style.fontSize = '16px';
+            document.getElementById('triggeryes_dcs_').style.border = '2px solid white';
+            document.getElementById('triggeryes_dcs_').style.color = 'white';
+            }
+            
+            function dcs_ntr_style() {
+            document.getElementById('triggerno_dcs_').style.paddingBottom = "12px";
+            document.getElementById('triggerno_dcs_').style.paddingTop = "12px";
+            document.getElementById('triggerno_dcs_').style.paddingLeft = "16px";
+            document.getElementById('triggerno_dcs_').style.paddingRight = "16px";
+            document.getElementById('triggerno_dcs_').style.fontSize = '16px';
+            document.getElementById('triggerno_dcs_').style.border = '2px solid #33CCCC';
+            document.getElementById('triggerno_dcs_').style.color = '#33CCCC';
+            }
+            
+            // Action Buttons
+            
+            var dcscom = 'no';
+            var dcslea = 'no';
+            var dcsdel = 'no';
+            var dcsnon = 'yes';
+            
             function completed_dcs_() {
             document.getElementById('completed_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_done.png'> Completed ";
-            document.getElementById('completed_dcs_').style.background = '#00B666';
-            document.getElementById('trash_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
-            document.getElementById('trash_dcs_').style.background = '#000066';
-            document.getElementById('learn_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
-            document.getElementById('learn_dcs_').style.background = '#000066';
-            document.getElementById('none_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
-            document.getElementById('none_dcs_').style.background = '#000066';
+            document.getElementById('completed_dcs_').style.backgroundColor = '#00B666';
+            dcs_del_nor();
+            dcs_lea_nor();
+            dcs_non_nor();
+            dcscom = 'yes';
+            dcslea = 'no';
+            dcsdel = 'no';
+            dcsnon = 'no';
+            dcs_com_style();
+            dcs_del_style();
+            dcs_lea_style();
+            dcs_non_style();
             }
             
             function trash_dcs_() {
-            document.getElementById('completed_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
-            document.getElementById('completed_dcs_').style.background = '#000066';
+            dcs_com_nor();
             document.getElementById('trash_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_delete.png'> Delete ";
-            document.getElementById('trash_dcs_').style.background = '#FF0000';
-            document.getElementById('learn_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
-            document.getElementById('learn_dcs_').style.background = '#000066';
-            document.getElementById('none_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
-            document.getElementById('none_dcs_').style.background = '#000066';
+            document.getElementById('trash_dcs_').style.backgroundColor = '#FF0000';
+            dcs_lea_nor();
+            dcs_non_nor();
+            dcscom = 'no';
+            dcslea = 'no';
+            dcsdel = 'yes';
+            dcsnon = 'no';
+            dcs_com_style();
+            dcs_del_style();
+            dcs_lea_style();
+            dcs_non_style();
             }
             
             function learn_dcs_() {
-            document.getElementById('completed_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
-            document.getElementById('completed_dcs_').style.background = '#000066';
-            document.getElementById('trash_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
-            document.getElementById('trash_dcs_').style.background = '#000066';
+            dcs_com_nor();
+            dcs_del_nor();
             document.getElementById('learn_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_learning.png'> Learning ";
-            document.getElementById('learn_dcs_').style.background = '#FFCC00';
-            document.getElementById('none_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
-            document.getElementById('none_dcs_').style.background = '#000066';
+            document.getElementById('learn_dcs_').style.backgroundColor = '#FFCC00';
+            dcs_non_nor();
+            dcscom = 'no';
+            dcslea = 'yes';
+            dcsdel = 'no';
+            dcsnon = 'no';
+            dcs_com_style();
+            dcs_del_style();
+            dcs_lea_style();
+            dcs_non_style();
             }
             
             function none_dcs_() {
-            document.getElementById('completed_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
-            document.getElementById('completed_dcs_').style.background = '#000066';
-            document.getElementById('trash_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
-            document.getElementById('trash_dcs_').style.background = '#000066';
-            document.getElementById('learn_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
-            document.getElementById('learn_dcs_').style.background = '#000066';
+            dcs_com_nor();
+            dcs_del_nor();
+            dcs_lea_nor();
             document.getElementById('none_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None ";
-            document.getElementById('none_dcs_').style.background = '#575757';
+            document.getElementById('none_dcs_').style.backgroundColor = '#575757';
+            dcscom = 'no';
+            dcslea = 'no';
+            dcsdel = 'no';
+            dcsnon = 'yes';
+            dcs_com_style();
+            dcs_del_style();
+            dcs_lea_style();
+            dcs_non_style();
+            }
+            
+            function dcs_com_nor() {
+            document.getElementById('completed_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+            document.getElementById('completed_dcs_').style.backgroundColor = '#000066';
+            }
+            
+            function dcs_lea_nor() {
+            document.getElementById('learn_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+            document.getElementById('learn_dcs_').style.backgroundColor = '#000066';
+            }
+            
+            function dcs_del_nor() {
+            document.getElementById('trash_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+            document.getElementById('trash_dcs_').style.backgroundColor = '#000066';
+            }
+            
+            function dcs_non_nor() {
+            document.getElementById('none_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+            document.getElementById('none_dcs_').style.backgroundColor = '#000066';
+            }
+            
+            // Hover - Action buttons
+            
+            function dcs_com_down() {
+            if (dcscom == 'yes') {
+            document.getElementById('completed_dcs_').style.backgroundColor = '#00B666';
+            document.getElementById('completed_dcs_').style.border = '2px solid';
+            document.getElementById('completed_dcs_').style.borderColor = 'white';
+            document.getElementById('completed_dcs_').style.color = 'white';
+            document.getElementById('completed_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_done.png'> Completed ";
+            dcscom = 'yes';
+            } else if (dcscom == 'no') {
+            document.getElementById('completed_dcs_').style.backgroundColor = '#000066';
+            document.getElementById('completed_dcs_').style.border = '2px solid';
+            document.getElementById('completed_dcs_').style.borderColor = 'white';
+            document.getElementById('completed_dcs_').style.color = 'white';
+            document.getElementById('completed_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+            dcscom = 'no';
+            } else {
+            dcs_com_down()
+            }
+            }
+            
+            function dcs_com_hover() {
+            if (dcscom == 'yes') {
+            document.getElementById('completed_dcs_').style.backgroundColor = '#000066';
+            document.getElementById('completed_dcs_').style.border = '2px solid';
+            document.getElementById('completed_dcs_').style.borderColor = '#FFCC66';
+            document.getElementById('completed_dcs_').style.color = '#FFCC66';
+            document.getElementById('completed_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+            dcscom = 'yes';
+            } else if (dcscom == 'no') {
+            document.getElementById('completed_dcs_').style.backgroundColor = '#000066';
+            document.getElementById('completed_dcs_').style.border = '2px solid';
+            document.getElementById('completed_dcs_').style.borderColor = '#FFCC66';
+            document.getElementById('completed_dcs_').style.color = '#FFCC66';
+            document.getElementById('completed_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+            dcscom = 'no';
+            } else {
+            dcs_com_hover()
+            }
+            }
+            
+            function dcs_del_down() {
+            if (dcsdel == 'yes') {
+            document.getElementById('trash_dcs_').style.backgroundColor = '#FF0000';
+            document.getElementById('trash_dcs_').style.border = '2px solid';
+            document.getElementById('trash_dcs_').style.borderColor = 'white';
+            document.getElementById('trash_dcs_').style.color = 'white';
+            document.getElementById('trash_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_delete.png'> Delete ";
+            dcsdel = 'yes';
+            } else if (dcsdel == 'no') {
+            document.getElementById('trash_dcs_').style.backgroundColor = '#000066';
+            document.getElementById('trash_dcs_').style.border = '2px solid';
+            document.getElementById('trash_dcs_').style.borderColor = 'white';
+            document.getElementById('trash_dcs_').style.color = 'white';
+            document.getElementById('trash_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+            dcsdel = 'no';
+            } else {
+            dcs_del_down()
+            }
+            }
+            
+            function dcs_del_hover() {
+            if (dcsdel == 'yes') {
+            document.getElementById('trash_dcs_').style.backgroundColor = '#000066';
+            document.getElementById('trash_dcs_').style.border = '2px solid';
+            document.getElementById('trash_dcs_').style.borderColor = '#FFCC66';
+            document.getElementById('trash_dcs_').style.color = '#FFCC66';
+            document.getElementById('trash_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete  ";
+            dcsdel = 'yes';
+            } else if (dcsdel == 'no') {
+            document.getElementById('trash_dcs_').style.backgroundColor = '#000066';
+            document.getElementById('trash_dcs_').style.border = '2px solid';
+            document.getElementById('trash_dcs_').style.borderColor = '#FFCC66';
+            document.getElementById('trash_dcs_').style.color = '#FFCC66';
+            document.getElementById('trash_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+            dcsdel = 'no';
+            } else {
+            dcs_del_hover()
+            }
+            }
+            
+            function dcs_lea_down() {
+            if (dcslea == 'yes') {
+            document.getElementById('learn_dcs_').style.backgroundColor = '#FFCC00';
+            document.getElementById('learn_dcs_').style.border = '2px solid';
+            document.getElementById('learn_dcs_').style.borderColor = 'white';
+            document.getElementById('learn_dcs_').style.color = 'white';
+            document.getElementById('learn_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_learning.png'> Learning ";
+            dcslea = 'yes';
+            } else if (dcslea == 'no') {
+            document.getElementById('learn_dcs_').style.backgroundColor = '#000066';
+            document.getElementById('learn_dcs_').style.border = '2px solid';
+            document.getElementById('learn_dcs_').style.borderColor = 'white';
+            document.getElementById('learn_dcs_').style.color = 'white';
+            document.getElementById('learn_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+            dcslea = 'no';
+            } else {
+            dcs_lea_down()
+            }
+            }
+            
+            function dcs_lea_hover() {
+            if (dcslea == 'yes') {
+            document.getElementById('learn_dcs_').style.backgroundColor = '#000066';
+            document.getElementById('learn_dcs_').style.border = '2px solid';
+            document.getElementById('learn_dcs_').style.borderColor = '#FFCC66';
+            document.getElementById('learn_dcs_').style.color = '#FFCC66';
+            document.getElementById('learn_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+            dcslea = 'yes';
+            } else if (dcslea == 'no') {
+            document.getElementById('learn_dcs_').style.backgroundColor = '#000066';
+            document.getElementById('learn_dcs_').style.border = '2px solid';
+            document.getElementById('learn_dcs_').style.borderColor = '#FFCC66';
+            document.getElementById('learn_dcs_').style.color = '#FFCC66';
+            document.getElementById('learn_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+            dcslea = 'no';
+            } else {
+            dcs_lea_hover()
+            }
+            }
+            
+            function dcs_non_down() {
+            if (dcsnon == 'yes') {
+            document.getElementById('none_dcs_').style.backgroundColor = '#575757';
+            document.getElementById('none_dcs_').style.border = '2px solid';
+            document.getElementById('none_dcs_').style.borderColor = 'white';
+            document.getElementById('none_dcs_').style.color = 'white';
+            document.getElementById('none_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None ";
+            dcsnon = 'yes';
+            } else if (dcsnon == 'no') {
+            document.getElementById('none_dcs_').style.backgroundColor = '#000066';
+            document.getElementById('none_dcs_').style.border = '2px solid';
+            document.getElementById('none_dcs_').style.borderColor = 'white';
+            document.getElementById('none_dcs_').style.color = 'white';
+            document.getElementById('none_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+            dcsnon = 'no';
+            } else {
+            dcs_non_down()
+            }
+            }
+            
+            function dcs_non_hover() {
+            if (dcsnon == 'yes') {
+            document.getElementById('none_dcs_').style.backgroundColor = '#000066';
+            document.getElementById('none_dcs_').style.border = '2px solid';
+            document.getElementById('none_dcs_').style.borderColor = '#FFCC66';
+            document.getElementById('none_dcs_').style.color = '#FFCC66';
+            document.getElementById('none_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+            dcsnon = 'yes';
+            } else if (dcsnon == 'no') {
+            document.getElementById('none_dcs_').style.backgroundColor = '#000066';
+            document.getElementById('none_dcs_').style.border = '2px solid';
+            document.getElementById('none_dcs_').style.borderColor = '#FFCC66';
+            document.getElementById('none_dcs_').style.color = '#FFCC66';
+            document.getElementById('none_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+            dcsnon = 'no';
+            } else {
+            dcs_non_hover()
+            }
+            }
+            
+            // Triggers
+            
+            var dcsytr = 'no';
+            var dcsntr = 'yes';
+            
+            function triggeryes_dcs_() {
+            document.getElementById('triggeryes_dcs_').style.backgroundColor = '#FFFF00';
+            document.getElementById('triggeryes_dcs_').style.borderColor = '#33CCCC';
+            document.getElementById('triggeryes_dcs_').style.color = '#33CCCC';
+            document.getElementById('triggerno_dcs_').style.backgroundColor = '#000066';
+            document.getElementById('triggerno_dcs_').style.borderColor = '#FFFFFF';
+            document.getElementById('triggerno_dcs_').style.color = '#FFFFFF';
+            document.getElementById('dcst').innerHTML = "F (R U' R' U') (R U R') F' (R U R' U') (R' F R F')";
+            document.getElementById('triggeryes_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bracket_bracket.png'> Show Triggers For Diagonal Corner Swap Only";
+            document.getElementById('triggerno_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_notrig_normal.png'> Hide Triggers For Diagonal Corner Swap Only";
+            dcsytr = 'yes';
+            dcsntr = 'no';
+            }
+            
+            function triggerno_dcs_() {
+            document.getElementById('triggerno_dcs_').style.backgroundColor = '#FFFF00';
+            document.getElementById('triggerno_dcs_').style.borderColor = '#33CCCC';
+            document.getElementById('triggerno_dcs_').style.color = '#33CCCC';
+            document.getElementById('triggeryes_dcs_').style.backgroundColor = '#000066';
+            document.getElementById('triggeryes_dcs_').style.borderColor = '#FFFFFF';
+            document.getElementById('triggeryes_dcs_').style.color = '#FFFFFF';
+            document.getElementById('dcst').innerHTML = "F R U' R' U' R U R' F' R U R' U' R' F R F'";
+            document.getElementById('triggeryes_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bracket_normal.png'> Show Triggers For Diagonal Corner Swap Only";
+            document.getElementById('triggerno_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_notrig_notrig.png'> Hide Triggers For Diagonal Corner Swap Only";
+            dcsytr = 'no';
+            dcsntr = 'yes';
+            }
+            
+            // Hover - Triggers
+            
+            function dcs_ytr_down() {
+            if (dcsytr == 'yes') {
+            document.getElementById('triggeryes_dcs_').style.backgroundColor = '#FFFF00';
+            document.getElementById('triggeryes_dcs_').style.border = '2px solid';
+            document.getElementById('triggeryes_dcs_').style.borderColor = '#33CCCC';
+            document.getElementById('triggeryes_dcs_').style.color = '#33CCCC';
+            document.getElementById('triggeryes_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bracket_bracket.png'> Show Triggers For Diagonal Corner Swap Only"
+            dcsytr = 'yes';
+            } else if (dcsytr == 'no') {
+            document.getElementById('triggeryes_dcs_').style.backgroundColor = '#000066';
+            document.getElementById('triggeryes_dcs_').style.border = '2px solid';
+            document.getElementById('triggeryes_dcs_').style.borderColor = 'white';
+            document.getElementById('triggeryes_dcs_').style.color = 'white';
+            document.getElementById('triggeryes_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bracket_normal.png'> Show Triggers For Diagonal Corner Swap Only"
+            dcsytr = 'no';
+            } else {
+            dcs_ytr_down()
+            }
+            }
+            
+            function dcs_ytr_hover() {
+            if (dcsytr == 'yes') {
+            document.getElementById('triggeryes_dcs_').style.backgroundColor = '#000066';
+            document.getElementById('triggeryes_dcs_').style.border = '2px solid';
+            document.getElementById('triggeryes_dcs_').style.borderColor = '#FFCC66';
+            document.getElementById('triggeryes_dcs_').style.color = '#FFCC66';
+            document.getElementById('triggeryes_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bracket_normal.png'> Show Triggers For Diagonal Corner Swap Only"
+            dcsytr = 'yes';
+            } else if (dcsytr == 'no') {
+            document.getElementById('triggeryes_dcs_').style.backgroundColor = '#000066';
+            document.getElementById('triggeryes_dcs_').style.border = '2px solid';
+            document.getElementById('triggeryes_dcs_').style.borderColor = '#FFCC66';
+            document.getElementById('triggeryes_dcs_').style.color = '#FFCC66';
+            document.getElementById('triggeryes_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bracket_normal.png'> Show Triggers For Diagonal Corner Swap Only"
+            dcsytr = 'no';
+            } else {
+            dcs_ytr_hover()
+            }
+            }
+            
+            function dcs_ntr_down() {
+            if (dcsntr == 'yes') {
+            document.getElementById('triggerno_dcs_').style.backgroundColor = '#FFFF00';
+            document.getElementById('triggerno_dcs_').style.border = '2px solid';
+            document.getElementById('triggerno_dcs_').style.borderColor = '#33CCCC';
+            document.getElementById('triggerno_dcs_').style.color = '#33CCCC';
+            document.getElementById('triggerno_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_notrig_notrig.png'> Hide Triggers For Diagonal Corner Swap Only";
+            dcsntr = 'yes';
+            } else if (dcsntr == 'no') {
+            document.getElementById('triggerno_dcs_').style.backgroundColor = '#000066';
+            document.getElementById('triggerno_dcs_').style.border = '2px solid';
+            document.getElementById('triggerno_dcs_').style.borderColor = 'white';
+            document.getElementById('triggerno_dcs_').style.color = 'white';
+            document.getElementById('triggerno_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_notrig_normal.png'> Hide Triggers For Diagonal Corner Swap Only";
+            dcsntr = 'no';
+            } else {
+            dcs_ntr_down()
+            }
+            }
+            
+            function dcs_ntr_hover() {
+            if (dcsntr == 'yes') {
+            document.getElementById('triggerno_dcs_').style.backgroundColor = '#000066';
+            document.getElementById('triggerno_dcs_').style.border = '2px solid';
+            document.getElementById('triggerno_dcs_').style.borderColor = '#FFCC66';
+            document.getElementById('triggerno_dcs_').style.color = '#FFCC66';
+            document.getElementById('triggerno_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_notrig_normal.png'> Hide Triggers For Diagonal Corner Swap Only";
+            dcsntr = 'yes';
+            } else if (dcsntr == 'no') {
+            document.getElementById('triggerno_dcs_').style.backgroundColor = '#000066';
+            document.getElementById('triggerno_dcs_').style.border = '2px solid';
+            document.getElementById('triggerno_dcs_').style.borderColor = '#FFCC66';
+            document.getElementById('triggerno_dcs_').style.color = '#FFCC66';
+            document.getElementById('triggerno_dcs_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_notrig_normal.png'> Hide Triggers For Diagonal Corner Swap Only";
+            dcsntr = 'no';
+            } else {
+            dcs_ntr_hover()
+            }
             }
             
             //Triggers
             
-            function showtrigger() {
-            document.getElementById('acst').innerHTML = " (R U R' U') R' F (R2 U' R' U') (R U R') F'";
-            document.getElementById('dcst').innerHTML = " F (R U' R' U') (R U R') F' (R U R' U') (R' F R F')";
+            function showtrigger_22begpll() {
+            triggeryes_acs_();
+            triggeryes_dcs_();
             changecolor_22begpll();
+            paddingalgs_22begpll();
             }
             
-            function hidetrigger() {
-            document.getElementById('acst').innerHTML = " R U R' U' R' F R2 U' R' U' R U R' F'";
-            document.getElementById('dcst').innerHTML = " F R U' R' U' R U R' F' R U R' U' R' F R F'";
+            function hidetrigger_22begpll() {
+            triggerno_acs_();
+            triggerno_dcs_();
             changecolor_22begpll();
+            paddingalgs_22begpll();
             }
             
             function changecolor_22begpll() {
             document.getElementById('acst').style.color = "#000066";
             document.getElementById('dcst').style.color = "#000066";
+            }
+
+            function paddingalgs_22begpll() {
+            document.getElementById('acst').style.paddingLeft = "5px";
+            document.getElementById('dcst').style.paddingLeft = "5px";
             }
             
         </script>
@@ -235,22 +1170,24 @@
 
         <br><br>
         
-        <div> <b>
+        <div id='intro_div'> <b>
         
-        <p class='introp22'>This is the third and final step in beginner solving method. Before this step, do 
-        <a class='introa22' href='22_beg_oll_cor.html' alt='OLL'>Beginner OLL</a>.
+        <p id='introp33_a'>This is the third and final step in beginner solving method. Before this step, do 
+        <a id='introa33_a' href='22_beg_oll_cor.html' alt='OLL' onmouseover='introa33_a_h()' onmouseout='introa33_a_d()'>Beginner OLL</a>.
         </p>
         
-        <p class='introp22'>Advanced Permutation/Full LL: 
-        <a class='introa22' href='22_int_ortpbl_cor.html' alt='Ortega PBL'>Ortega PBL</a>, 
-        <a class='introa22' href='22_adv_cll_cor.html' alt='CLL'>CLL</a>, 
-        <a class='introa22' href='22_mas_eg1_cor.html' alt='EG-1'>EG-1</a>, 
-        <a class='introa22' href='22_mas_eg2_cor.html' alt='EG-2'>EG-2</a>.
+        <p id='introp33_b'>Advanced Permutation/Full LL: 
+        <a id='introa33_b' href='22_int_ortpbl_cor.html' alt='Ortega PBL' onmouseover='introa33_b_h()' onmouseout='introa33_b_d()'>Ortega PBL</a>, 
+        <a id='introa33_c' href='22_adv_cll_cor.html' alt='CLL' onmouseover='introa33_c_h()' onmouseout='introa33_c_d()'>CLL</a>, 
+        <a id='introa33_d' href='22_mas_eg1_cor.html' alt='EG-1' onmouseover='introa33_d_h()' onmouseout='introa33_d_d()'>EG-1</a>, 
+        <a id='introa33_e' href='22_mas_eg2_cor.html' alt='EG-2' onmouseover='introa33_e_h()' onmouseout='introa33_e_d()'>EG-2</a>.
         </p>
         
-        <button type="button" class='triggerornot22' onclick='showtrigger()'> <h4> Show triggers(brackets) </h4> </button>
+        <button type="button" class='triggerornot22' onclick='showtrigger_22begpll()' id='show_hide_ooa'
+        onmouseover='show_hide_ooa_h()' onmouseout='show_hide_ooa_d()'> <h4> Show triggers(brackets) </h4> </button>
         <br><br>
-        <button type="button" class='triggerornot22' onclick='hidetrigger()'> <h4> Hide triggers(no brackets) </h4> </button>
+        <button type="button" class='triggerornot22' onclick='hidetrigger_22begpll()' id='show_hide_oob'
+        onmouseover='show_hide_oob_h()' onmouseout='show_hide_oob_d()'> <h4> Hide triggers(no brackets) </h4> </button>
         <br>
         
         </b> </div>
@@ -265,20 +1202,37 @@
         <br>
         <h3 id='acst'> <b class='two_beginner_pll_algs'> R U R' U' R' F R2 U' R' U' R U R' F' </b> </h3>
         
-        <button type='button' class='cubealgbutton22' id='completed_acs_' onclick='completed_acs_()'>
+        <button type='button' class='cubealgbutton22' id='completed_acs_' onclick='completed_acs_()' 
+        onmouseover='acs_com_hover()' onmouseout='acs_com_down()'>
         <img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed 
         </button>
         
-        <button type='button' class='cubealgbutton22' id='trash_acs_' onclick='trash_acs_()'>
+        <button type='button' class='cubealgbutton22' id='trash_acs_' onclick='trash_acs_()' 
+        onmouseover='acs_del_hover()' onmouseout='acs_del_down()'>
         <img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete 
         </button>
         
-        <button type='button' class='cubealgbutton22' id='learn_acs_' onclick='learn_acs_()'>
+        <button type='button' class='cubealgbutton22' id='learn_acs_' onclick='learn_acs_()' 
+        onmouseover='acs_lea_hover()' onmouseout='acs_lea_down()'>
         <img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning 
         </button>
         
-        <button type='button' class='cubealgbutton22_none' id='none_acs_' onclick='none_acs_()'>
+        <button type='button' class='cubealgbutton22_none' id='none_acs_' onclick='none_acs_()' 
+        onmouseover='acs_non_hover()' onmouseout='acs_non_down()'>
         <img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None 
+        </button>
+        
+        <br>
+        <br>
+        
+        <button type='button' class='cubealgbutton22' style='width:250px;' id='triggeryes_acs_' onclick='triggeryes_acs_()'
+        onmouseover='acs_ytr_hover()' onmouseout='acs_ytr_down()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_bracket_normal.png'> Show Triggers For Adjacent Corner Swap Only
+        </button>
+        
+        <button type='button' class='cubealgbutton22_trigno' style='width:250px;' id='triggerno_acs_' onclick='triggerno_acs_()' 
+        onmouseover='acs_ntr_hover()' onmouseout='acs_ntr_down()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_notrig_notrig.png'> Hide Triggers For Adjacent Corner Swap Only
         </button>
         
         <br>
@@ -296,20 +1250,37 @@
         <br>
         <h3 id='dcst'> <b class='two_beginner_pll_algs'> F R U' R' U' R U R' F' R U R' U' R' F R F' </b> </h3>
         
-        <button type='button' class='cubealgbutton22' id='completed_dcs_' onclick='completed_dcs_()'>
+        <button type='button' class='cubealgbutton22' id='completed_dcs_' onclick='completed_dcs_()' 
+        onmouseover='dcs_com_hover()' onmouseout='dcs_com_down()'>
         <img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed 
         </button>
         
-        <button type='button' class='cubealgbutton22' id='trash_dcs_' onclick='trash_dcs_()'>
+        <button type='button' class='cubealgbutton22' id='trash_dcs_' onclick='trash_dcs_()' 
+        onmouseover='dcs_del_hover()' onmouseout='dcs_del_down()'>
         <img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete 
         </button>
         
-        <button type='button' class='cubealgbutton22' id='learn_dcs_' onclick='learn_dcs_()'>
+        <button type='button' class='cubealgbutton22' id='learn_dcs_' onclick='learn_dcs_()' 
+        onmouseover='dcs_lea_hover()' onmouseout='dcs_lea_down()'>
         <img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning 
         </button>
         
-        <button type='button' class='cubealgbutton22_none' id='none_dcs_' onclick='none_dcs_()'>
+        <button type='button' class='cubealgbutton22_none' id='none_dcs_' onclick='none_dcs_()' 
+        onmouseover='dcs_non_hover()' onmouseout='dcs_non_down()'>
         <img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None 
+        </button>
+        
+        <br>
+        <br>
+        
+        <button type='button' class='cubealgbutton22' style='width:250px;' id='triggeryes_dcs_' onclick='triggeryes_dcs_()' 
+        onmouseover='dcs_ytr_hover()' onmouseout='dcs_ytr_down()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_bracket_normal.png'> Show Triggers For Diagonal Corner Swap Only
+        </button>
+        
+        <button type='button' class='cubealgbutton22_trigno' style='width:250px;' id='triggerno_dcs_' onclick='triggerno_dcs_()' 
+        onmouseover='dcs_ntr_hover()' onmouseout='dcs_ntr_down()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_notrig_notrig.png'> Hide Triggers For Diagonal Corner Swap Only
         </button>
         
         <br>
