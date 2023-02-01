@@ -5,12 +5,12 @@ This project has been done by me for myself. This is related about cubing and I 
 
 This contains 200+ cubing algs and top cubes of the time(will be updated soon).
 
-Following links have been completed
+Following links have been completed and opened for viewing
 
 * 3x3 Advanced OLL 
 * 2x2 Beginner PLL
 
-Following will be completed by February 28
+Following will be completed by March 31
 
 * 2x2 Beginner OLL
 * 4x4 Beginner Parity Algs
