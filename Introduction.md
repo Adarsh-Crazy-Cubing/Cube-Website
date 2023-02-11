@@ -9,8 +9,8 @@ Following links have been completed and opened for viewing
 
 * 3x3 Advanced OLL 
 * 2x2 Beginner PLL
+* 4x4 Beginner Parity Algs
 
 Following will be completed by March 31
 
 * 2x2 Beginner OLL
-* 4x4 Beginner Parity Algs
