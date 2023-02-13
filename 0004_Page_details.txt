@@ -1,9 +1,9 @@
 No. Of Lines
 
 030941 - 3x3 Adv OLL
-006287 - 3X3 Adv PLL
+010926 - 3X3 Adv PLL
 ______
-037228 - 3x3 Total
+041867 - 3x3 Total
 ______
 
 ----------
@@ -22,16 +22,17 @@ ______
 
 ----------
 
-039869 - Grand Total
+044508 - Grand Total
 
 -----------------------
 
 No. Of Algorithms
 
 057 - 3x3 Adv OLL
-021 - 3X3 Adv PLL
+021 - 3x3 Adv PLL
+021 - 3x3 Adv PLL Alpha
 ___
-078 - 3x3 Total
+099 - 3x3 Total
 ___
 
 ----------
@@ -50,6 +51,6 @@ ___
 
 ----------
 
-082 - Grand Total
+103 - Grand Total
 
 -----------------------
