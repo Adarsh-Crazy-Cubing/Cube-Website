@@ -13,4 +13,4 @@ Following links have been completed and opened for viewing
 
 Following will be completed by March 31
 
-* 2x2 Beginner OLL
+* 3x3 Advanced PLL
