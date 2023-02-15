@@ -1,9 +1,10 @@
 No. Of Lines
 
 030941 - 3x3 Adv OLL
-010926 - 3X3 Adv PLL
+011470 - 3X3 Adv PLL
+000000 - 3x3 Adv PLL Alpha
 ______
-041867 - 3x3 Total
+042411 - 3x3 Total
 ______
 
 ----------
@@ -15,14 +16,14 @@ ______
 
 ----------
 
-001332 - 4x4 Adv OLL
+001332 - 4-7 Beg Parity
 ______
-001332 - 4x4 Total
+001332 - 4-7 Total
 ______
 
 ----------
 
-044508 - Grand Total
+045052 - Grand Total
 
 -----------------------
 
@@ -37,16 +38,23 @@ ___
 
 ----------
 
-002 - 2x2 Beg OLL
+002 - 2x2 Beg PLL
 ___
 002 - 2x2 Total
 ___
 
 ----------
 
-002 - 4x4 Adv OLL
+000 - 4-6 Beg Parity
 ___
-002 - 4x4 Total
+000 - 4-6 Total
+___
+
+----------
+
+002 - 4-7 Beg Parity
+___
+002 - 4-7 Total
 ___
 
 ----------
@@ -54,3 +62,5 @@ ___
 103 - Grand Total
 
 -----------------------
+
+Avg line for each alg = 437.4
