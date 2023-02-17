@@ -1,10 +1,10 @@
 No. Of Lines
 
 030941 - 3x3 Adv OLL
-011470 - 3X3 Adv PLL
+011594 - 3X3 Adv PLL
 000000 - 3x3 Adv PLL Alpha
 ______
-042411 - 3x3 Total
+042535 - 3x3 Total
 ______
 
 ----------
@@ -23,7 +23,7 @@ ______
 
 ----------
 
-045052 - Grand Total
+045176 - Grand Total
 
 -----------------------
 
@@ -63,4 +63,4 @@ ___
 
 -----------------------
 
-Avg line for each alg = 437.4
+Avg line for each alg = 438.6
