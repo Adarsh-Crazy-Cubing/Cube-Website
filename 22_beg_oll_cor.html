@@ -2,637 +2,654 @@
 
 <html lang="en" >
 
-<head>
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cube Algorithms</title>
-<link rel="stylesheet" href="algpage.css">
-
-</head>
-
-<body>
-
-<script>
-
-// Sune
-
-function completed_sun_() {
-document.getElementById('completed_sun_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_done.png'> Completed ";
-document.getElementById('completed_sun_').style.background = '#00B666';
-document.getElementById('trash_sun_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
-document.getElementById('trash_sun_').style.background = '#000066';
-document.getElementById('learn_sun_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
-document.getElementById('learn_sun_').style.background = '#000066';
-document.getElementById('none_sun_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
-document.getElementById('none_sun_').style.background = '#000066';
-}
-
-function trash_sun_() {
-document.getElementById('completed_sun_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
-document.getElementById('completed_sun_').style.background = '#000066';
-document.getElementById('trash_sun_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_delete.png'> Delete ";
-document.getElementById('trash_sun_').style.background = '#FF0000';
-document.getElementById('learn_sun_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
-document.getElementById('learn_sun_').style.background = '#000066';
-document.getElementById('none_sun_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
-document.getElementById('none_sun_').style.background = '#000066';
-}
-
-function learn_sun_() {
-document.getElementById('completed_sun_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
-document.getElementById('completed_sun_').style.background = '#000066';
-document.getElementById('trash_sun_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
-document.getElementById('trash_sun_').style.background = '#000066';
-document.getElementById('learn_sun_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_learning.png'> Learning ";
-document.getElementById('learn_sun_').style.background = '#FFCC00';
-document.getElementById('none_sun_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
-document.getElementById('none_sun_').style.background = '#000066';
-}
-
-function none_sun_() {
-document.getElementById('completed_sun_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
-document.getElementById('completed_sun_').style.background = '#000066';
-document.getElementById('trash_sun_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
-document.getElementById('trash_sun_').style.background = '#000066';
-document.getElementById('learn_sun_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
-document.getElementById('learn_sun_').style.background = '#000066';
-document.getElementById('none_sun_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None ";
-document.getElementById('none_sun_').style.background = '#575757';
-}
-
-// Antisune
-
-function completed_asu_() {
-document.getElementById('completed_asu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_done.png'> Completed ";
-document.getElementById('completed_asu_').style.background = '#00B666';
-document.getElementById('trash_asu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
-document.getElementById('trash_asu_').style.background = '#000066';
-document.getElementById('learn_asu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
-document.getElementById('learn_asu_').style.background = '#000066';
-document.getElementById('none_asu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
-document.getElementById('none_asu_').style.background = '#000066';
-}
-
-function trash_asu_() {
-document.getElementById('completed_asu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
-document.getElementById('completed_asu_').style.background = '#000066';
-document.getElementById('trash_asu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_delete.png'> Delete ";
-document.getElementById('trash_asu_').style.background = '#FF0000';
-document.getElementById('learn_asu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
-document.getElementById('learn_asu_').style.background = '#000066';
-document.getElementById('none_asu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
-document.getElementById('none_asu_').style.background = '#000066';
-}
-
-function learn_asu_() {
-document.getElementById('completed_asu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
-document.getElementById('completed_asu_').style.background = '#000066';
-document.getElementById('trash_asu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
-document.getElementById('trash_asu_').style.background = '#000066';
-document.getElementById('learn_asu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_learning.png'> Learning ";
-document.getElementById('learn_asu_').style.background = '#FFCC00';
-document.getElementById('none_asu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
-document.getElementById('none_asu_').style.background = '#000066';
-}
-
-function none_asu_() {
-document.getElementById('completed_asu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
-document.getElementById('completed_asu_').style.background = '#000066';
-document.getElementById('trash_asu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
-document.getElementById('trash_asu_').style.background = '#000066';
-document.getElementById('learn_asu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
-document.getElementById('learn_asu_').style.background = '#000066';
-document.getElementById('none_asu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None ";
-document.getElementById('none_asu_').style.background = '#575757';
-}
-
-// H-shaped
-
-function completed_hhh_() {
-document.getElementById('completed_hhh_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_done.png'> Completed ";
-document.getElementById('completed_hhh_').style.background = '#00B666';
-document.getElementById('trash_hhh_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
-document.getElementById('trash_hhh_').style.background = '#000066';
-document.getElementById('learn_hhh_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
-document.getElementById('learn_hhh_').style.background = '#000066';
-document.getElementById('none_hhh_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
-document.getElementById('none_hhh_').style.background = '#000066';
-}
-
-function trash_hhh_() {
-document.getElementById('completed_hhh_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
-document.getElementById('completed_hhh_').style.background = '#000066';
-document.getElementById('trash_hhh_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_delete.png'> Delete ";
-document.getElementById('trash_hhh_').style.background = '#FF0000';
-document.getElementById('learn_hhh_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
-document.getElementById('learn_hhh_').style.background = '#000066';
-document.getElementById('none_hhh_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
-document.getElementById('none_hhh_').style.background = '#000066';
-}
-
-function learn_hhh_() {
-document.getElementById('completed_hhh_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
-document.getElementById('completed_hhh_').style.background = '#000066';
-document.getElementById('trash_hhh_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
-document.getElementById('trash_hhh_').style.background = '#000066';
-document.getElementById('learn_hhh_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_learning.png'> Learning ";
-document.getElementById('learn_hhh_').style.background = '#FFCC00';
-document.getElementById('none_hhh_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
-document.getElementById('none_hhh_').style.background = '#000066';
-}
-
-function none_hhh_() {
-document.getElementById('completed_hhh_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
-document.getElementById('completed_hhh_').style.background = '#000066';
-document.getElementById('trash_hhh_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
-document.getElementById('trash_hhh_').style.background = '#000066';
-document.getElementById('learn_hhh_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
-document.getElementById('learn_hhh_').style.background = '#000066';
-document.getElementById('none_hhh_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None ";
-document.getElementById('none_hhh_').style.background = '#575757';
-}
-
-// Pi
-
-function completed_ppi_() {
-document.getElementById('completed_ppi_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_done.png'> Completed ";
-document.getElementById('completed_ppi_').style.background = '#00B666';
-document.getElementById('trash_ppi_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
-document.getElementById('trash_ppi_').style.background = '#000066';
-document.getElementById('learn_ppi_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
-document.getElementById('learn_ppi_').style.background = '#000066';
-document.getElementById('none_ppi_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
-document.getElementById('none_ppi_').style.background = '#000066';
-}
-
-function trash_ppi_() {
-document.getElementById('completed_ppi_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
-document.getElementById('completed_ppi_').style.background = '#000066';
-document.getElementById('trash_ppi_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_delete.png'> Delete ";
-document.getElementById('trash_ppi_').style.background = '#FF0000';
-document.getElementById('learn_ppi_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
-document.getElementById('learn_ppi_').style.background = '#000066';
-document.getElementById('none_ppi_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
-document.getElementById('none_ppi_').style.background = '#000066';
-}
-
-function learn_ppi_() {
-document.getElementById('completed_ppi_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
-document.getElementById('completed_ppi_').style.background = '#000066';
-document.getElementById('trash_ppi_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
-document.getElementById('trash_ppi_').style.background = '#000066';
-document.getElementById('learn_ppi_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_learning.png'> Learning ";
-document.getElementById('learn_ppi_').style.background = '#FFCC00';
-document.getElementById('none_ppi_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
-document.getElementById('none_ppi_').style.background = '#000066';
-}
-
-function none_ppi_() {
-document.getElementById('completed_ppi_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
-document.getElementById('completed_ppi_').style.background = '#000066';
-document.getElementById('trash_ppi_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
-document.getElementById('trash_ppi_').style.background = '#000066';
-document.getElementById('learn_ppi_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
-document.getElementById('learn_ppi_').style.background = '#000066';
-document.getElementById('none_ppi_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None ";
-document.getElementById('none_ppi_').style.background = '#575757';
-}
-
-// 8-shaped
-
-function completed_lll_() {
-document.getElementById('completed_lll_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_done.png'> Completed ";
-document.getElementById('completed_lll_').style.background = '#00B666';
-document.getElementById('trash_lll_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
-document.getElementById('trash_lll_').style.background = '#000066';
-document.getElementById('learn_lll_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
-document.getElementById('learn_lll_').style.background = '#000066';
-document.getElementById('none_lll_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
-document.getElementById('none_lll_').style.background = '#000066';
-}
-
-function trash_lll_() {
-document.getElementById('completed_lll_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
-document.getElementById('completed_lll_').style.background = '#000066';
-document.getElementById('trash_lll_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_delete.png'> Delete ";
-document.getElementById('trash_lll_').style.background = '#FF0000';
-document.getElementById('learn_lll_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
-document.getElementById('learn_lll_').style.background = '#000066';
-document.getElementById('none_lll_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
-document.getElementById('none_lll_').style.background = '#000066';
-}
-
-function learn_lll_() {
-document.getElementById('completed_lll_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
-document.getElementById('completed_lll_').style.background = '#000066';
-document.getElementById('trash_lll_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
-document.getElementById('trash_lll_').style.background = '#000066';
-document.getElementById('learn_lll_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_learning.png'> Learning ";
-document.getElementById('learn_lll_').style.background = '#FFCC00';
-document.getElementById('none_lll_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
-document.getElementById('none_lll_').style.background = '#000066';
-}
-
-function none_lll_() {
-document.getElementById('completed_lll_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
-document.getElementById('completed_lll_').style.background = '#000066';
-document.getElementById('trash_lll_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
-document.getElementById('trash_lll_').style.background = '#000066';
-document.getElementById('learn_lll_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
-document.getElementById('learn_lll_').style.background = '#000066';
-document.getElementById('none_lll_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None ";
-document.getElementById('none_lll_').style.background = '#575757';
-}
-
-// Adjacent Corner Swap
-
-function completed_ttt_() {
-document.getElementById('completed_ttt_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_done.png'> Completed ";
-document.getElementById('completed_ttt_').style.background = '#00B666';
-document.getElementById('trash_ttt_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
-document.getElementById('trash_ttt_').style.background = '#000066';
-document.getElementById('learn_ttt_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
-document.getElementById('learn_ttt_').style.background = '#000066';
-document.getElementById('none_ttt_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
-document.getElementById('none_ttt_').style.background = '#000066';
-}
-
-function trash_ttt_() {
-document.getElementById('completed_ttt_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
-document.getElementById('completed_ttt_').style.background = '#000066';
-document.getElementById('trash_ttt_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_delete.png'> Delete ";
-document.getElementById('trash_ttt_').style.background = '#FF0000';
-document.getElementById('learn_ttt_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
-document.getElementById('learn_ttt_').style.background = '#000066';
-document.getElementById('none_ttt_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
-document.getElementById('none_ttt_').style.background = '#000066';
-}
-
-function learn_ttt_() {
-document.getElementById('completed_ttt_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
-document.getElementById('completed_ttt_').style.background = '#000066';
-document.getElementById('trash_ttt_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
-document.getElementById('trash_ttt_').style.background = '#000066';
-document.getElementById('learn_ttt_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_learning.png'> Learning ";
-document.getElementById('learn_ttt_').style.background = '#FFCC00';
-document.getElementById('none_ttt_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
-document.getElementById('none_ttt_').style.background = '#000066';
-}
-
-function none_ttt_() {
-document.getElementById('completed_ttt_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
-document.getElementById('completed_ttt_').style.background = '#000066';
-document.getElementById('trash_ttt_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
-document.getElementById('trash_ttt_').style.background = '#000066';
-document.getElementById('learn_ttt_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
-document.getElementById('learn_ttt_').style.background = '#000066';
-document.getElementById('none_ttt_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None ";
-document.getElementById('none_ttt_').style.background = '#575757';
-}
-
-// Diagonal Corner Swap
-
-function completed_uuu_() {
-document.getElementById('completed_uuu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_done.png'> Completed ";
-document.getElementById('completed_uuu_').style.background = '#00B666';
-document.getElementById('trash_uuu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
-document.getElementById('trash_uuu_').style.background = '#000066';
-document.getElementById('learn_uuu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
-document.getElementById('learn_uuu_').style.background = '#000066';
-document.getElementById('none_uuu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
-document.getElementById('none_uuu_').style.background = '#000066';
-}
-
-function trash_uuu_() {
-document.getElementById('completed_uuu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
-document.getElementById('completed_uuu_').style.background = '#000066';
-document.getElementById('trash_uuu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_delete.png'> Delete ";
-document.getElementById('trash_uuu_').style.background = '#FF0000';
-document.getElementById('learn_uuu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
-document.getElementById('learn_uuu_').style.background = '#000066';
-document.getElementById('none_uuu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
-document.getElementById('none_uuu_').style.background = '#000066';
-}
-
-function learn_uuu_() {
-document.getElementById('completed_uuu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
-document.getElementById('completed_uuu_').style.background = '#000066';
-document.getElementById('trash_uuu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
-document.getElementById('trash_uuu_').style.background = '#000066';
-document.getElementById('learn_uuu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_learning.png'> Learning ";
-document.getElementById('learn_uuu_').style.background = '#FFCC00';
-document.getElementById('none_uuu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
-document.getElementById('none_uuu_').style.background = '#000066';
-}
-
-function none_uuu_() {
-document.getElementById('completed_uuu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
-document.getElementById('completed_uuu_').style.background = '#000066';
-document.getElementById('trash_uuu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
-document.getElementById('trash_uuu_').style.background = '#000066';
-document.getElementById('learn_uuu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
-document.getElementById('learn_uuu_').style.background = '#000066';
-document.getElementById('none_uuu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None ";
-document.getElementById('none_uuu_').style.background = '#575757';
-}
-
-//Triggers
-
-function showtrigger() {
-document.getElementById('sunt').innerHTML = " (R U R' U) (R U2 R')";
-document.getElementById('asut').innerHTML = " (L' U' L U') (L' U2 L)";
-document.getElementById('hhht').innerHTML = " F (R U R' U') (R U R' U') (R U R' U') F'";
-document.getElementById('ppit').innerHTML = " F (R U R' U') (R U R' U') F'";
-document.getElementById('lllt').innerHTML = " (F R' F' R) (U R U' R')";
-document.getElementById('tttt').innerHTML = " (R U R' U') (R' F R F')";
-document.getElementById('uuut').innerHTML = " F (R U R' U') F'";
-changecolor_22begoll();
-}
-
-function hidetrigger() {
-document.getElementById('sunt').innerHTML = " R U R' U R U2 R'";
-document.getElementById('asut').innerHTML = " L' U' L U' L' U2 L";
-document.getElementById('hhht').innerHTML = " F (R U R' U')3 F'";
-document.getElementById('ppit').innerHTML = " F (R U R' U')2 F'";
-document.getElementById('lllt').innerHTML = " F R' F' R U R U' R'";
-document.getElementById('tttt').innerHTML = " R U R' U' R' F R F'";
-document.getElementById('uuut').innerHTML = " F R U R' U' F'";
-changecolor_22begoll();
-}
-
-function changecolor_22begoll() {
-document.getElementById('sunt').style.color = "#000066";
-document.getElementById('asut').style.color = "#000066";
-document.getElementById('hhht').style.color = "#000066";
-document.getElementById('ppit').style.color = "#000066";
-document.getElementById('lllt').style.color = "#000066";
-document.getElementById('tttt').style.color = "#000066";
-document.getElementById('uuut').style.color = "#000066";
-}
-
-</script>
-
-<header id='heading'>
-
-<h1 style='text-align:center; background-color: yellow; color: #000066; width: 100%; height: 125px;' id='top'> <br> Adarsh Crazy Cubing </h1>
-
-</header>
-
-<button class="buttonap" onclick="document.location='algpage.html'"> <h2> Algorithm Page </h2> </button>
-
-<br><br>
-
-<h1 style='text-align:center;'>2x2</h1>
-
-<h2 style='text-align:center;'>Beginner OLL Algorithms </h2>
-
-<div> <b>
-
-<p class='introp22'>This is the second step in beginner solving method. After this step, do 
-<a class='introa22' href='22_beg_pll_cor.html' alt='PLL'>Beginner PLL</a>.
-</p>
-
-<p class='introp22'>Advanced Orientation/Full LL: 
-<a class='introa22' href='22_int_ortoll_cor.html' alt='Ortega OLL'>Ortega OLL</a>, 
-<a class='introa22' href='22_adv_cll_cor.html' alt='CLL'>CLL</a>, 
-<a class='introa22' href='22_mas_eg1_cor.html' alt='EG-1'>EG-1</a>, 
-<a class='introa22' href='22_mas_eg2_cor.html' alt='EG-2'>EG-2</a>.
-</p>
-
-<button class='triggerornot22' onclick='showtrigger()'> <h4> Show triggers(brackets) </h4> </button>
-<br><br>
-<button class='triggerornot22' onclick='hidetrigger()'> <h4> Hide triggers(no brackets) </h4> </button>
-<br>
-
-</b> </div>
-
-<br><br>
-
-<div id='sun' class='two_beginner_oll_algs'>
-
-<h3 class='algname22'>Sune</h3>
-
-<img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/22BEGOLL/beg_oll_sune.png' class='221limgs' alt='Sune' style='height: 125px; width: 125px;'> </img>
-<br><br>
-<h3 id='sunt'> <b class='two_beginner_oll_algs'> R U R' U R U2 R' </b> </h3>
-
-<button type='button' class='cubealgbutton22' id='completed_sun_' onclick='completed_sun_()'>
-<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed 
-</button>
-
-<button type='button' class='cubealgbutton22' id='trash_sun_' onclick='trash_sun_()'>
-<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete 
-</button>
-
-<button type='button' class='cubealgbutton22' id='learn_sun_' onclick='learn_sun_()'>
-<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning 
-</button>
-
-<button type='button' class='cubealgbutton22_none' id='none_sun_' onclick='none_sun_()'>
-<img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None 
-</button>
-
-<br>
-<br>
-
-</div>
-
-<br><br><br>
-
-<div id='asu' class='two_beginner_oll_algs'>
-
-<h3 class='algname22'>Antisune</h3>
-
-<img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/22BEGOLL/beg_oll_antisune.png' class='221limgs' alt='Antisune' style='height: 125px; width: 125px;'> </img>
-<br><br>
-<h3 id='asut'> <b class='two_beginner_oll_algs'> L' U' L U' L' U2 L </b> </h3>
-
-<button type='button' class='cubealgbutton22' id='completed_asu_' onclick='completed_asu_()'>
-<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed 
-</button>
-
-<button type='button' class='cubealgbutton22' id='trash_asu_' onclick='trash_asu_()'>
-<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete 
-</button>
-
-<button type='button' class='cubealgbutton22' id='learn_asu_' onclick='learn_asu_()'>
-<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning 
-</button>
-
-<button type='button' class='cubealgbutton22_none' id='none_asu_' onclick='none_asu_()'>
-<img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None 
-</button>
-
-<br>
-<br>
-
-</div>
-
-<br><br><br>
-
-<div id='hhh' class='two_beginner_oll_algs'>
-
-<h3 class='algname22'>H-shaped</h3>
-
-<img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/22BEGOLL/beg_oll_h-shaped.png' class='221limgs' alt='H-shaped' style='height: 125px; width: 125px;'> </img>
-<br><br>
-<h3 id='hhht'> <b class='two_beginner_oll_algs'> F (R U R' U')3 F' </b> </h3>
-
-<button type='button' class='cubealgbutton22' id='completed_hhh_' onclick='completed_hhh_()'>
-<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed 
-</button>
-
-<button type='button' class='cubealgbutton22' id='trash_hhh_' onclick='trash_hhh_()'>
-<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete 
-</button>
-
-<button type='button' class='cubealgbutton22' id='learn_hhh_' onclick='learn_hhh_()'>
-<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning 
-</button>
-
-<button type='button' class='cubealgbutton22_none' id='none_hhh_' onclick='none_hhh_()'>
-<img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None 
-</button>
-
-<br>
-<br>
-
-</div>
-
-<br><br><br>
-
-<div id='ppi' class='two_beginner_oll_algs'>
-
-<h3 class='algname22'>Pi</h3>
-
-<img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/22BEGOLL/beg_oll_pi.png' class='221limgs' alt='Pi' style='height: 125px; width: 125px;'> </img>
-<br><br>
-<h3 id='ppit'> <b class='two_beginner_oll_algs'> F (R U R' U')2 F' </b> </h3>
-
-<button type='button' class='cubealgbutton22' id='completed_ppi_' onclick='completed_ppi_()'>
-<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed 
-</button>
-
-<button type='button' class='cubealgbutton22' id='trash_ppi_' onclick='trash_ppi_()'>
-<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete 
-</button>
-
-<button type='button' class='cubealgbutton22' id='learn_ppi_' onclick='learn_ppi_()'>
-<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning 
-</button>
-
-<button type='button' class='cubealgbutton22_none' id='none_ppi_' onclick='none_ppi_()'>
-<img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None 
-</button>
-
-<br>
-<br>
-
-</div>
-
-<br><br><br>
-
-<div id='lll' class='two_beginner_oll_algs'>
-
-<h3 class='algname22'>8-shaped</h3>
-
-<img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/22BEGOLL/beg_oll_8-shaped.png' class='221limgs' alt='8-shaped' style='height: 125px; width: 125px;'> </img>
-<br><br>
-<h3 id='lllt'> <b class='two_beginner_oll_algs'> F R' F' R U R U' R' </b> </h3>
-
-<button type='button' class='cubealgbutton22' id='completed_lll_' onclick='completed_lll_()'>
-<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed 
-</button>
-
-<button type='button' class='cubealgbutton22' id='trash_lll_' onclick='trash_lll_()'>
-<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete 
-</button>
-
-<button type='button' class='cubealgbutton22' id='learn_lll_' onclick='learn_lll_()'>
-<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning 
-</button>
-
-<button type='button' class='cubealgbutton22_none' id='none_lll_' onclick='none_lll_()'>
-<img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None 
-</button>
-
-<br>
-<br>
-
-</div>
-
-<br><br><br>
-
-<div id='ttt' class='two_beginner_oll_algs'>
-
-<h3 class='algname22'>T-shaped</h3>
-
-<img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/22BEGOLL/beg_oll_t-shaped.png' class='221limgs' alt='T-shaped' style='height: 125px; width: 125px;'> </img>
-<br><br>
-<h3 id='tttt'> <b class='two_beginner_oll_algs'> R U R' U' R' F R F' </b> </h3>
-
-<button type='button' class='cubealgbutton22' id='completed_ttt_' onclick='completed_ttt_()'>
-<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed 
-</button>
-
-<button type='button' class='cubealgbutton22' id='trash_ttt_' onclick='trash_ttt_()'>
-<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete 
-</button>
-
-<button type='button' class='cubealgbutton22' id='learn_ttt_' onclick='learn_ttt_()'>
-<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning 
-</button>
-
-<button type='button' class='cubealgbutton22_none' id='none_ttt_' onclick='none_ttt_()'>
-<img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None 
-</button>
-
-<br>
-<br>
-
-</div>
-
-<br><br><br>
-
-<div id='uuu' class='two_beginner_oll_algs'>
-
-<h3 class='algname22'>U-shaped</h3>
-
-<img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/22BEGOLL/beg_oll_u-shaped.png' class='221limgs' alt='U-shaped' style='height: 125px; width: 125px;'> </img>
-<br><br>
-<h3 id='uuut'> <b class='two_beginner_oll_algs'> F R U R' U' F' </b> </h3>
-
-<button type='button' class='cubealgbutton22' id='completed_uuu_' onclick='completed_uuu_()'>
-<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed 
-</button>
-
-<button type='button' class='cubealgbutton22' id='trash_uuu_' onclick='trash_uuu_()'>
-<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete 
-</button>
-
-<button type='button' class='cubealgbutton22' id='learn_uuu_' onclick='learn_uuu_()'>
-<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning 
-</button>
-
-<button type='button' class='cubealgbutton22_none' id='none_uuu_' onclick='none_uuu_()'>
-<img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None 
-</button>
-
-<br>
-<br>
-
-</div>
-
-<br><br><br>
-
-<b><a class='atop' href="#top">Back To Top</a></b>
-
-<footer id='footer'>
-
-<p style='text-align:center;'>Thank you for viewing our page<br>Requesting you to visit our page again</p>
-
-</footer>
-
-</body>
-
+    <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cube Algorithms</title>
+        <link rel="stylesheet" href="algpage.css">
+        
+    </head>
+    
+    <body>
+    
+        <script>
+    
+            // Sune
+            
+            function completed_sun_() {
+            document.getElementById('completed_sun_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_done.png'> Completed ";
+            document.getElementById('completed_sun_').style.background = '#00B666';
+            document.getElementById('trash_sun_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+            document.getElementById('trash_sun_').style.background = '#000066';
+            document.getElementById('learn_sun_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+            document.getElementById('learn_sun_').style.background = '#000066';
+            document.getElementById('none_sun_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+            document.getElementById('none_sun_').style.background = '#000066';
+            }
+            
+            function trash_sun_() {
+            document.getElementById('completed_sun_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+            document.getElementById('completed_sun_').style.background = '#000066';
+            document.getElementById('trash_sun_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_delete.png'> Delete ";
+            document.getElementById('trash_sun_').style.background = '#FF0000';
+            document.getElementById('learn_sun_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+            document.getElementById('learn_sun_').style.background = '#000066';
+            document.getElementById('none_sun_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+            document.getElementById('none_sun_').style.background = '#000066';
+            }
+            
+            function learn_sun_() {
+            document.getElementById('completed_sun_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+            document.getElementById('completed_sun_').style.background = '#000066';
+            document.getElementById('trash_sun_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+            document.getElementById('trash_sun_').style.background = '#000066';
+            document.getElementById('learn_sun_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_learning.png'> Learning ";
+            document.getElementById('learn_sun_').style.background = '#FFCC00';
+            document.getElementById('none_sun_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+            document.getElementById('none_sun_').style.background = '#000066';
+            }
+            
+            function none_sun_() {
+            document.getElementById('completed_sun_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+            document.getElementById('completed_sun_').style.background = '#000066';
+            document.getElementById('trash_sun_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+            document.getElementById('trash_sun_').style.background = '#000066';
+            document.getElementById('learn_sun_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+            document.getElementById('learn_sun_').style.background = '#000066';
+            document.getElementById('none_sun_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None ";
+            document.getElementById('none_sun_').style.background = '#575757';
+            }
+            
+            // Antisune
+            
+            function completed_asu_() {
+            document.getElementById('completed_asu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_done.png'> Completed ";
+            document.getElementById('completed_asu_').style.background = '#00B666';
+            document.getElementById('trash_asu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+            document.getElementById('trash_asu_').style.background = '#000066';
+            document.getElementById('learn_asu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+            document.getElementById('learn_asu_').style.background = '#000066';
+            document.getElementById('none_asu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+            document.getElementById('none_asu_').style.background = '#000066';
+            }
+            
+            function trash_asu_() {
+            document.getElementById('completed_asu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+            document.getElementById('completed_asu_').style.background = '#000066';
+            document.getElementById('trash_asu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_delete.png'> Delete ";
+            document.getElementById('trash_asu_').style.background = '#FF0000';
+            document.getElementById('learn_asu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+            document.getElementById('learn_asu_').style.background = '#000066';
+            document.getElementById('none_asu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+            document.getElementById('none_asu_').style.background = '#000066';
+            }
+            
+            function learn_asu_() {
+            document.getElementById('completed_asu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+            document.getElementById('completed_asu_').style.background = '#000066';
+            document.getElementById('trash_asu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+            document.getElementById('trash_asu_').style.background = '#000066';
+            document.getElementById('learn_asu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_learning.png'> Learning ";
+            document.getElementById('learn_asu_').style.background = '#FFCC00';
+            document.getElementById('none_asu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+            document.getElementById('none_asu_').style.background = '#000066';
+            }
+            
+            function none_asu_() {
+            document.getElementById('completed_asu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+            document.getElementById('completed_asu_').style.background = '#000066';
+            document.getElementById('trash_asu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+            document.getElementById('trash_asu_').style.background = '#000066';
+            document.getElementById('learn_asu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+            document.getElementById('learn_asu_').style.background = '#000066';
+            document.getElementById('none_asu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None ";
+            document.getElementById('none_asu_').style.background = '#575757';
+            }
+            
+            // H-shaped
+            
+            function completed_hhh_() {
+            document.getElementById('completed_hhh_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_done.png'> Completed ";
+            document.getElementById('completed_hhh_').style.background = '#00B666';
+            document.getElementById('trash_hhh_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+            document.getElementById('trash_hhh_').style.background = '#000066';
+            document.getElementById('learn_hhh_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+            document.getElementById('learn_hhh_').style.background = '#000066';
+            document.getElementById('none_hhh_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+            document.getElementById('none_hhh_').style.background = '#000066';
+            }
+            
+            function trash_hhh_() {
+            document.getElementById('completed_hhh_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+            document.getElementById('completed_hhh_').style.background = '#000066';
+            document.getElementById('trash_hhh_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_delete.png'> Delete ";
+            document.getElementById('trash_hhh_').style.background = '#FF0000';
+            document.getElementById('learn_hhh_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+            document.getElementById('learn_hhh_').style.background = '#000066';
+            document.getElementById('none_hhh_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+            document.getElementById('none_hhh_').style.background = '#000066';
+            }
+            
+            function learn_hhh_() {
+            document.getElementById('completed_hhh_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+            document.getElementById('completed_hhh_').style.background = '#000066';
+            document.getElementById('trash_hhh_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+            document.getElementById('trash_hhh_').style.background = '#000066';
+            document.getElementById('learn_hhh_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_learning.png'> Learning ";
+            document.getElementById('learn_hhh_').style.background = '#FFCC00';
+            document.getElementById('none_hhh_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+            document.getElementById('none_hhh_').style.background = '#000066';
+            }
+            
+            function none_hhh_() {
+            document.getElementById('completed_hhh_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+            document.getElementById('completed_hhh_').style.background = '#000066';
+            document.getElementById('trash_hhh_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+            document.getElementById('trash_hhh_').style.background = '#000066';
+            document.getElementById('learn_hhh_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+            document.getElementById('learn_hhh_').style.background = '#000066';
+            document.getElementById('none_hhh_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None ";
+            document.getElementById('none_hhh_').style.background = '#575757';
+            }
+            
+            // Pi
+            
+            function completed_ppi_() {
+            document.getElementById('completed_ppi_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_done.png'> Completed ";
+            document.getElementById('completed_ppi_').style.background = '#00B666';
+            document.getElementById('trash_ppi_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+            document.getElementById('trash_ppi_').style.background = '#000066';
+            document.getElementById('learn_ppi_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+            document.getElementById('learn_ppi_').style.background = '#000066';
+            document.getElementById('none_ppi_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+            document.getElementById('none_ppi_').style.background = '#000066';
+            }
+            
+            function trash_ppi_() {
+            document.getElementById('completed_ppi_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+            document.getElementById('completed_ppi_').style.background = '#000066';
+            document.getElementById('trash_ppi_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_delete.png'> Delete ";
+            document.getElementById('trash_ppi_').style.background = '#FF0000';
+            document.getElementById('learn_ppi_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+            document.getElementById('learn_ppi_').style.background = '#000066';
+            document.getElementById('none_ppi_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+            document.getElementById('none_ppi_').style.background = '#000066';
+            }
+            
+            function learn_ppi_() {
+            document.getElementById('completed_ppi_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+            document.getElementById('completed_ppi_').style.background = '#000066';
+            document.getElementById('trash_ppi_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+            document.getElementById('trash_ppi_').style.background = '#000066';
+            document.getElementById('learn_ppi_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_learning.png'> Learning ";
+            document.getElementById('learn_ppi_').style.background = '#FFCC00';
+            document.getElementById('none_ppi_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+            document.getElementById('none_ppi_').style.background = '#000066';
+            }
+            
+            function none_ppi_() {
+            document.getElementById('completed_ppi_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+            document.getElementById('completed_ppi_').style.background = '#000066';
+            document.getElementById('trash_ppi_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+            document.getElementById('trash_ppi_').style.background = '#000066';
+            document.getElementById('learn_ppi_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+            document.getElementById('learn_ppi_').style.background = '#000066';
+            document.getElementById('none_ppi_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None ";
+            document.getElementById('none_ppi_').style.background = '#575757';
+            }
+            
+            // 8-shaped
+            
+            function completed_lll_() {
+            document.getElementById('completed_lll_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_done.png'> Completed ";
+            document.getElementById('completed_lll_').style.background = '#00B666';
+            document.getElementById('trash_lll_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+            document.getElementById('trash_lll_').style.background = '#000066';
+            document.getElementById('learn_lll_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+            document.getElementById('learn_lll_').style.background = '#000066';
+            document.getElementById('none_lll_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+            document.getElementById('none_lll_').style.background = '#000066';
+            }
+            
+            function trash_lll_() {
+            document.getElementById('completed_lll_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+            document.getElementById('completed_lll_').style.background = '#000066';
+            document.getElementById('trash_lll_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_delete.png'> Delete ";
+            document.getElementById('trash_lll_').style.background = '#FF0000';
+            document.getElementById('learn_lll_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+            document.getElementById('learn_lll_').style.background = '#000066';
+            document.getElementById('none_lll_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+            document.getElementById('none_lll_').style.background = '#000066';
+            }
+            
+            function learn_lll_() {
+            document.getElementById('completed_lll_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+            document.getElementById('completed_lll_').style.background = '#000066';
+            document.getElementById('trash_lll_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+            document.getElementById('trash_lll_').style.background = '#000066';
+            document.getElementById('learn_lll_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_learning.png'> Learning ";
+            document.getElementById('learn_lll_').style.background = '#FFCC00';
+            document.getElementById('none_lll_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+            document.getElementById('none_lll_').style.background = '#000066';
+            }
+            
+            function none_lll_() {
+            document.getElementById('completed_lll_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+            document.getElementById('completed_lll_').style.background = '#000066';
+            document.getElementById('trash_lll_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+            document.getElementById('trash_lll_').style.background = '#000066';
+            document.getElementById('learn_lll_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+            document.getElementById('learn_lll_').style.background = '#000066';
+            document.getElementById('none_lll_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None ";
+            document.getElementById('none_lll_').style.background = '#575757';
+            }
+            
+            // Adjacent Corner Swap
+            
+            function completed_ttt_() {
+            document.getElementById('completed_ttt_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_done.png'> Completed ";
+            document.getElementById('completed_ttt_').style.background = '#00B666';
+            document.getElementById('trash_ttt_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+            document.getElementById('trash_ttt_').style.background = '#000066';
+            document.getElementById('learn_ttt_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+            document.getElementById('learn_ttt_').style.background = '#000066';
+            document.getElementById('none_ttt_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+            document.getElementById('none_ttt_').style.background = '#000066';
+            }
+            
+            function trash_ttt_() {
+            document.getElementById('completed_ttt_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+            document.getElementById('completed_ttt_').style.background = '#000066';
+            document.getElementById('trash_ttt_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_delete.png'> Delete ";
+            document.getElementById('trash_ttt_').style.background = '#FF0000';
+            document.getElementById('learn_ttt_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+            document.getElementById('learn_ttt_').style.background = '#000066';
+            document.getElementById('none_ttt_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+            document.getElementById('none_ttt_').style.background = '#000066';
+            }
+            
+            function learn_ttt_() {
+            document.getElementById('completed_ttt_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+            document.getElementById('completed_ttt_').style.background = '#000066';
+            document.getElementById('trash_ttt_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+            document.getElementById('trash_ttt_').style.background = '#000066';
+            document.getElementById('learn_ttt_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_learning.png'> Learning ";
+            document.getElementById('learn_ttt_').style.background = '#FFCC00';
+            document.getElementById('none_ttt_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+            document.getElementById('none_ttt_').style.background = '#000066';
+            }
+            
+            function none_ttt_() {
+            document.getElementById('completed_ttt_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+            document.getElementById('completed_ttt_').style.background = '#000066';
+            document.getElementById('trash_ttt_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+            document.getElementById('trash_ttt_').style.background = '#000066';
+            document.getElementById('learn_ttt_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+            document.getElementById('learn_ttt_').style.background = '#000066';
+            document.getElementById('none_ttt_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None ";
+            document.getElementById('none_ttt_').style.background = '#575757';
+            }
+            
+            // Diagonal Corner Swap
+            
+            function completed_uuu_() {
+            document.getElementById('completed_uuu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_done.png'> Completed ";
+            document.getElementById('completed_uuu_').style.background = '#00B666';
+            document.getElementById('trash_uuu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+            document.getElementById('trash_uuu_').style.background = '#000066';
+            document.getElementById('learn_uuu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+            document.getElementById('learn_uuu_').style.background = '#000066';
+            document.getElementById('none_uuu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+            document.getElementById('none_uuu_').style.background = '#000066';
+            }
+            
+            function trash_uuu_() {
+            document.getElementById('completed_uuu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+            document.getElementById('completed_uuu_').style.background = '#000066';
+            document.getElementById('trash_uuu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_delete.png'> Delete ";
+            document.getElementById('trash_uuu_').style.background = '#FF0000';
+            document.getElementById('learn_uuu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+            document.getElementById('learn_uuu_').style.background = '#000066';
+            document.getElementById('none_uuu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+            document.getElementById('none_uuu_').style.background = '#000066';
+            }
+            
+            function learn_uuu_() {
+            document.getElementById('completed_uuu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+            document.getElementById('completed_uuu_').style.background = '#000066';
+            document.getElementById('trash_uuu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+            document.getElementById('trash_uuu_').style.background = '#000066';
+            document.getElementById('learn_uuu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_learning.png'> Learning ";
+            document.getElementById('learn_uuu_').style.background = '#FFCC00';
+            document.getElementById('none_uuu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_normal.png'> None ";
+            document.getElementById('none_uuu_').style.background = '#000066';
+            }
+            
+            function none_uuu_() {
+            document.getElementById('completed_uuu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed ";
+            document.getElementById('completed_uuu_').style.background = '#000066';
+            document.getElementById('trash_uuu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete ";
+            document.getElementById('trash_uuu_').style.background = '#000066';
+            document.getElementById('learn_uuu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning ";
+            document.getElementById('learn_uuu_').style.background = '#000066';
+            document.getElementById('none_uuu_').innerHTML = "<img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None ";
+            document.getElementById('none_uuu_').style.background = '#575757';
+            }
+            
+            //Triggers
+            
+            function showtrigger_22begoll() {
+            document.getElementById('sunt').innerHTML = " (R U R' U) (R U2 R')";
+            document.getElementById('asut').innerHTML = " (L' U' L U') (L' U2 L)";
+            document.getElementById('hhht').innerHTML = " F (R U R' U') (R U R' U') (R U R' U') F'";
+            document.getElementById('ppit').innerHTML = " F (R U R' U') (R U R' U') F'";
+            document.getElementById('lllt').innerHTML = " (F R' F' R) (U R U' R')";
+            document.getElementById('tttt').innerHTML = " (R U R' U') (R' F R F')";
+            document.getElementById('uuut').innerHTML = " F (R U R' U') F'";
+            changecolor_22begoll();
+            paddingalgs_22begoll();
+            }
+            
+            function hidetrigger_22begoll() {
+            document.getElementById('sunt').innerHTML = " R U R' U R U2 R'";
+            document.getElementById('asut').innerHTML = " L' U' L U' L' U2 L";
+            document.getElementById('hhht').innerHTML = " F (R U R' U')3 F'";
+            document.getElementById('ppit').innerHTML = " F (R U R' U')2 F'";
+            document.getElementById('lllt').innerHTML = " F R' F' R U R U' R'";
+            document.getElementById('tttt').innerHTML = " R U R' U' R' F R F'";
+            document.getElementById('uuut').innerHTML = " F R U R' U' F'";
+            changecolor_22begoll();
+            paddingalgs_22begoll();
+            }
+            
+            function changecolor_22begoll() {
+            document.getElementById('sunt').style.color = "#000066";
+            document.getElementById('asut').style.color = "#000066";
+            document.getElementById('hhht').style.color = "#000066";
+            document.getElementById('ppit').style.color = "#000066";
+            document.getElementById('lllt').style.color = "#000066";
+            document.getElementById('tttt').style.color = "#000066";
+            document.getElementById('uuut').style.color = "#000066";
+            }
+
+            function paddingalgs_22begoll() {
+            document.getElementById('sunt').style.paddingLeft = "5px";
+            document.getElementById('asut').style.paddingLeft = "5px";
+            document.getElementById('hhht').style.paddingLeft = "5px";
+            document.getElementById('ppit').style.paddingLeft = "5px";
+            document.getElementById('lllt').style.paddingLeft = "5px";
+            document.getElementById('tttt').style.paddingLeft = "5px";
+            document.getElementById('uuut').style.paddingLeft = "5px";
+            }
+            
+        </script>
+            
+        <header id='headermain' style='text-align: center;'>
+
+            <h1 id='headhone'>Adarsh Crazy Cubing</h1>
+           
+            <button class='hdbutint' id='hdbut_algp' onmouseover='algp_hover()' onmouseout='algp_down()' onclick="document.location='algpage.html'"> <h3> Algorithm Page </h3> </button>
+            <button class='hdbutint' id='hdbut_hmep' onmouseover='hmep_hover()' onmouseout='hmep_down()' onclick="document.location='homepage.html'"> <h3> Home Page </h3> </button>
+            
+            <br><br>
+            
+        </header>
+            
+        <br><br>
+            
+        <h1 style='text-align:center;'>2x2</h1>
+            
+        <h2 style='text-align:center;'>Beginner OLL Algorithms </h2>
+            
+        <div id='intro_div'> <b>
+
+        <p id='introp22_a'>This is the second step in beginner solving method. After this step, do 
+        <a id='introa22_a' href='22_beg_pll_cor.html' alt='PLL' onmouseover='introa22_a_h()' onmouseout='introa22_a_d()'>Beginner PLL</a>.
+        </p>
+        
+        <p id='introp22_b'>Advanced Permutation/Full LL: 
+        <a id='introa22_b' href='22_int_ortpbl_cor.html' alt='Ortega PBL' onmouseover='introa22_b_h()' onmouseout='introa22_b_d()'>Ortega PBL</a>, 
+        <a id='introa22_c' href='22_adv_cll_cor.html' alt='CLL' onmouseover='introa22_c_h()' onmouseout='introa22_c_d()'>CLL</a>, 
+        <a id='introa22_d' href='22_mas_eg1_cor.html' alt='EG-1' onmouseover='introa22_d_h()' onmouseout='introa22_d_d()'>EG-1</a>, 
+        <a id='introa22_e' href='22_mas_eg2_cor.html' alt='EG-2' onmouseover='introa22_e_h()' onmouseout='introa22_e_d()'>EG-2</a>.
+        </p>
+        
+        <button type="button" class='triggerornot22' onclick='showtrigger_22begoll()' id='show_hide_ooa'
+        onmouseover='show_hide_ooa_h()' onmouseout='show_hide_ooa_d()'> <h4> Show triggers(brackets) </h4> </button>
+        <br><br>
+        <button type="button" class='triggerornot22' onclick='hidetrigger_22begoll()' id='show_hide_oob'
+        onmouseover='show_hide_oob_h()' onmouseout='show_hide_oob_d()'> <h4> Hide triggers(no brackets) </h4> </button>
+        <br>
+            
+        </b> </div>
+            
+        <br><br>
+            
+        <div id='sun' class='two_beginner_oll_algs'>
+            
+        <h3 class='algname22'>Sune</h3>
+            
+        <img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/22BEGOLL/beg_oll_sune.png' class='221limgs' alt='Sune' style='height: 125px; width: 125px;'> </img>
+        <br><br>
+        <h3 id='sunt'> <b class='two_beginner_oll_algs'> R U R' U R U2 R' </b> </h3>
+            
+            <button type='button' class='cubealgbutton22' id='completed_sun_' onclick='completed_sun_()'>
+            <img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed 
+            </button>
+            
+            <button type='button' class='cubealgbutton22' id='trash_sun_' onclick='trash_sun_()'>
+            <img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete 
+            </button>
+            
+            <button type='button' class='cubealgbutton22' id='learn_sun_' onclick='learn_sun_()'>
+            <img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning 
+            </button>
+            
+            <button type='button' class='cubealgbutton22_none' id='none_sun_' onclick='none_sun_()'>
+            <img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None 
+            </button>
+            
+            <br>
+            <br>
+            
+        </div>
+            
+        <br><br><br>
+
+        <div id='asu' class='two_beginner_oll_algs'>
+            
+        <h3 class='algname22'>Antisune</h3>
+        
+        <img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/22BEGOLL/beg_oll_antisune.png' class='221limgs' alt='Antisune' style='height: 125px; width: 125px;'> </img>
+        <br><br>
+        <h3 id='asut'> <b class='two_beginner_oll_algs'> L' U' L U' L' U2 L </b> </h3>
+        
+        <button type='button' class='cubealgbutton22' id='completed_asu_' onclick='completed_asu_()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed 
+        </button>
+        
+        <button type='button' class='cubealgbutton22' id='trash_asu_' onclick='trash_asu_()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete 
+        </button>
+        
+        <button type='button' class='cubealgbutton22' id='learn_asu_' onclick='learn_asu_()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning 
+        </button>
+        
+        <button type='button' class='cubealgbutton22_none' id='none_asu_' onclick='none_asu_()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None 
+        </button>
+        
+        <br>
+        <br>
+        
+        </div>
+        
+        <br><br><br>
+        
+        <div id='hhh' class='two_beginner_oll_algs'>
+        
+        <h3 class='algname22'>H-shaped</h3>
+        
+        <img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/22BEGOLL/beg_oll_h-shaped.png' class='221limgs' alt='H-shaped' style='height: 125px; width: 125px;'> </img>
+        <br><br>
+        <h3 id='hhht'> <b class='two_beginner_oll_algs'> F (R U R' U')3 F' </b> </h3>
+        
+        <button type='button' class='cubealgbutton22' id='completed_hhh_' onclick='completed_hhh_()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed 
+        </button>
+        
+        <button type='button' class='cubealgbutton22' id='trash_hhh_' onclick='trash_hhh_()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete 
+        </button>
+        
+        <button type='button' class='cubealgbutton22' id='learn_hhh_' onclick='learn_hhh_()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning 
+        </button>
+        
+        <button type='button' class='cubealgbutton22_none' id='none_hhh_' onclick='none_hhh_()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None 
+        </button>
+        
+        <br>
+        <br>
+        
+        </div>
+        
+        <br><br><br>
+        
+        <div id='ppi' class='two_beginner_oll_algs'>
+        
+        <h3 class='algname22'>Pi</h3>
+        
+        <img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/22BEGOLL/beg_oll_pi.png' class='221limgs' alt='Pi' style='height: 125px; width: 125px;'> </img>
+        <br><br>
+        <h3 id='ppit'> <b class='two_beginner_oll_algs'> F (R U R' U')2 F' </b> </h3>
+        
+        <button type='button' class='cubealgbutton22' id='completed_ppi_' onclick='completed_ppi_()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed 
+        </button>
+        
+        <button type='button' class='cubealgbutton22' id='trash_ppi_' onclick='trash_ppi_()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete 
+        </button>
+        
+        <button type='button' class='cubealgbutton22' id='learn_ppi_' onclick='learn_ppi_()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning 
+        </button>
+        
+        <button type='button' class='cubealgbutton22_none' id='none_ppi_' onclick='none_ppi_()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None 
+        </button>
+        
+        <br>
+        <br>
+        
+        </div>
+        
+        <br><br><br>
+        
+        <div id='lll' class='two_beginner_oll_algs'>
+        
+        <h3 class='algname22'>8-shaped</h3>
+        
+        <img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/22BEGOLL/beg_oll_8-shaped.png' class='221limgs' alt='8-shaped' style='height: 125px; width: 125px;'> </img>
+        <br><br>
+        <h3 id='lllt'> <b class='two_beginner_oll_algs'> F R' F' R U R U' R' </b> </h3>
+        
+        <button type='button' class='cubealgbutton22' id='completed_lll_' onclick='completed_lll_()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed 
+        </button>
+        
+        <button type='button' class='cubealgbutton22' id='trash_lll_' onclick='trash_lll_()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete 
+        </button>
+        
+        <button type='button' class='cubealgbutton22' id='learn_lll_' onclick='learn_lll_()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning 
+        </button>
+        
+        <button type='button' class='cubealgbutton22_none' id='none_lll_' onclick='none_lll_()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None 
+        </button>
+        
+        <br>
+        <br>
+        
+        </div>
+        
+        <br><br><br>
+        
+        <div id='ttt' class='two_beginner_oll_algs'>
+        
+        <h3 class='algname22'>T-shaped</h3>
+        
+        <img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/22BEGOLL/beg_oll_t-shaped.png' class='221limgs' alt='T-shaped' style='height: 125px; width: 125px;'> </img>
+        <br><br>
+        <h3 id='tttt'> <b class='two_beginner_oll_algs'> R U R' U' R' F R F' </b> </h3>
+        
+        <button type='button' class='cubealgbutton22' id='completed_ttt_' onclick='completed_ttt_()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed 
+        </button>
+        
+        <button type='button' class='cubealgbutton22' id='trash_ttt_' onclick='trash_ttt_()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete 
+        </button>
+        
+        <button type='button' class='cubealgbutton22' id='learn_ttt_' onclick='learn_ttt_()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning 
+        </button>
+        
+        <button type='button' class='cubealgbutton22_none' id='none_ttt_' onclick='none_ttt_()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None 
+        </button>
+        
+        <br>
+        <br>
+        
+        </div>
+        
+        <br><br><br>
+        
+        <div id='uuu' class='two_beginner_oll_algs'>
+        
+        <h3 class='algname22'>U-shaped</h3>
+        
+        <img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/22BEGOLL/beg_oll_u-shaped.png' class='221limgs' alt='U-shaped' style='height: 125px; width: 125px;'> </img>
+        <br><br>
+        <h3 id='uuut'> <b class='two_beginner_oll_algs'> F R U R' U' F' </b> </h3>
+        
+        <button type='button' class='cubealgbutton22' id='completed_uuu_' onclick='completed_uuu_()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed 
+        </button>
+        
+        <button type='button' class='cubealgbutton22' id='trash_uuu_' onclick='trash_uuu_()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete 
+        </button>
+        
+        <button type='button' class='cubealgbutton22' id='learn_uuu_' onclick='learn_uuu_()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning 
+        </button>
+        
+        <button type='button' class='cubealgbutton22_none' id='none_uuu_' onclick='none_uuu_()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None 
+        </button>
+        
+        <br>
+        <br>
+        
+        </div>
+        
+        <br><br><br>
+        
+        <b><a class='atop' href="#top">Back To Top</a></b>
+        
+        <footer id='footer'>
+        
+        <p style='text-align:center;'>Thank you for viewing our page<br>Requesting you to visit our page again</p>
+        
+        </footer>
+            
+    </body>
+    
 </html>
