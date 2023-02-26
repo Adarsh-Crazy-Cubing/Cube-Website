@@ -1,10 +1,11 @@
 No. Of Lines
 
 030941 - 3x3 Adv OLL
+030117 - 3x3 Adv OLL (Numb)
 011608 - 3X3 Adv PLL
-011406 - 3x3 Adv PLL Alpha
+011406 - 3x3 Adv PLL (Alpha)
 ______
-053955 - 3x3 Total
+084072 - 3x3 Total
 ______
 
 ----------
@@ -23,29 +24,39 @@ ______
 
 ----------
 
-056596 - Grand Total
+086713 - Grand Total
 
 -----------------------
 
 No. Of Algorithms
 
 057 - 3x3 Adv OLL
+057 - 3x3 Adv OLL (Numb)
 021 - 3x3 Adv PLL
-021 - 3x3 Adv PLL Alpha
+021 - 3x3 Adv PLL (Alpha)
+010 - 3x3 Beg OLL \\
+006 - 3x3 Beg PLL \\
 ___
-099 - 3x3 Total
+156 - 3x3 Total
 ___
 
 ----------
 
 002 - 2x2 Beg PLL
+007 - 2x2 Beg OLL \\
+005 - 2x2 Int Ortega PBL \\
+007 - 2x2 Int Ortega OLL \\
+042 - 2x2 Adv CLL \\
+043 - 2x2 Mas EG-1 \\
+043 - 2x2 Mas EG-2 \\
+128 - 2x2 Mas Full EG \\
 ___
 002 - 2x2 Total
 ___
 
 ----------
 
-000 - 4-6 Beg Parity
+022 - 4-6 Adv Parity PLL \\
 ___
 000 - 4-6 Total
 ___
@@ -59,8 +70,10 @@ ___
 
 ----------
 
-103 - Grand Total
+160 - Grand Total
 
 -----------------------
 
-Avg line for each alg = 549.5
+Avg line for each alg = 542.0
+
+\\ - Not Counted
