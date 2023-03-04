@@ -13,7 +13,7 @@ ______
 ----------
 
 001309 - 2x2 Beg PLL
-000000 - 2x2 Beg OLL \\*
+003832 - 2x2 Beg OLL 
 000000 - 2x2 Int Ortega PBL \\*
 000000 - 2x2 Int Ortega OLL \\*
 000000 - 2x2 Adv CLL \\*
@@ -21,7 +21,7 @@ ______
 000000 - 2x2 Mas EG-2 \\*
 000000 - 2x2 Mas Full EG \\*
 ______
-001309 - 2x2 Total
+005141 - 2x2 Total
 ______
 
 ----------
@@ -40,7 +40,7 @@ ______
 
 ----------
 
-086713 - Grand Total
+090545 - Grand Total
 
 -----------------------
 
@@ -59,7 +59,7 @@ ___
 ----------
 
 002 - 2x2 Beg PLL
-007 - 2x2 Beg OLL \\*
+007 - 2x2 Beg OLL 
 005 - 2x2 Int Ortega PBL \\*
 007 - 2x2 Int Ortega OLL \\*
 042 - 2x2 Adv CLL \\*
@@ -67,7 +67,7 @@ ___
 043 - 2x2 Mas EG-2 \\*
 128 - 2x2 Mas Full EG \\*
 ___
-002 - 2x2 Total
+009 - 2x2 Total
 ___
 
 ----------
@@ -86,11 +86,11 @@ ___
 
 ----------
 
-160 - Grand Total
+167 - Grand Total
 
 -----------------------
 
-Avg line for each alg = 542.0
+Avg line for each alg = 542.2
 
 \\ - Not Counted
 * - Not Started
