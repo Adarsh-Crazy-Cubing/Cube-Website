@@ -3386,25 +3386,25 @@
             //Triggers
             
             function showtrigger_22begoll() {
-            document.getElementById('sunt').innerHTML = "(R U R' U) (R U2 R')";
-            document.getElementById('asut').innerHTML = "(L' U' L U') (L' U2 L)";
-            document.getElementById('hhht').innerHTML = "F (R U R' U') (R U R' U') (R U R' U') F'";
-            document.getElementById('ppit').innerHTML = "F (R U R' U') (R U R' U') F'";
-            document.getElementById('lllt').innerHTML = "(F R' F' R) (U R U' R')";
-            document.getElementById('tttt').innerHTML = "(R U R' U') (R' F R F')";
-            document.getElementById('uuut').innerHTML = "F (R U R' U') F'";
+            triggeryes_sun_();
+            triggeryes_asu_();
+            triggeryes_hhh_();
+            triggeryes_ppi_();
+            triggeryes_lll_();
+            triggeryes_ttt_();
+            triggeryes_uuu_();
             changecolor_22begoll();
             paddingalgs_22begoll();
             }
             
             function hidetrigger_22begoll() {
-            document.getElementById('sunt').innerHTML = "R U R' U R U2 R'";
-            document.getElementById('asut').innerHTML = "L' U' L U' L' U2 L";
-            document.getElementById('hhht').innerHTML = "F (R U R' U')3 F'";
-            document.getElementById('ppit').innerHTML = "F (R U R' U')2 F'";
-            document.getElementById('lllt').innerHTML = "F R' F' R U R U' R'";
-            document.getElementById('tttt').innerHTML = "R U R' U' R' F R F'";
-            document.getElementById('uuut').innerHTML = "F R U R' U' F'";
+            triggerno_sun_();
+            triggerno_asu_();
+            triggerno_hhh_();
+            triggerno_ppi_();
+            triggerno_lll_();
+            triggerno_ttt_();
+            triggerno_uuu_();
             changecolor_22begoll();
             paddingalgs_22begoll();
             }
@@ -3479,25 +3479,42 @@
         <img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/22BEGOLL/beg_oll_sune.png' class='221limgs' alt='Sune' style='height: 125px; width: 125px;'> </img>
         <br><br>
         <h3 id='sunt'> <b class='two_beginner_oll_algs'> R U R' U R U2 R' </b> </h3>
-            
-            <button type='button' class='cubealgbutton22' id='completed_sun_' onclick='completed_sun_()'>
-            <img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed 
-            </button>
-            
-            <button type='button' class='cubealgbutton22' id='trash_sun_' onclick='trash_sun_()'>
-            <img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete 
-            </button>
-            
-            <button type='button' class='cubealgbutton22' id='learn_sun_' onclick='learn_sun_()'>
-            <img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning 
-            </button>
-            
-            <button type='button' class='cubealgbutton22_none' id='none_sun_' onclick='none_sun_()'>
-            <img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None 
-            </button>
-            
-            <br>
-            <br>
+        
+        <button type='button' class='cubealgbutton22' id='completed_sun_' onclick='completed_sun_()' 
+        onmouseover='sun_com_hover()' onmouseout='sun_com_down()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed 
+        </button>
+        
+        <button type='button' class='cubealgbutton22' id='trash_sun_' onclick='trash_sun_()' 
+        onmouseover='sun_del_hover()' onmouseout='sun_del_down()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete 
+        </button>
+        
+        <button type='button' class='cubealgbutton22' id='learn_sun_' onclick='learn_sun_()' 
+        onmouseover='sun_lea_hover()' onmouseout='sun_lea_down()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning 
+        </button>
+        
+        <button type='button' class='cubealgbutton22_none' id='none_sun_' onclick='none_sun_()' 
+        onmouseover='sun_non_hover()' onmouseout='sun_non_down()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None 
+        </button>
+        
+        <br>
+        <br>
+        
+        <button type='button' class='cubealgbutton22' style='width:250px;' id='triggeryes_sun_' onclick='triggeryes_sun_()'
+        onmouseover='sun_ytr_hover()' onmouseout='sun_ytr_down()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_bracket_normal.png'> Show Triggers For Sune Only
+        </button>
+        
+        <button type='button' class='cubealgbutton22_trigno' style='width:250px;' id='triggerno_sun_' onclick='triggerno_sun_()' 
+        onmouseover='sun_ntr_hover()' onmouseout='sun_ntr_down()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_notrig_notrig.png'> Hide Triggers For Sune Only
+        </button>
+        
+        <br>
+        <br>
             
         </div>
             
@@ -3511,20 +3528,37 @@
         <br><br>
         <h3 id='asut'> <b class='two_beginner_oll_algs'> L' U' L U' L' U2 L </b> </h3>
         
-        <button type='button' class='cubealgbutton22' id='completed_asu_' onclick='completed_asu_()'>
+        <button type='button' class='cubealgbutton22' id='completed_asu_' onclick='completed_asu_()' 
+        onmouseover='asu_com_hover()' onmouseout='asu_com_down()'>
         <img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed 
         </button>
         
-        <button type='button' class='cubealgbutton22' id='trash_asu_' onclick='trash_asu_()'>
+        <button type='button' class='cubealgbutton22' id='trash_asu_' onclick='trash_asu_()' 
+        onmouseover='asu_del_hover()' onmouseout='asu_del_down()'>
         <img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete 
         </button>
         
-        <button type='button' class='cubealgbutton22' id='learn_asu_' onclick='learn_asu_()'>
+        <button type='button' class='cubealgbutton22' id='learn_asu_' onclick='learn_asu_()' 
+        onmouseover='asu_lea_hover()' onmouseout='asu_lea_down()'>
         <img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning 
         </button>
         
-        <button type='button' class='cubealgbutton22_none' id='none_asu_' onclick='none_asu_()'>
+        <button type='button' class='cubealgbutton22_none' id='none_asu_' onclick='none_asu_()' 
+        onmouseover='asu_non_hover()' onmouseout='asu_non_down()'>
         <img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None 
+        </button>
+        
+        <br>
+        <br>
+        
+        <button type='button' class='cubealgbutton22' style='width:250px;' id='triggeryes_asu_' onclick='triggeryes_asu_()'
+        onmouseover='asu_ytr_hover()' onmouseout='asu_ytr_down()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_bracket_normal.png'> Show Triggers For Antisune Only
+        </button>
+        
+        <button type='button' class='cubealgbutton22_trigno' style='width:250px;' id='triggerno_asu_' onclick='triggerno_asu_()' 
+        onmouseover='asu_ntr_hover()' onmouseout='asu_ntr_down()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_notrig_notrig.png'> Hide Triggers For Antisune Only
         </button>
         
         <br>
@@ -3542,20 +3576,37 @@
         <br><br>
         <h3 id='hhht'> <b class='two_beginner_oll_algs'> F (R U R' U')3 F' </b> </h3>
         
-        <button type='button' class='cubealgbutton22' id='completed_hhh_' onclick='completed_hhh_()'>
+        <button type='button' class='cubealgbutton22' id='completed_hhh_' onclick='completed_hhh_()' 
+        onmouseover='hhh_com_hover()' onmouseout='hhh_com_down()'>
         <img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed 
         </button>
         
-        <button type='button' class='cubealgbutton22' id='trash_hhh_' onclick='trash_hhh_()'>
+        <button type='button' class='cubealgbutton22' id='trash_hhh_' onclick='trash_hhh_()' 
+        onmouseover='hhh_del_hover()' onmouseout='hhh_del_down()'>
         <img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete 
         </button>
         
-        <button type='button' class='cubealgbutton22' id='learn_hhh_' onclick='learn_hhh_()'>
+        <button type='button' class='cubealgbutton22' id='learn_hhh_' onclick='learn_hhh_()' 
+        onmouseover='hhh_lea_hover()' onmouseout='hhh_lea_down()'>
         <img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning 
         </button>
         
-        <button type='button' class='cubealgbutton22_none' id='none_hhh_' onclick='none_hhh_()'>
+        <button type='button' class='cubealgbutton22_none' id='none_hhh_' onclick='none_hhh_()' 
+        onmouseover='hhh_non_hover()' onmouseout='hhh_non_down()'>
         <img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None 
+        </button>
+        
+        <br>
+        <br>
+        
+        <button type='button' class='cubealgbutton22' style='width:250px;' id='triggeryes_hhh_' onclick='triggeryes_hhh_()'
+        onmouseover='hhh_ytr_hover()' onmouseout='hhh_ytr_down()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_bracket_normal.png'> Show Triggers For H-shaped Only
+        </button>
+        
+        <button type='button' class='cubealgbutton22_trigno' style='width:250px;' id='triggerno_hhh_' onclick='triggerno_hhh_()' 
+        onmouseover='hhh_ntr_hover()' onmouseout='hhh_ntr_down()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_notrig_notrig.png'> Hide Triggers For H-shaped Only
         </button>
         
         <br>
@@ -3573,20 +3624,37 @@
         <br><br>
         <h3 id='ppit'> <b class='two_beginner_oll_algs'> F (R U R' U')2 F' </b> </h3>
         
-        <button type='button' class='cubealgbutton22' id='completed_ppi_' onclick='completed_ppi_()'>
+        <button type='button' class='cubealgbutton22' id='completed_ppi_' onclick='completed_ppi_()' 
+        onmouseover='ppi_com_hover()' onmouseout='ppi_com_down()'>
         <img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed 
         </button>
         
-        <button type='button' class='cubealgbutton22' id='trash_ppi_' onclick='trash_ppi_()'>
+        <button type='button' class='cubealgbutton22' id='trash_ppi_' onclick='trash_ppi_()' 
+        onmouseover='ppi_del_hover()' onmouseout='ppi_del_down()'>
         <img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete 
         </button>
         
-        <button type='button' class='cubealgbutton22' id='learn_ppi_' onclick='learn_ppi_()'>
+        <button type='button' class='cubealgbutton22' id='learn_ppi_' onclick='learn_ppi_()' 
+        onmouseover='ppi_lea_hover()' onmouseout='ppi_lea_down()'>
         <img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning 
         </button>
         
-        <button type='button' class='cubealgbutton22_none' id='none_ppi_' onclick='none_ppi_()'>
+        <button type='button' class='cubealgbutton22_none' id='none_ppi_' onclick='none_ppi_()' 
+        onmouseover='ppi_non_hover()' onmouseout='ppi_non_down()'>
         <img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None 
+        </button>
+        
+        <br>
+        <br>
+        
+        <button type='button' class='cubealgbutton22' style='width:250px;' id='triggeryes_ppi_' onclick='triggeryes_ppi_()'
+        onmouseover='ppi_ytr_hover()' onmouseout='ppi_ytr_down()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_bracket_normal.png'> Show Triggers For Pi Only
+        </button>
+        
+        <button type='button' class='cubealgbutton22_trigno' style='width:250px;' id='triggerno_ppi_' onclick='triggerno_ppi_()' 
+        onmouseover='ppi_ntr_hover()' onmouseout='ppi_ntr_down()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_notrig_notrig.png'> Hide Triggers For Pi Only
         </button>
         
         <br>
@@ -3604,20 +3672,37 @@
         <br><br>
         <h3 id='lllt'> <b class='two_beginner_oll_algs'> F R' F' R U R U' R' </b> </h3>
         
-        <button type='button' class='cubealgbutton22' id='completed_lll_' onclick='completed_lll_()'>
+        <button type='button' class='cubealgbutton22' id='completed_lll_' onclick='completed_lll_()' 
+        onmouseover='lll_com_hover()' onmouseout='lll_com_down()'>
         <img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed 
         </button>
         
-        <button type='button' class='cubealgbutton22' id='trash_lll_' onclick='trash_lll_()'>
+        <button type='button' class='cubealgbutton22' id='trash_lll_' onclick='trash_lll_()' 
+        onmouseover='lll_del_hover()' onmouseout='lll_del_down()'>
         <img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete 
         </button>
         
-        <button type='button' class='cubealgbutton22' id='learn_lll_' onclick='learn_lll_()'>
+        <button type='button' class='cubealgbutton22' id='learn_lll_' onclick='learn_lll_()' 
+        onmouseover='lll_lea_hover()' onmouseout='lll_lea_down()'>
         <img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning 
         </button>
         
-        <button type='button' class='cubealgbutton22_none' id='none_lll_' onclick='none_lll_()'>
+        <button type='button' class='cubealgbutton22_none' id='none_lll_' onclick='none_lll_()' 
+        onmouseover='lll_non_hover()' onmouseout='lll_non_down()'>
         <img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None 
+        </button>
+        
+        <br>
+        <br>
+        
+        <button type='button' class='cubealgbutton22' style='width:250px;' id='triggeryes_lll_' onclick='triggeryes_lll_()'
+        onmouseover='lll_ytr_hover()' onmouseout='lll_ytr_down()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_bracket_normal.png'> Show Triggers For 8-Shaped Only
+        </button>
+        
+        <button type='button' class='cubealgbutton22_trigno' style='width:250px;' id='triggerno_lll_' onclick='triggerno_lll_()' 
+        onmouseover='lll_ntr_hover()' onmouseout='lll_ntr_down()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_notrig_notrig.png'> Hide Triggers For 8-Shaped Only
         </button>
         
         <br>
@@ -3635,20 +3720,37 @@
         <br><br>
         <h3 id='tttt'> <b class='two_beginner_oll_algs'> R U R' U' R' F R F' </b> </h3>
         
-        <button type='button' class='cubealgbutton22' id='completed_ttt_' onclick='completed_ttt_()'>
+        <button type='button' class='cubealgbutton22' id='completed_ttt_' onclick='completed_ttt_()' 
+        onmouseover='ttt_com_hover()' onmouseout='ttt_com_down()'>
         <img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed 
         </button>
         
-        <button type='button' class='cubealgbutton22' id='trash_ttt_' onclick='trash_ttt_()'>
+        <button type='button' class='cubealgbutton22' id='trash_ttt_' onclick='trash_ttt_()' 
+        onmouseover='ttt_del_hover()' onmouseout='ttt_del_down()'>
         <img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete 
         </button>
         
-        <button type='button' class='cubealgbutton22' id='learn_ttt_' onclick='learn_ttt_()'>
+        <button type='button' class='cubealgbutton22' id='learn_ttt_' onclick='learn_ttt_()' 
+        onmouseover='ttt_lea_hover()' onmouseout='ttt_lea_down()'>
         <img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning 
         </button>
         
-        <button type='button' class='cubealgbutton22_none' id='none_ttt_' onclick='none_ttt_()'>
+        <button type='button' class='cubealgbutton22_none' id='none_ttt_' onclick='none_ttt_()' 
+        onmouseover='ttt_non_hover()' onmouseout='ttt_non_down()'>
         <img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None 
+        </button>
+        
+        <br>
+        <br>
+        
+        <button type='button' class='cubealgbutton22' style='width:250px;' id='triggeryes_ttt_' onclick='triggeryes_ttt_()'
+        onmouseover='ttt_ytr_hover()' onmouseout='ttt_ytr_down()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_bracket_normal.png'> Show Triggers For T-Shaped Only
+        </button>
+        
+        <button type='button' class='cubealgbutton22_trigno' style='width:250px;' id='triggerno_ttt_' onclick='triggerno_ttt_()' 
+        onmouseover='ttt_ntr_hover()' onmouseout='ttt_ntr_down()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_notrig_notrig.png'> Hide Triggers For T-Shaped Only
         </button>
         
         <br>
@@ -3666,20 +3768,37 @@
         <br><br>
         <h3 id='uuut'> <b class='two_beginner_oll_algs'> F R U R' U' F' </b> </h3>
         
-        <button type='button' class='cubealgbutton22' id='completed_uuu_' onclick='completed_uuu_()'>
+        <button type='button' class='cubealgbutton22' id='completed_uuu_' onclick='completed_uuu_()' 
+        onmouseover='uuu_com_hover()' onmouseout='uuu_com_down()'>
         <img class='imgbut22' height='20px' width='20px' src='22_thumbs_up_normal.png'> Completed 
         </button>
         
-        <button type='button' class='cubealgbutton22' id='trash_uuu_' onclick='trash_uuu_()'>
+        <button type='button' class='cubealgbutton22' id='trash_uuu_' onclick='trash_uuu_()' 
+        onmouseover='uuu_del_hover()' onmouseout='uuu_del_down()'>
         <img class='imgbut22' height='20px' width='20px' src='22_eye_slash_normal.png'> Delete 
         </button>
         
-        <button type='button' class='cubealgbutton22' id='learn_uuu_' onclick='learn_uuu_()'>
+        <button type='button' class='cubealgbutton22' id='learn_uuu_' onclick='learn_uuu_()' 
+        onmouseover='uuu_lea_hover()' onmouseout='uuu_lea_down()'>
         <img class='imgbut22' height='20px' width='20px' src='22_bookmark_normal.png'> Learning 
         </button>
         
-        <button type='button' class='cubealgbutton22_none' id='none_uuu_' onclick='none_uuu_()'>
+        <button type='button' class='cubealgbutton22_none' id='none_uuu_' onclick='none_uuu_()' 
+        onmouseover='uuu_non_hover()' onmouseout='uuu_non_down()'>
         <img class='imgbut22' height='20px' width='20px' src='22_xmark_none.png'> None 
+        </button>
+        
+        <br>
+        <br>
+        
+        <button type='button' class='cubealgbutton22' style='width:250px;' id='triggeryes_uuu_' onclick='triggeryes_uuu_()'
+        onmouseover='uuu_ytr_hover()' onmouseout='uuu_ytr_down()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_bracket_normal.png'> Show Triggers For U-Shaped Only
+        </button>
+        
+        <button type='button' class='cubealgbutton22_trigno' style='width:250px;' id='triggerno_uuu_' onclick='triggerno_uuu_()' 
+        onmouseover='uuu_ntr_hover()' onmouseout='uuu_ntr_down()'>
+        <img class='imgbut22' height='20px' width='20px' src='22_notrig_notrig.png'> Hide Triggers For U-Shaped Only
         </button>
         
         <br>
