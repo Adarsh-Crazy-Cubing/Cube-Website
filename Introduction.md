@@ -11,7 +11,11 @@ Following links have been completed and opened for viewing
 * 2x2 Beginner PLL
 * 4x4 Beginner Parity Algs
 * 3x3 Advanced PLL
+* 2x2 Beginner OLL
+* 2x2 Intermediate Ortega OLL
 
-The following will be completed by March 31
+The following will be completed by April 30
 
 * 3x3 Beginner PLL
+
+Website Launched at https://adarsh-crazy-cubing.github.io/Cube-Website/
