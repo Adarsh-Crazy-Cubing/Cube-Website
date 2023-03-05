@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adarsh Crazy Cubing</title>
+    <link rel="stylesheet" href="homepage.css"> 
+    
+    </head>
+    
+    <body onload="web_style_homepage()">
+
+        <header id='headermain' style='text-align: center;'>
+        
+            <h1 id='headhone'>Adarsh Crazy Cubing</h1>
+        
+            <button class='hdbutint' id='hdbutint_algp' onmouseover='hdbutint_algp_h()' onmouseout='hdbutint_algp_d()' onclick="document.location='algpage.html'"> <h3> Algorithm Page </h3> </button>
+            <button class='hdbutint' id='hdbutint_hmep' onmouseover='hdbutint_hmep_h()' onmouseout='hdbutint_hmep_d()' onclick="document.location='index.html'"> <h3> Home Page </h3> </button>
+        
+            <br><br>
+        
+        </header>
+        
+        <br>
+        
+        <script>
+        
+        // Onload
+        
+        function web_style_homepage() {
+        header_style();
+        footer_style();
+        hdbutint_algp_d();
+        hdbutint_hmep_d();
+        bdpopalg_3_advpll_d();
+        bdpopalg_2_advcll_d();
+        bdpopalg_3_advoll_d();
+        }
+        
+        // Header and Footer - Style
+
+        function header_style() {
+        document.getElementById('headermain').style.backgroundColor = '#FAFAFA';
+        document.getElementById('headermain').style.border = '5px double #FF9933';
+        document.getElementById('headhone').style.color = '#33CC33';
+        }
+        
+        function footer_style() {
+            document.getElementById('footermain').style.backgroundColor = '#FAFAFA';
+            document.getElementById('footermain').style.border = '5px double #FF5050';
+            document.getElementById('footp_a').style.color = '#33CCCC';
+            document.getElementById('footp_b').style.color = '#33CCCC';
+            document.getElementById('footp_c').style.color = '#33CCCC';
+            }
+    
+        // Algorithm page button
+        
+        function hdbutint_algp_h() {
+        document.getElementById('hdbutint_algp').style.color = '#003366';
+        document.getElementById('hdbutint_algp').style.border = '2px solid #003366';
+        document.getElementById('hdbutint_algp').style.background = '#FF9933';
+        document.getElementById('hdbutint_algp').style.paddingLeft = '12px';
+        document.getElementById('hdbutint_algp').style.paddingRight = '12px';
+        }
+        
+        function hdbutint_algp_d() {
+        document.getElementById('hdbutint_algp').style.color = '#FF9933';
+        document.getElementById('hdbutint_algp').style.border = '2px solid #FF9933';
+        document.getElementById('hdbutint_algp').style.background = '#003366';
+        document.getElementById('hdbutint_algp').style.paddingLeft = '12px';
+        document.getElementById('hdbutint_algp').style.paddingRight = '12px';
+        }
+        
+        // Homepage button
+        
+        function hdbutint_hmep_h() {
+        document.getElementById('hdbutint_hmep').style.color = '#003366';
+        document.getElementById('hdbutint_hmep').style.border = '2px solid #003366';
+        document.getElementById('hdbutint_hmep').style.background = '#FF9933';
+        document.getElementById('hdbutint_hmep').style.paddingLeft = '12px';
+        document.getElementById('hdbutint_hmep').style.paddingRight = '12px';
+        }
+        
+        function hdbutint_hmep_d() {
+        document.getElementById('hdbutint_hmep').style.color = '#FF9933';
+        document.getElementById('hdbutint_hmep').style.border = '2px solid #FF9933';
+        document.getElementById('hdbutint_hmep').style.background = '#003366';
+        document.getElementById('hdbutint_hmep').style.paddingLeft = '12px';
+        document.getElementById('hdbutint_hmep').style.paddingRight = '12px';
+        }
+        
+        // Poular Algorithms
+        
+        function bdpopalg_3_advpll_h() {
+        document.getElementById('bdpopalg_3_advpll').style.color = '#66CCFF';
+        document.getElementById('bdpopalg_3_advpll').style.border = '2px solid #66CCFF';
+        document.getElementById('bdpopalg_3_advpll').style.background = '#660066';
+        document.getElementById('bdpopalg_3_advpll').style.paddingLeft = '12px';
+        document.getElementById('bdpopalg_3_advpll').style.paddingRight = '12px';
+        }
+        
+        function bdpopalg_3_advpll_d() {
+        document.getElementById('bdpopalg_3_advpll').style.color = '#660066';
+        document.getElementById('bdpopalg_3_advpll').style.border = '2px solid #660066';
+        document.getElementById('bdpopalg_3_advpll').style.background = '#66CCFF';
+        document.getElementById('bdpopalg_3_advpll').style.paddingLeft = '12px';
+        document.getElementById('bdpopalg_3_advpll').style.paddingRight = '12px';
+        }
+        
+        function bdpopalg_2_advcll_h() {
+        document.getElementById('bdpopalg_2_advcll').style.color = '#66CCFF';
+        document.getElementById('bdpopalg_2_advcll').style.border = '2px solid #66CCFF';
+        document.getElementById('bdpopalg_2_advcll').style.background = '#660066';
+        document.getElementById('bdpopalg_2_advcll').style.paddingLeft = '12px';
+        document.getElementById('bdpopalg_2_advcll').style.paddingRight = '12px';
+        }
+        
+        function bdpopalg_2_advcll_d() {
+        document.getElementById('bdpopalg_2_advcll').style.color = '#660066';
+        document.getElementById('bdpopalg_2_advcll').style.border = '2px solid #660066';
+        document.getElementById('bdpopalg_2_advcll').style.background = '#66CCFF';
+        document.getElementById('bdpopalg_2_advcll').style.paddingLeft = '12px';
+        document.getElementById('bdpopalg_2_advcll').style.paddingRight = '12px';
+        }
+        
+        function bdpopalg_3_advoll_h() {
+        document.getElementById('bdpopalg_3_advoll').style.color = '#66CCFF';
+        document.getElementById('bdpopalg_3_advoll').style.border = '2px solid #66CCFF';
+        document.getElementById('bdpopalg_3_advoll').style.background = '#660066';
+        document.getElementById('bdpopalg_3_advoll').style.paddingLeft = '12px';
+        document.getElementById('bdpopalg_3_advoll').style.paddingRight = '12px';
+        }
+        
+        function bdpopalg_3_advoll_d() {
+        document.getElementById('bdpopalg_3_advoll').style.color = '#660066';
+        document.getElementById('bdpopalg_3_advoll').style.border = '2px solid #660066';
+        document.getElementById('bdpopalg_3_advoll').style.background = '#66CCFF';
+        document.getElementById('bdpopalg_3_advoll').style.paddingLeft = '12px';
+        document.getElementById('bdpopalg_3_advoll').style.paddingRight = '12px';
+        }
+        
+        </script>
+        
+        <h2 text-align='center'> Popular Algorithms </h2>
+        
+        <br>
+        
+        <div>
+        
+        <button class='bdpopalg' id='bdpopalg_3_advpll' onmouseover='bdpopalg_3_advpll_h()' onmouseout='bdpopalg_3_advpll_d()' 
+        onclick="document.location='33_adv_pll_both.html'"> <h3> 3x3 Advanced PLL </h3> </button>
+        
+        <button class='bdpopalg' id='bdpopalg_2_advcll' onmouseover='bdpopalg_2_advcll_h()' onmouseout='bdpopalg_2_advcll_d()' 
+        onclick="document.location='22_adv_cll_cor.html'"> <h3> 2x2 CLL </h3> </button>
+        
+        <button class='bdpopalg' id='bdpopalg_3_advoll' onmouseover='bdpopalg_3_advoll_h()' onmouseout='bdpopalg_3_advoll_d()' 
+        onclick="document.location='33_adv_oll_both.html'"> <h3> 3x3 Advanced OLL </h3> </button>
+        
+        </div>
+        
+        <br><br>
+        
+        <div style='text-align: center;'>
+        
+        <a href='22_adv_cll_cor.html' alt='2x2 CLL'> <img src='C:/Users/User/Desktop/ADARSH/ADARSH/Html/Cube_algs/HOMEPAGE_PICTURES/22_ADV_CLL.png' alt='2x2 CLL' class='homeimg' style='height: 200px; width: 375px;'> </a>
+        
+        </div>
+        
+        <br><br><br>
+        
+        <footer id='footermain' style='text-align: center;'>
+        
+            <p id='footp_a'>Thank you for viewing my page</p>
+            
+            <p id='footp_b'>Requesting you to visit our page again</p>
+            
+            <p id='footp_c'>Email at: <b>adarsh30k@gmail.com</b> </p>
+            
+        </footer>
+        
+    </body>
+        
+</html>
