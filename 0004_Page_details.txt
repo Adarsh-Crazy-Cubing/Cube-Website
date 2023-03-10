@@ -4,10 +4,11 @@ No. Of Lines
 030117 - 3x3 Adv OLL (Numb)
 011608 - 3X3 Adv PLL
 011406 - 3x3 Adv PLL (Alpha)
+041123 - 3x3 Adv LL 
 000000 - 3x3 Beg OLL \\*
 000000 - 3x3 Beg PLL \\*
 ______
-084072 - 3x3 Total
+125195 - 3x3 Total
 ______
 
 ----------
@@ -40,7 +41,7 @@ ______
 
 ----------
 
-094381 - Grand Total
+135504 - Grand Total
 
 -----------------------
 
@@ -50,10 +51,11 @@ No. Of Algorithms
 057 - 3x3 Adv OLL (Numb)
 021 - 3x3 Adv PLL
 021 - 3x3 Adv PLL (Alpha)
+078 - 3x3 Adv LL 
 010 - 3x3 Beg OLL \\*
 006 - 3x3 Beg PLL \\*
 ___
-156 - 3x3 Total
+234 - 3x3 Total
 ___
 
 ----------
@@ -86,11 +88,11 @@ ___
 
 ----------
 
-167 - Grand Total
+252 - Grand Total
 
 -----------------------
 
-Avg line for each alg = 542.4
+Avg line for each alg = 537.7
 
 \\ - Not Counted
 * - Not Started
