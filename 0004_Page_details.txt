@@ -4,11 +4,11 @@ No. Of Lines
 030117 - 3x3 Adv OLL (Numb)
 011608 - 3X3 Adv PLL
 011406 - 3x3 Adv PLL (Alpha)
-041123 - 3x3 Adv LL 
+042249 - 3x3 Adv LL 
 000000 - 3x3 Beg OLL \\*
 000000 - 3x3 Beg PLL \\*
 ______
-125195 - 3x3 Total
+126321 - 3x3 Total
 ______
 
 ----------
@@ -41,7 +41,17 @@ ______
 
 ----------
 
-135504 - Grand Total
+000421 - Algpage CSS &
+000196 - Algpage $
+000010 - Homepage(Index) CSS &
+000185 - Index $
+
+______
+000812 - Others Total
+______
+
+136630 - Algorithms Total
+137442 - Grand Total
 
 -----------------------
 
@@ -51,7 +61,7 @@ No. Of Algorithms
 057 - 3x3 Adv OLL (Numb)
 021 - 3x3 Adv PLL
 021 - 3x3 Adv PLL (Alpha)
-078 - 3x3 Adv LL 
+078 - 3x3 Adv LL $
 010 - 3x3 Beg OLL \\*
 006 - 3x3 Beg PLL \\*
 ___
@@ -92,7 +102,9 @@ ___
 
 -----------------------
 
-Avg line for each alg = 537.7
+Avg line for each alg = 542.2
 
 \\ - Not Counted
 * - Not Started
+$ - On Updates and bugs
+& - Will be Reduced
